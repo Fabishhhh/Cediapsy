@@ -1,12 +1,20 @@
 // ==========================================
+// CONFIGURATION COMPTE EMAILJS (À REMPLIR)
+// ==========================================
+const EMAILJS_PUBLIC_KEY = "dY0WJ9yPACVvpd4K_"; 
+const EMAILJS_SERVICE_ID = "service_em5osgp";
+const EMAILJS_TEMPLATE_ID = "template_njh1e6s";
+
+// ==========================================
 // INITIALISATION EMAILJS
 // ==========================================
-// Remplace "VOTRE_PUBLIC_KEY_ICI" par ta clé publique trouvée sur ton compte EmailJS
+(function() {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+})();
 
 // ==========================================
-// MENU BURGER
+// MENU BURGER (HORS DOMCONTENTLOADED POUR PLUS DE RÉACTIVITÉ)
 // ==========================================
-
 const burgerBtn = document.getElementById('burgerBtn');
 const navMenu = document.getElementById('navMenu');
 
@@ -16,7 +24,7 @@ if (burgerBtn && navMenu) {
         navMenu.classList.toggle('active');
     });
 
-    // fermer le menu quand on clique sur un lien
+    // Fermer le menu quand on clique sur un lien
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             burgerBtn.classList.remove('active');
@@ -24,14 +32,14 @@ if (burgerBtn && navMenu) {
         });
     });
 }
-(function() {
-    emailjs.init("VOTRE_PUBLIC_KEY_ICI");
-})();
 
+// ==========================================
+// GESTION DU CODE UNE FOIS LE DOM CHARGÉ
+// ==========================================
 document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================================
-    // 2. EFFET CARROUSEL FICTIF / SIMULÉ POUR LES TÉMOIGNAGES
+    // 2. EFFET CARROUSEL POUR LES TÉMOIGNAGES
     // ==========================================
     const dots = document.querySelectorAll('.slider-dots .dot');
     const testimonialQuote = document.querySelector('.testimonial-slide blockquote');
@@ -86,11 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = document.querySelector('.btn-submit-form');
             const originalText = btn.innerHTML;
             
+            // Changement d'état visuel du bouton (Spinner de chargement)
             btn.innerHTML = 'Envoi en cours... <i class="fa-solid fa-spinner fa-spin"></i>';
             btn.disabled = true;
 
-            // /!\ REMPLACE 'VOTRE_SERVICE_ID' ET 'VOTRE_TEMPLATE_ID' PAR LES TIENS
-            emailjs.sendForm('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', this)
+            // Envoi des données du formulaire via les variables configurées en haut
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
                 .then(function() {
                     alert('Message envoyé avec succès !');
                     contactForm.reset();

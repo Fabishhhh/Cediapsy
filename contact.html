@@ -12,13 +12,14 @@
 <body>
 
     <!-- -------------------------------------------------------------
-       EN-TÊTE DE LA PAGE (HEADER COMMUN)
+       EN-TÊTE DE LA PAGE (HEADER COMMUN) - NETTOYÉ & CORRIGÉ
        ------------------------------------------------------------- -->
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
                 <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CEDIAPSY">
             </div>
+            
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Accueil</a></li>
@@ -29,15 +30,10 @@
                 </ul>
             </nav>
 
-                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-
             <div class="header-actions">
                 <a href="contact.html" class="btn btn-primary active">Contact</a>
-                <button class="burger-menu">
+                <!-- Un seul bouton burger conservé ici, parfaitement identifiable par le JS -->
+                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -59,19 +55,18 @@
         </div>
     </section>
 
-<!-- -------------------------------------------------------------
-        SECTION FORMULAIRE ET COORDONNÉES
-        ------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------
+       SECTION FORMULAIRE ET COORDONNÉES
+       ------------------------------------------------------------- -->
     <main class="contact-main-container">
         <div class="container">
             <div class="contact-grid">
                 
-                <!-- Bloc de gauche : Le Formulaire -->
+                <!-- Bloc de gauche : Le Formulaire configuré pour EmailJS -->
                 <section class="contact-form-box">
                     <h2>Envoyez-nous un message</h2>
                     <p class="form-intro">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
                     
-                    <!-- Ajout de l'id pour EmailJS et suppression de l'action -->
                     <form id="contact-form" class="main-contact-form">
                         <div class="form-row-dual">
                             <div class="form-group">
@@ -113,7 +108,6 @@
 
                         <div class="form-checkbox-group">
                             <input type="checkbox" id="privacy" name="privacy" required>
-                            <!-- Lien connecté vers ta page de confidentialité -->
                             <label for="privacy">J'accepte que mes données soient traitées conformément à la <a href="confidentialite.html">politique de confidentialité</a> *</label>
                         </div>
 
@@ -125,14 +119,13 @@
 
                 <!-- Bloc de droite : Les coordonnées en mini-cartes -->
                 <aside class="contact-info-column">
-                    
                     <!-- Carte 1 : Adresse -->
                     <div class="info-mini-card">
                         <div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="info-card-content">
                             <h3>Adresse</h3>
                             <p>14 rue de la Pépinière, 75008 Paris</p>
-                            <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" class="info-card-link">Voir sur Google Maps</a>
+                            <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" class="info-card-link" target="_blank" rel="noopener">Voir sur Google Maps</a>
                         </div>
                     </div>
 
@@ -164,7 +157,6 @@
                             <p>Lun - Ven : 9h - 19h<br>Sam : 9h - 13h</p>
                         </div>
                     </div>
-
                 </aside>
 
             </div>
@@ -174,13 +166,9 @@
     <!-- -------------------------------------------------------------
        SECTION MAP INTERACTIVE (PLEINE LARGEUR)
        ------------------------------------------------------------- -->
-<section class="large-map-section">
+    <section class="large-map-section">
         <div class="map-container-wrapper">
-            <!-- L'encadré d'adresse qui flotte au-dessus de la carte -->
-            <div class="map-floating-overlay">
-            </div>
-            
-            <!-- Remplacement de la simulation par la vraie carte Google Maps -->
+            <div class="map-floating-overlay"></div>
             <div class="large-map-real">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.237255132204!2d2.321453977287951!3d48.872740200373016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3b2e59df99%3A0x7d69dc2a11b71be5!2s14%20Rue%20de%20la%20P%C3%A9pini%C3%A8re%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1717430000000!5m2!1sfr!2sfr" 
@@ -201,33 +189,33 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
-            <div class="footer-brand">
-              <a href="index.html" class="logo inverted">
-              <img src="images/Logo_Cediapsy_blanc.png" alt="Cédiapsy Logo Footer">
-              </a>
-              <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
-            </div>
+                <div class="footer-brand">
+                    <a href="index.html" class="logo inverted">
+                        <img src="images/Logo_Cediapsy_blanc.png" alt="Cédiapsy Logo Footer">
+                    </a>
+                    <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
+                </div>
                 <div class="footer-links">
                     <h5>Navigation</h5>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="equipe.html">Notre équipe</a></li>
-                    <li><a href="troubles.html">Les troubles évalués</a></li>
-                    <li><a href="prise-en-charge.html">Prise en charge</a></li>
-                    <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="equipe.html">Notre équipe</a></li>
+                        <li><a href="troubles.html">Les troubles évalués</a></li>
+                        <li><a href="prise-en-charge.html">Prise en charge</a></li>
+                        <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+                    </ul>
                 </div>
 
-            <div class="footer-links">
+                <div class="footer-links">
                     <h5>Informations</h5>
-                <ul>
-                    <li><a href="mentions-legales.html">Mentions légales</a></li>
-                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-                    <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
-                    <li><a href="cookies.html">Gestion des cookies</a></li>
-                </ul>
-            </div>
-            
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+                        <li><a href="cookies.html">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+                
                 <div class="footer-links">
                     <h5>Contact</h5>
                     <ul class="footer-contact-list">
@@ -243,10 +231,9 @@
         </div>
     </footer>
 
-<!-- INCLUSION DU SDK EMAILJS -->
+    <!-- INCLUSION DU SDK EMAILJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
-    <!-- TON SCRIPT PERSONNALISÉ (contenant le code JS fourni à l'étape précédente) -->
+    <!-- TON SCRIPT PERSONNALISÉ -->
     <script src="script.js"></script>
 </body>
 </html>
