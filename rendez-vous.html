@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre rendez-vous - CÉDIAPSY</title>
+    <!-- Même fichier style.css unique -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- -------------------------------------------------------------
+       EN-TÊTE DE LA PAGE (HEADER COMMUN)
+       ------------------------------------------------------------- -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="equipe.html" class="nav-link">Notre équipe</a></li>
+                    <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
+                    <li><a href="prise-en-charge.html" class="nav-link">Prise en charge</a></li>
+                    <li><a href="rendez-vous.html" class="nav-link active">Prendre rendez-vous</a></li>
+                </ul>
+            </nav>
+
+                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary">Contact</a>
+                <button class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------------------------------------------------------------
+       FIL D'ARIANE ET INTRO DE LA PAGE
+       ------------------------------------------------------------- -->
+    <section class="page-intro-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> <span>&gt;</span> <span class="current">Prendre rendez-vous</span>
+            </div>
+            <h1 class="page-main-title">Prendre Rendez-Vous</h1>
+            <p class="page-subtitle">Prenez rendez-vous avec notre équipe via Doctolib. La réservation s'effectue directement sur la plateforme.</p>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       SECTION INTEGRATION DOCTOLIB & ÉTAPES
+       ------------------------------------------------------------- -->
+    <main class="booking-main-container">
+        <div class="container small-container">
+            
+            <!-- Encadré Grille des Praticiens -->
+            <section class="doctolib-showcase-box">
+                <div class="doctolib-alert-header">
+                    <i class="fa-solid fa-arrow-up-right-from-square alert-icon"></i>
+                    <div>
+                        <h3>Rendez-vous en ligne via Doctolib</h3>
+                        <p>La prise de rendez-vous s'effectue directement sur les pages Doctolib de nos praticiens. Cliquez sur le nom du professionnel pour accéder à son agenda.</p>
+                    </div>
+                </div>
+
+                <div class="praticiens-booking-grid">
+                    <!-- Praticien 1 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Dr Nora Hamdani</h4>
+                            <span class="praticien-specialty">Psychiatre</span>
+                        </div>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Praticien 2 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Dr Isabelle Scheid</h4>
+                            <span class="praticien-specialty">Psychiatre</span>
+                        </div>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Praticien 3 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Céline Hebbache</h4>
+                            <span class="praticien-specialty">Psychologue</span>
+                        </div>
+                        <a href="https://www.doctolib.fr/psychologue/paris/celine-hebbache" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Praticien 4 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Laura Cuedj</h4>
+                            <span class="praticien-specialty">Psychologue</span>
+                        </div>
+                        <a href="https://www.doctolib.fr/psychologue/paris/laura-guedj" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Praticien 5 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Stéphanie Langlet</h4>
+                            <span class="praticien-specialty">Psychologue</span>
+                        </div>
+                        <a href="www.google.com" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Praticien 6 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Doïna Mazière</h4>
+                            <span class="praticien-specialty">Psychologue</span>
+                        </div>
+                        <a href="https://www.doctolib.fr/psychologue/paris/doina-maziere" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                                <!-- Praticien 7 -->
+                    <div class="praticien-mini-card">
+                        <div>
+                            <h4>Zeyad Al Salloum</h4>
+                            <span class="praticien-specialty">Psychiatre</span>
+                        </div>
+                        <a href="https://www.maquestionmedicale.fr/med-rdv/professions/medecin/jossigny/docteur-zeyad-al-salloum.htm" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Processus/Étapes -->
+            <section class="steps-section-box">
+                <h2 class="steps-box-title">Comment se déroule la prise de rendez-vous ?</h2>
+                
+                <div class="steps-list">
+                    <!-- Étape 1 -->
+                    <div class="step-row-item">
+                        <div class="step-icon-wrapper"><i class="fa-solid fa-user-check"></i></div>
+                        <div class="step-content-text">
+                            <h3>1. Choisissez votre praticien</h3>
+                            <p>Parcourez la liste de nos professionnels et sélectionnez celui qui vous convient. Vous pouvez consulter leurs spécialités et profils détaillés pour un choix éclairé.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 2 -->
+                    <div class="step-row-item">
+                        <div class="step-icon-wrapper"><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="step-content-text">
+                            <h3>2. Sélectionnez un créneau sur Doctolib</h3>
+                            <p>Cliquez sur le bouton de réservation pour être redirigé vers notre agenda Doctolib sécurisé. Choisissez la date et l'heure qui vous conviennent parmi les créneaux disponibles.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 3 -->
+                    <div class="step-row-item">
+                        <div class="step-icon-wrapper"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                        <div class="step-content-text">
+                            <h3>3. Recevez votre confirmation</h3>
+                            <p>Une fois votre créneau validé sur Doctolib, vous recevrez un e-mail et un SMS de confirmation contenant tous les détails de votre rendez-vous.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 4 -->
+                    <div class="step-row-item">
+                        <div class="step-icon-wrapper"><i class="fa-solid fa-laptop-medical"></i></div>
+                        <div class="step-content-text">
+                            <h3>4. Première consultation au cabinet ou en visio</h3>
+                            <p>Le jour de votre rendez-vous, présentez-vous au cabinet sélectionné ou connectez-vous à la visio-conférence via le lien fourni. Votre praticien vous accueillera.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- -------------------------------------------------------------
+       SECTION NOS CABINETS (CARTES MAPS)
+       ------------------------------------------------------------- -->
+<section class="cabinets-section">
+    <div class="container">
+        <h2 class="cabinets-main-title">Nos Cabinets</h2>
+        
+        <div class="cabinets-grid">
+            <!-- Cabinet 1 : Paris 8e -->
+            <article class="cabinet-card">
+                <div class="cabinet-map-placeholder">
+                    <!-- Vraie carte Google Maps intégrée pour le 14 rue de la Pépinière -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.237255132204!2d2.321453977287951!3d48.872740200373016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3b2e59df99%3A0x7d69dc2a11b71be5!2s14%20Rue%20de%20la%20P%C3%A9pini%C3%A8re%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1717430000000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="cabinet-card-body">
+                    <h3>Cabinet Paris 8e</h3>
+                    <p class="cabinet-intro-text">À proximité de la gare Saint-Lazare, notre cabinet du 8e arrondissement vous accueille dans un cadre calme et accessible.</p>
+                    
+                    <div class="cabinet-address-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>14, rue de la Pépinière</strong><br>75008 PARIS</p>
+                    </div>
+                    
+                    <div class="cabinet-access-block">
+                        <h5>Accès</h5>
+                        <div class="metro-tags-list">
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Métro St-Augustin (ligne 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Bus 22, 43, 80, 93</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Auber</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Gare St-Lazare (toutes lignes)</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
+                    <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- Cabinet 2 : Paris 11e -->
+            <article class="cabinet-card">
+                <div class="cabinet-map-placeholder">
+                    <!-- Vraie carte Google Maps intégrée pour le 20 avenue Philippe Auguste -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4338903332026!2d2.3929452772863923!3d48.84992980197992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d66e74b732d%3A0x6b876fcda0fbf8d1!2s20%20Av.%20Philippe-Auguste%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1717430100000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="cabinet-card-body">
+                    <h3>Cabinet Paris 11e</h3>
+                    <p class="cabinet-intro-text">Situé à deux pas de la place de la Nation, ce cabinet bénéficie d'une excellente desserte en transports en commun.</p>
+                    
+                    <div class="cabinet-address-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>20, avenue Philippe Auguste</strong><br>75011 PARIS</p>
+                    </div>
+                    
+                    <div class="cabinet-access-block">
+                        <h5>Accès</h5>
+                        <div class="metro-tags-list">
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Métro Nation (lignes 1, 2, 6, 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Nation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
+                    <a href="https://maps.google.com/?q=20+Avenue+Philippe+Auguste+75011+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- -------------------------------------------------------------
+       PIED DE PAGE (FOOTER COMMUN)
+       ------------------------------------------------------------- -->
+    <footer class="main-footer">
+        <div class="container">
+             <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="logo inverted">
+              <img src="images/Logo_Cediapsy_blanc.png" alt="Cédiapsy Logo Footer">
+              </a>
+              <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
+            </div>
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="equipe.html">Notre équipe</a></li>
+                    <li><a href="troubles.html">Les troubles évalués</a></li>
+                    <li><a href="prise-en-charge.html">Prise en charge</a></li>
+                    <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+                </ul>
+                </div>
+
+            <div class="footer-links">
+                    <h5>Informations</h5>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="cookies.html">Gestion des cookies</a></li>
+                </ul>
+            </div>
+            
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 14, rue de la pépinière 75008 PARIS</li>
+                        <li><i class="fa-solid fa-phone"></i> 06 09 08 08 98</li>
+                        <li><i class="fa-solid fa-envelope"></i> nora_psy@yahoo.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CÉDIAPSY. Tous droits réservés. | Conçu par <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

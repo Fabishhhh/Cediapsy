@@ -1,0 +1,145 @@
+/* ==========================================================================
+   PAGES D'INFORMATIONS ET TEXTES (Mentions légales, etc.)
+   ========================================================================== */
+
+/* Structure générale de la page */
+body:has(.legal-container) {
+    background-color: var(--light-bg, #fcfbf9);
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Le bloc blanc principal */
+.legal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* En-tête du document */
+.legal-header {
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.legal-header h1 {
+    color: var(--dark-emerald, #1a4237);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.legal-header .date-update {
+    font-size: 0.9rem;
+    color: #666666;
+    font-style: italic;
+}
+
+/* Sections de contenu */
+.legal-section {
+    margin-bottom: 30px;
+}
+
+.legal-section h2 {
+    color: var(--emerald, #2d7a5f);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid var(--emerald, #2d7a5f);
+    padding-left: 12px;
+}
+
+.legal-section p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #444444;
+    text-align: justify;
+}
+
+.legal-section strong {
+    color: #111111;
+}
+
+/* Pied de page et bouton retour */
+.legal-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--emerald, #2d7a5f);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+    color: var(--dark-emerald, #1a4237);
+    transform: translateX(-4px);
+}
+
+/* ==========================================================================
+   SPÉCIFIQUE : POLITIQUE DE CONFIDENTIALITÉ / COOKIES
+   ========================================================================== */
+
+/* Style pour l'introduction de la politique */
+.privacy-intro {
+    font-size: 1.05rem;
+    color: #444444;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    font-style: italic;
+    background-color: #f7f5f0; /* Un fond très léger pour faire ressortir l'intro */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--emerald, #2d7a5f);
+}
+
+/* Style propre pour les listes à puces dans les textes informatifs */
+.legal-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.legal-section li {
+    font-size: 0.95rem;
+    color: #444444;
+    margin-bottom: 8px;
+    list-style-type: square; /* Puces carrées discrètes */
+}
+
+.cgu-alert {
+    background-color: #fdf2f2;
+    border-left: 4px solid #de3e3e; 
+    padding: 15px;
+    border-radius: 6px;
+    color: #9b2c2c;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* Tablettes et mobiles */
+@media (max-width: 768px) {
+    body:has(.legal-container) {
+        padding: 20px 10px;
+    }
+    .legal-container {
+        padding: 25px 20px;
+    }
+    .legal-header h1 {
+        font-size: 1.8rem;
+    }
+}

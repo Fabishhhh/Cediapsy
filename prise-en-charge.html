@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Prises en Charge - CÉDIAPSY</title>
+    <!-- Même fichier style.css unique -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Pour les icônes de la maquette -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- -------------------------------------------------------------
+       EN-TÊTE DE LA PAGE (HEADER COMMUN)
+       ------------------------------------------------------------- -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CEDIAPSY">
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="equipe.html" class="nav-link">Notre équipe</a></li>
+                    <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
+                    <li><a href="prise-en-charge.html" class="nav-link active">Prise en charge</a></li>
+                    <li><a href="rendez-vous.html" class="nav-link">Prendre rendez-vous</a></li>
+                </ul>
+            </nav>
+
+                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+
+            <div class="header-actions">
+                <a href="#" class="btn btn-primary">Contact</a>
+                <button class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------------------------------------------------------------
+       FIL D'ARIANE ET INTRO DE LA PAGE
+       ------------------------------------------------------------- -->
+<section class="page-intro-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> <span>&gt;</span> <span class="current">Prise en charge</span>
+            </div>
+            <h1 class="page-main-title">Les Prises en Charge</h1>
+            <p class="page-subtitle">Des approches thérapeutiques, cognitives et comportementales, adaptées à chaque structure et ancrées scientifiquement.</p>
+            
+            <div class="anchors-container">
+                <a href="#psychoeducation" class="anchor-btn"><i class="fa-solid fa-users"></i> Groupes</a>
+                <a href="#habiletes-sociales" class="anchor-btn"><i class="fa-solid fa-user"></i> Individuel / Social</a>
+                <a href="#affirmation-soi" class="anchor-btn"><i class="fa-solid fa-brain"></i> Affirmation de soi</a>
+                <a href="#emdr-enfant" class="anchor-btn"><i class="fa-solid fa-child"></i> Enfant / EMDR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       LISTE DES PRESTATIONS / SOINS
+       ------------------------------------------------------------- -->
+    <main class="care-main-container">
+        <div class="container">
+
+            <!-- CARD 1 : Groupes de Psychoéducation -->
+<article id="psychoeducation" class="care-card side-emerald">
+                    <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div class="care-icon-box"><i class="fa-solid fa-users-rectangle"></i></div>
+                        <div>
+                            <h3>Groupes de Psychoéducation</h3>
+                            <span class="care-tag-sub">Pour les troubles bipolaires</span>
+                        </div>
+                    </div>
+                    <p class="care-description">La psychoéducation est une approche thérapeutique qui vise à aider les patients et leurs proches à mieux comprendre la maladie bipolaire. Des groupes permettent d'acquérir des connaissances sur les troubles, les traitements, et des stratégies pour prévenir les rechutes.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Bénéfices</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Meilleure compréhension de la maladie</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Reconnaissance précoce des signes d'alerte</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Amélioration de l'observance thérapeutique</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Partage d'expériences avec d'autres patients</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Développement de stratégies de coping</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Format</span>
+                        <p class="meta-value">Sessions de groupe (8-10 participants) sur plusieurs semaines</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e ou Paris 11e</p>
+                    </div>
+                    <a href="rendez-vous.html" class="btn btn-care-action">S'inscrire <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- CARD 2 : Entraînement aux Habiletés Sociales -->
+<article id="habiletes-sociales" class="care-card side-light-green">
+                    <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div class="care-icon-box"><i class="fa-solid fa-comments"></i></div>
+                        <div>
+                            <h3>Entraînement aux Habiletés Sociales</h3>
+                            <span class="care-tag-sub">Adolescents et Adultes</span>
+                        </div>
+                    </div>
+                    <p class="care-description">Ce programme vise à développer les compétences relationnelles et communicationnelles. À travers des exercices pratiques, rôles, et jeux de simulation, les participants apprennent à mieux interagir avec leur entourage.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Bénéfices</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Amélioration de la communication verbale et non-verbale</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Gestion des émotions en situation sociale</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Développement de l'empathie</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Résolution de conflits interpersonnels</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Renforcement de la confiance en soi</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Format</span>
+                        <p class="meta-value">Ateliers de groupe hebdomadaires</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e ou Paris 11e</p>
+                    </div>
+                    <a href="rendez-vous.html" class="btn btn-care-action">S'inscrire <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- CARD 3 : Groupes d'Affirmation de Soi -->
+<article id="affirmation-soi" class="care-card side-teal">
+                    <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div class="care-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h3>Groupes d'Affirmation de Soi</h3>
+                            <span class="care-tag-sub">Développer sa communication</span>
+                        </div>
+                    </div>
+                    <p class="care-description">L'affirmation de soi est la capacité à exprimer ses opinions, ses besoins et ses émotions de manière appropriée, tout en respectant ceux des autres. Ce groupe vous aide à développer une communication assertive.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Bénéfices</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Expression de ses besoins et limites</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Gestion des critiques et des conflits</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Réduction de l'anxiété sociale</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Amélioration de l'estime de soi</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Relations interpersonnelles apaisées</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Format</span>
+                        <p class="meta-value">Sessions de groupe sur 8 à 12 semaines</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e ou Paris 11e</p>
+                    </div>
+                    <a href="rendez-vous.html" class="btn btn-care-action">S'inscrire <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- CARD 4 : EMDR Enfant -->
+            <article id="emdr-enfant" class="care-card side-sage">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div class="care-icon-box"><i class="fa-solid fa-child-reaching"></i></div>
+                        <div>
+                            <h3>EMDR Enfant</h3>
+                            <span class="care-tag-sub">Traitement du trauma</span>
+                        </div>
+                    </div>
+                    <p class="care-description">L'EMDR (Eye Movement Desensitization and Reprocessing) est une thérapie efficace pour le traitement des traumatismes. Notre approche est spécifiquement adaptée aux enfants, avec des protocoles ludiques et sécurisants.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Bénéfices</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Traitement des traumatismes psychologiques</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Réduction des symptômes de stress post-traumatique</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Amélioration de la régulation émotionnelle</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Protocoles adaptés à l'âge de l'enfant</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Implication des parents dans le processus</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Format</span>
+                        <p class="meta-value">Séances individuelles adaptées au rythme de l'enfant</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e ou Paris 11e</p>
+                    </div>
+                    <a href="rendez-vous.html" class="btn btn-care-action">S'inscrire <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- -------------------------------------------------------------
+       SECTION BAS DE PAGE : NOTRE APPROCHE THÉRAPEUTIQUE
+       ------------------------------------------------------------- -->
+    <section class="approach-section">
+        <div class="container">
+            <h2 class="approach-main-title">Notre Approche Thérapeutique</h2>
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-num">1</div>
+                    <h3>Évaluation</h3>
+                    <p>Comprendre vos besoins et votre parcours pour vous proposer la prise en charge la plus adaptée.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-num">2</div>
+                    <h3>Personnalisation</h3>
+                    <p>Adapter nos méthodes thérapeutiques à votre profil et à vos objectifs personnels.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-num">3</div>
+                    <h3>Accompagnement</h3>
+                    <p>Vous soutenir à chaque étape de votre parcours vers un mieux-être durable et autonome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       PIED DE PAGE (FOOTER COMMUN)
+       ------------------------------------------------------------- -->
+    <footer class="main-footer">
+        <div class="container">
+              <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="logo inverted">
+              <img src="images/Logo_Cediapsy_blanc.png" alt="Cédiapsy Logo Footer">
+              </a>
+              <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
+            </div>
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="equipe.html">Notre équipe</a></li>
+                    <li><a href="troubles.html">Les troubles évalués</a></li>
+                    <li><a href="prise-en-charge.html">Prise en charge</a></li>
+                    <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+                </ul>
+                </div>
+
+            <div class="footer-links">
+                    <h5>Informations</h5>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="cookies.html">Gestion des cookies</a></li>
+                </ul>
+            </div>
+            
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 14, rue de la pépinière 75008 PARIS</li>
+                        <li><i class="fa-solid fa-phone"></i> 06 09 08 08 98</li>
+                        <li><i class="fa-solid fa-envelope"></i> nora_psy@yahoo.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CÉDIAPSY. Tous droits réservés. | Conçu par <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
