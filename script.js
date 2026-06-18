@@ -86,47 +86,35 @@ document.addEventListener('DOMContentLoaded', () => {
 const closeBtn = document.querySelector(".close");
 
 const data = {
-  celine: `
-    <h3>Présentation</h3>
-    <p>
-      Diplômée de l’Université Paris Nanterre (2015) en psychopathologie et psychologie clinique,
-      je suis spécialisée en Thérapies Comportementales et Cognitives (TCC) et formée à différentes approches complémentaires :
-      ACT, thérapie interpersonnelle, hypnose ericksonienne, nouvelle hypnose et PNL.
-    </p>
+celine: `
+    <h4>Biographie &amp; Parcours</h4>
+    <p>Diplômée de l’université Nanterre Paris 10 en 2015 en psychopathologie et psychologie clinique, empirique et TCC (Thérapies Comportementales et Cognitives), Céline Hebbache s'inscrit dans une démarche thérapeutique multi-référentielle et éclectique. Elle est également formée en thérapie interpersonnelle, en thérapie ACT (Acceptation et Engagement), en Hypnose Ericksonienne, nouvelle hypnose et PNL.</p>
+    
+    <p>Particulièrement intéressée par le concept de personnalité et de schémas de fonctionnement, elle utilise l'approche thérapeutique développée par Jeffrey E. Young ainsi que la thérapie ACT, dont l'efficacité est cliniquement démontrée. Sa pratique lui permet de sélectionner des outils sur mesure afin de s'adapter à la globalité et à l'histoire de vie unique de chaque patient.</p>
 
-    <p>
-      Mon approche est <strong>intégrative et personnalisée</strong> : j’adapte les outils thérapeutiques à chaque personne,
-      en fonction de son histoire, de ses besoins et de ses objectifs.
-    </p>
+    <p>Ayant travaillé plusieurs années en milieu hospitalier, elle a développé une solide expertise dans l’évaluation diagnostique et thérapeutique de patients souffrant de troubles bipolaires ainsi que d'autres pathologies psychiatriques complexes. Elle possède également une longue expérience dans l’animation de groupes de psychoéducation, de gestion des émotions et d’affirmation de soi.</p>
 
-    <p>
-      J’accorde une attention particulière aux schémas de fonctionnement et à la compréhension globale de la personnalité.
-    </p>
-
-    <h4>Expérience</h4>
-    <p>
-      Plusieurs années en milieu hospitalier m’ont permis de développer une expertise dans l’accompagnement des troubles psychiatriques,
-      notamment les troubles bipolaires, ainsi que dans l’évaluation clinique.
-    </p>
-
-    <h4>Activités</h4>
+    <h4>Services &amp; Prises en charge</h4>
     <ul>
-      <li>Psychothérapie individuelle (approche intégrative)</li>
-      <li>Bilan de personnalité</li>
-      <li>Bilan attentionnel</li>
-      <li>Groupes de psychoéducation (gestion des émotions, affirmation de soi, troubles bipolaires)</li>
+      <li><strong>Prise en charge psychothérapeutique :</strong> Un travail collaboratif et actif visant à faire émerger et redécouvrir les ressources propres de la personne.</li>
+      <li><strong>Bilan de personnalité</strong></li>
+      <li><strong>Bilan attentionnel</strong></li>
+      <li><strong>Groupes thérapeutiques :</strong> Psychoéducation des troubles bipolaires, gestion des émotions et affirmation de soi.</li>
     </ul>
-  `,
+`,
 
-  nora: `
-    <h3>Dr Nora Hamdani</h3>
+nora: `
+   
+    <h4>Biographie &amp; Parcours</h4>
+    <p>Le docteur Nora HAMDANI est médecin psychiatre, ancienne chef de clinique des hôpitaux de Paris et responsable médical d’unités d’hospitalisation. Elle a exercé plus de quinze ans dans les hôpitaux psychiatriques universitaires, évaluant des milliers de patients souffrant de pathologies diverses, notamment les troubles bipolaires et la schizophrénie.</p>
+    
+    <p>Titulaire d'un Master II et d'une Thèse de Sciences (PhD) en pharmacogénétique avec la mention très honorable, elle a également obtenu l’Habilitation à Diriger les Recherches (HDR) pour ses travaux menés en lien avec l'INSERM sur l'immunopsychiatrie (pistes infectieuses, inflammatoires et digestives de la schizophrénie, du trouble bipolaire ou des traumatismes). Son expérience double, à la fois clinique et scientifique, lui permet de proposer une évaluation clinique fine et des prises en charge ciblées.</p>
 
     <h4>Articles récents</h4>
-
     <ul>
       <li>Gay F, Romeo B, Martelli C, Benyamina A, Hamdani N. <em>Cytokines changes associated with electroconvulsive therapy in patients with treatment-resistant depression: a Meta-analysis.</em> Psychiatry Res. 2021 Mar;297:113735.</li>
 
-      <li>Romeo B, Lester V, Martelli C, Benjamin A, Hamdani N. <em>Cannabis Cessation, Inflammatory Markers and Schizophrenia.</em> J Dual Diagn. 2022, 18(1):33-41.</li>
+      <li>Romeo B, Lester V, Martelli C, Benyamina A, Hamdani N. <em>Cannabis Cessation, Inflammatory Markers and Schizophrenia.</em> J Dual Diagn. 2022, 18(1):33-41.</li>
 
       <li>Lestra V, Romeo B, Martelli C, Benyamina A, Hamdani N. <em>Could CRP be a differential biomarker of illness stages in schizophrenia?</em> 2022, 246:175-186.</li>
 
@@ -138,85 +126,92 @@ const data = {
 
       <li><em>Could peripheral immunological markers discriminate schizophrenia and schizoaffective disorders from bipolar disorder?</em> Journal of Psychiatric Research (in press).</li>
     </ul>
-  `,
+`,
 
-  zeyad: `
-    <h3>Dr Zeyad AL SALLOUM</h3>
+isabelle: `
+    <h4>Biographie &amp; Parcours</h4>
+    <p>La docteure Isabelle SCHEID est psychiatre, ancienne Cheffe de Clinique des hôpitaux de Paris dans le service de psychiatrie de l’hôpital Hôtel Dieu. Également titulaire d’un Master 2 en neurosciences axé sur les facteurs génétiques impliqués dans les TSA, elle s'est spécialisée dans la psychopathologie de l’adulte.</p>
+    
+    <p>Elle a exercé pendant 6 ans au Centre Expert TSA (Troubles du Spectre de l'Autisme) sans déficience intellectuelle pour adultes à l’hôpital Chenevier, dont 2 ans en temps partagé avec le Centre Expert enfants et adolescents de l’hôpital Robert Debré. Ancienne coordinatrice nationale du réseau des Centres Experts TSA France et praticienne au Dispositif de Soins Partagés 94, elle met aujourd'hui son expertise au service des adultes (à partir de 18 ans) qui s'interrogent sur un potentiel diagnostic de TSA.</p>
 
-    <p>
-      Le Dr Zeyad AL SALLOUM est médecin psychiatre.
-    </p>
-
-    <h4>Parcours et approche clinique</h4>
-
-    <p>
-      Il exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris.
-      Fort d'une solide expérience hospitalière (urgences, hospitalisation, CMP) acquise dans plusieurs structures de la région parisienne et en province.
-    </p>
-
-    <p>
-      Il a également exercé en pédopsychiatrie et possède une expérience pratique en psychiatrie transculturelle.
-    </p>
-
-    <p>
-      Dans sa pratique, il privilégie une approche globale alliant psychoéducation et réhabilitation psychosociale,
-      avec un intérêt particulier pour les troubles anxieux, bipolaires et le psychotrauma.
-    </p>
-
-    <h4>Diplômes et formations</h4>
-
+    <h4>Articles récents</h4>
     <ul>
-      <li>DIU de Psychiatrie pour assistants généralistes (Université Paris Diderot)</li>
-      <li>DU Clinique de l'Adolescent (Institut Mutualiste Montsouris)</li>
-      <li>Diplôme de Médecine Générale (Université de Homs, Syrie)</li>
+      <li>Bennabi M, Tarantino N, Gaman A, Scheid I, et al. <em>Persistence of dysfunctional natural killer cells in adults with high-functioning autism spectrum disorders: stigma/consequence of unresolved early infectious events?</em> Mol Autism. 2019 May 15;10:22.</li>
+
+      <li>Holiga Š, Hipp JF, Chatham CH, Garces P, Spooren W, ... Scheid I, et al. <em>Patients with autism spectrum disorders display reproducible functional connectivity alterations.</em> Sci Transl Med. 2019 Feb 27;11(481).</li>
+
+      <li>Laidi C, Boisgontier J, de Pierrefeu A, Duchesnay E, Hotier S, ... Scheid I, et al. <em>Decreased Cortical Thickness in the Anterior Cingulate Cortex in Adults with Autism.</em> J Autism Dev Disord. 2019 Apr;49(4):1402-1409.</li>
+
+      <li>d'Albis MA, Guevara P, Guevara M, Laidi C, Boisgontier J, ... Scheid I, et al. <em>Local structural connectivity is associated with social cognition in autism spectrum disorder.</em> Brain. 2018 Dec 1;141(12):3472-3481.</li>
+
+      <li>Septier M, Peyre H, Amsellem F, Beggiato A, Maruani A, ... Scheid I, et al. <em>Increased risk of ADHD in families with ASD.</em> Eur Child Adolesc Psychiatry. 2019 Feb;28(2):281-288.</li>
+
+      <li>Bennabi M, Gaman A, Delorme R, Boukouaci W, Manier C, Scheid I, et al. <em>HLA-class II haplotypes and Autism Spectrum Disorders.</em> Sci Rep. 2018 May 16;8(1):7639.</li>
+    </ul>
+`,
+
+zeyad: `
+    <h4>Biographie &amp; Parcours</h4>
+    <p>Le Dr Zeyad AL SALLOUM est médecin psychiatre et exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris. Son parcours lui a permis d'acquérir une solide expérience clinique au travers de diverses structures en région parisienne et en province, couvrant les urgences psychiatriques, les services d'hospitalisation temps plein et le suivi en Centre Medico-Psychologique (CMP).</p>
+    
+    <p>Au-delà de la psychiatrie générale de l'adulte, il a enrichi sa pratique en exerçant en pédopsychiatrie et dispose d'une expérience concrète en psychiatrie transculturelle, lui permettant de proposer des soins adaptés à la diversité des parcours de vie.</p>
+
+    <h4>Approche Clinique</h4>
+    <p>Dans sa pratique quotidienne, le Dr AL SALLOUM privilégie une approche thérapeutique globale et intégrative. Il met un accent particulier sur la psychoéducation (aider le patient et son entourage à comprendre le trouble) et la réhabilitation psychosociale afin de favoriser l'autonomie et le rétablissement durable.</p>
+    
+    <h4>Champs d'expertise &amp; Prises en charge</h4>
+    <ul>
+      <li>Troubles anxieux</li>
+      <li>Troubles bipolaires</li>
+      <li>Psychotraumatismes (Psychotrauma)</li>
+      <li>Clinique de l'adolescent et du jeune adulte</li>
     </ul>
 
-    <h4>Langues</h4>
+    <h4>Langues de consultation</h4>
+    <p class="prof-languages"><i class="fa-solid fa-language"></i> Français, Anglais, Arabe levantin.</p>
+`,
 
-    <p>Français, Anglais, Arabe levantin.</p>
-  `,
+  laura: `
+    <h4>Biographie &amp; Parcours</h4>
+    <p>Diplômée d’un Master en psychologie clinique, Laura Guedj s'inscrit dans une démarche thérapeutique moderne, bienveillante et intégrative. Son approche centrée sur le patient lui permet d'adapter ses outils et ses méthodes en fonction de l'histoire unique, du tempérament et des besoins spécifiques de chaque personne qui vient la consulter.</p>
+    
+    <p>Forte d'une formation continue solide et attentive aux évolutions de la psychologie clinique, elle met un point d'honneur à co-construire un espace de parole sécurisant. À travers une collaboration active, elle accompagne ses patients vers la découverte de leurs propres ressources et le développement de stratégies d'adaptation durables face aux difficultés de la vie.</p>
+
+    <h4>Services &amp; Prises en charge</h4>
+    <ul>
+      <li><strong>Prise en charge psychothérapeutique :</strong> Un accompagnement sur mesure pour traverser les moments de crise, les doutes ou les difficultés relationnelles et personnelles.</li>
+      <li><strong>Bilan psychologique :</strong> Évaluations approfondies pour mieux comprendre son fonctionnement cognitif, émotionnel ou de personnalité.</li>
+      <li><strong>Soutien psychologique &amp; Accompagnement :</strong> Des séances de suivi individuelles basées sur l'empathie, l'écoute active et le non-jugement.</li>
+      <li><strong>Gestion du stress et des émotions :</strong> Développement d'outils pratiques pour retrouver un équilibre au quotidien.</li>
+    </ul>
+`,
 
   doina: `
-    <h3>Doïna Mazière</h3>
+<h4>Biographie &amp; Parcours</h4>
+    <p>Psychologue clinicienne, Doïna Mazière accompagne les enfants, les adolescents, les adultes et leurs familles dans les différentes étapes de leur parcours. Au fil de son expérience, elle s'est hautement spécialisée dans les troubles du neurodéveloppement, notamment le Trouble du Spectre de l'Autisme (TSA) et le Trouble Déficitaire de l'Attention avec ou sans Hyperactivité (TDAH).</p>
+    <p>Elle a débuté sa carrière au sein du cabinet <em>Espas Iddees</em>, une structure de référence spécialisée dans l'accompagnement des personnes autistes. Aujourd'hui, elle partage son activité entre son cabinet libéral et un Institut Médico-Éducatif (IME) accueillant des enfants et adolescents présentant un TSA.</p>
+    
+    <blockquote>
+        "Mon rôle n'est pas de vous faire entrer dans une norme, mais de vous aider à mieux comprendre votre fonctionnement afin d'identifier les stratégies qui vous permettront de vous sentir plus à l'aise dans votre quotidien."
+    </blockquote>
 
-    <p>
-      Psychologue clinicienne spécialisée dans les troubles du neurodéveloppement (TSA et TDAH).
-    </p>
-
-    <h4>Comprendre son fonctionnement</h4>
-
-    <p>
-      Un bilan psychologique ou neurodéveloppemental ne vise pas seulement à poser un diagnostic.
-      Il permet avant tout de mieux comprendre ses forces, ses particularités, ses difficultés et son mode de fonctionnement.
-    </p>
-
-    <p>
-      Cette compréhension constitue souvent une première étape essentielle pour retrouver de la sérénité
-      et construire un accompagnement adapté.
-    </p>
-
-    <h4>Évaluations et bilans</h4>
-
+    <h4>Évaluations &amp; Bilans</h4>
+    <p>Le bilan ne vise pas seulement à poser un diagnostic, mais à mettre en lumière les forces, les particularités, les difficultés et le mode de fonctionnement global pour retrouver de la sérénité.</p>
     <ul>
-      <li>Bilans psychométriques (WISC-V, WAIS-IV)</li>
-      <li>Évaluations TSA (ADOS-2, ADI-R)</li>
-      <li>Bilans TDAH enfant, adolescent et adulte</li>
-      <li>Évaluation des troubles des apprentissages</li>
-      <li>Analyse des difficultés attentionnelles et exécutives</li>
+      <li><strong>Bilans psychométriques :</strong> Évaluation du fonctionnement intellectuel (WISC-V pour enfants, WAIS-IV pour adultes).</li>
+      <li><strong>Évaluations TSA :</strong> Outils diagnostiques standardisés d'excellence (ADOS-2, ADI-R).</li>
+      <li><strong>Bilans TDAH :</strong> Diagnostic et analyse chez l'enfant (à partir de 6 ans), l'adolescent et l'adulte.</li>
+      <li><strong>Troubles des apprentissages :</strong> Analyse des difficultés attentionnelles et des fonctions exécutives.</li>
     </ul>
 
-    <h4>Consultations et accompagnements</h4>
-
+    <h4>Accompagnements &amp; Suivis</h4>
     <ul>
-      <li>Thérapies Cognitives et Comportementales (TCC)</li>
-      <li>Remédiation cognitive</li>
-      <li>Aide aux apprentissages</li>
-      <li>Guidance parentale</li>
-      <li>Développement des compétences sociales</li>
-      <li>Gestion des émotions</li>
-      <li>Confiance en soi et relations sociales</li>
+      <li><strong>Consultations &amp; TCC :</strong> Thérapies cognitives et comportementales adaptées.</li>
+      <li><strong>Remédiation cognitive :</strong> Aide aux apprentissages et outils pour "apprendre à apprendre".</li>
+      <li><strong>Guidance parentale :</strong> Soutien spécifique aux parents d’enfants avec autisme, TDAH ou troubles du comportement.</li>
+      <li><strong>Développement des compétences sociales :</strong> Travail concret sur la communication, la compréhension des codes sociaux, la gestion des émotions et les relations (sociales ou professionnelles) à l'aide d'outils du quotidien.</li>
     </ul>
-  `
+`,
 };
 
 // ouvrir modal
