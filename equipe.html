@@ -92,6 +92,12 @@
                                     </ul>
                                 </div>
                             </div>
+        <button class="btn-more"
+                data-name="Dr Nora Hamdani"
+                data-role="Psychiatre"
+                data-content="nora">
+            Voir plus
+        </button>
                         </div>
                     </div>
 
@@ -128,44 +134,63 @@
                                     </ul>
                                 </div>
                             </div>
+        <button class="btn-more"
+                data-name="Dr Isabelle Scheid"
+                data-role="Psychiatre"
+                data-content="isabelle">
+            Voir plus
+        </button>
                         </div>
                     </div>
 
-                    <!-- Carte 3 : Céline Hebbache -->
-                    <div class="prof-horizontal-card">
-                        <div class="prof-image-area">
-                            <img src="images/Celine_Hebbache_Rectangle.png" alt="Céline Hebbache">
-                        </div>
-                        <div class="prof-info-area">
-                            <div class="prof-card-header">
-                                <div>
-                                    <h3>Céline Hebbache</h3>
-                                    <span class="prof-role">Psychologue</span>
-                                </div>
-                                <span class="prof-quote">"Prendre soin de vous"</span>
-                            </div>
-                            <p class="prof-description">Psychologue clinicienne spécialisée dans les thérapies cognitivo-comportementales et l'accompagnement des personnes souffrant de troubles anxieux. Son approche bienveillante favorise l'alliance thérapeutique.</p>
-                            
-                            <div class="prof-details-grid">
-                                <div class="details-col">
-                                    <h5><i class="fa-solid fa-stethoscope"></i> Spécialités</h5>
-                                    <ul>
-                                        <li>TCC</li>
-                                        <li>Troubles anxieux</li>
-                                        <li>Accompagnement individuel</li>
-                                    </ul>
-                                </div>
-                                <div class="details-col">
-                                    <h5><i class="fa-solid fa-graduation-cap"></i> Formation</h5>
-                                    <ul>
-                                        <li>Master en psychologie clinique</li>
-                                        <li>Formation TCC</li>
-                                        <li>Spécialisation anxiété</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Carte 3 : Céline Hebbache -->
+<div class="prof-horizontal-card">
+    <div class="prof-image-area">
+        <img src="images/Celine_Hebbache_Rectangle.png" alt="Céline Hebbache">
+    </div>
+
+    <div class="prof-info-area">
+        <div class="prof-card-header">
+            <div>
+                <h3>Céline Hebbache</h3>
+                <span class="prof-role">Psychologue</span>
+            </div>
+            <span class="prof-quote">"Prendre soin de vous"</span>
+        </div>
+
+        <p class="prof-description">
+            Psychologue clinicienne spécialisée dans les thérapies cognitivo-comportementales et l'accompagnement des personnes souffrant de troubles anxieux. Son approche bienveillante favorise l'alliance thérapeutique.
+        </p>
+
+        <div class="prof-details-grid">
+            <div class="details-col">
+                <h5><i class="fa-solid fa-stethoscope"></i> Spécialités</h5>
+                <ul>
+                    <li>TCC</li>
+                    <li>Troubles anxieux</li>
+                    <li>Accompagnement individuel</li>
+                </ul>
+            </div>
+
+            <div class="details-col">
+                <h5><i class="fa-solid fa-graduation-cap"></i> Formation</h5>
+                <ul>
+                    <li>Master en psychologie clinique</li>
+                    <li>Formation TCC</li>
+                    <li>Spécialisation anxiété</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ✅ bouton ICI (propre UX/UI) -->
+        <button class="btn-more"
+                data-name="Céline Hebbache"
+                data-role="Psychologue"
+                data-content="celine">
+            Voir plus
+        </button>
+    </div>
+</div>
 
                     <!-- Carte 4 : Laura Guedj -->
                     <div class="prof-horizontal-card">
@@ -199,6 +224,12 @@
                                     </ul>
                                 </div>
                             </div>
+            <button class="btn-more"
+                data-name="Dr Laura Guedj"
+                data-role="Psychiatre"
+                data-content="nora">
+            Voir plus
+        </button>
                         </div>
                     </div>
 
@@ -234,6 +265,13 @@
                                     </ul>
                                 </div>
                             </div>
+
+            <button class="btn-more"
+                data-name="Dr Stéphanie Langlet"
+                data-role="Thérapeute en Remédiation Cognitive"
+                data-content="stephanie">
+            Voir plus
+        </button>
                         </div>
                     </div>
 
@@ -270,6 +308,13 @@
                                     </ul>
                                 </div>
                             </div>
+
+            <button class="btn-more"
+                data-name="Dr Doïna Mazière"
+                data-role="Psychologue"
+                data-content="doina">
+            Voir plus
+        </button>
                         </div>
                     </div>
 
@@ -306,9 +351,14 @@
                                     </ul>
                                 </div>
                             </div>
+        <button class="btn-more"
+                data-name="Dr Zeyad Al Salloum"
+                data-role="Psychiatre"
+                data-content="zeyad">
+            Voir plus
+        </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -383,5 +433,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="script.js"></script>
+
+    <div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2 id="modal-title"></h2>
+        <h4 id="modal-role"></h4>
+
+        <div id="modal-body"></div>
+    </div>
+</div>
 </body>
 </html>
