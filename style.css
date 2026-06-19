@@ -855,10 +855,11 @@ body {
 /* Grille interne Spécialités / Formation */
 .prof-details-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
     gap: 40px;
     border-top: 1px solid #f0ede6;
     padding-top: 24px;
+    align-items: start;
 }
 
 .details-col h5 {
@@ -889,6 +890,36 @@ body {
     color: var(--emerald);
     position: absolute;
     left: 0;
+}
+
+/* Alignement de la formation et du QR Code côte à côte */
+.formation-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligne verticalement le QR code au milieu de la liste */
+    gap: 16px; /* Espace entre le texte et le QR code */
+}
+
+/* Optionnel : Ajustement si tu veux que la liste prenne le max de place à gauche */
+.formation-content-wrapper ul {
+    flex-grow: 1;
+}
+
+/* Style et dimensionnement du QR code */
+.prof-qrcode-area {
+    width: 85px; /* Taille idéale pour rester discret mais scannable */
+    min-width: 80px;
+    height: 80px;
+    border: 1px solid #f0ede6; /* Léger encadrement pour le faire ressortir */
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.prof-qrcode-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* -------------------------------------------------------------
