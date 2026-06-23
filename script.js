@@ -13,6 +13,28 @@ const EMAILJS_TEMPLATE_ID = "template_njh1e6s";
 })();
 
 // ==========================================
+// BARRIÈRE DE SÉCURITÉ (ACCÈS PRIVÉ HOBBY VERCEL)
+// ==========================================
+(function() {
+    // Choisis ici ton mot de passe secret
+    const codeSecret = "cedia2026"; 
+    
+    // On vérifie si le navigateur se souvient que l'accès a déjà été validé
+    if (sessionStorage.getItem('site_access') !== 'true') {
+        const saisie = prompt("Ce site est en cours de développement.\nVeuillez entrer le code d'accès :");
+        
+        if (saisie === codeSecret) {
+            // Le code est bon, on l'enregistre pour la session actuelle
+            sessionStorage.setItem('site_access', 'true');
+        } else {
+            // Mauvais code ou clic sur "Annuler" -> redirection immédiate
+            alert("Code incorrect ! Accès refusé.");
+            window.location.href = "https://www.google.com"; 
+        }
+    }
+})();
+
+// ==========================================
 // MENU BURGER (HORS DOMCONTENTLOADED POUR PLUS DE RÉACTIVITÉ)
 // ==========================================
 const burgerBtn = document.getElementById('burgerBtn');
