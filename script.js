@@ -236,27 +236,206 @@ zeyad: `
 `,
 };
 
-// ouvrir modal
-document.querySelectorAll(".btn-more").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.getElementById("modal-title").textContent = btn.dataset.name;
-    document.getElementById("modal-role").textContent = btn.dataset.role;
-    document.getElementById("modal-body").innerHTML = data[btn.dataset.content];
+if (modal && closeBtn) {
 
-    modal.classList.remove("hidden");
-  });
+    document.querySelectorAll(".btn-more").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            document.getElementById("modal-title").textContent = btn.dataset.name;
+            document.getElementById("modal-role").textContent = btn.dataset.role;
+            document.getElementById("modal-body").innerHTML = data[btn.dataset.content];
+
+            modal.classList.remove("hidden");
+
+        });
+
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+    });
+
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+
+}
+
+/*
+Pop up prise en charge
+*/
+
+const rendezVousData = {
+
+    tnd: {
+        title: "Choisissez votre praticien",
+        cards: [
+
+            {
+                nom: "Dr Isabelle Scheid",
+                specialite: "Psychiatre • TSA",
+                lien: "https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris"
+            },
+
+            {
+                nom: "Dr Franck Rolland",
+                specialite: "Psychiatre • TDAH",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+            },
+
+            {
+                nom: "Doïna Mazière",
+                specialite: "Psychologue",
+                lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+            }
+
+        ]
+    },
+
+    psy: {
+
+        title: "Choisissez votre psychiatre",
+
+        cards: [
+
+            {
+                nom: "Dr Nora Hamdani",
+                specialite: "Psychiatre",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+            },
+
+            {
+                nom: "Dr Zeyad Al Salloum",
+                specialite: "Psychiatre",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+            },
+
+            {
+                nom: "Dr Franck Rolland",
+                specialite: "Psychiatre",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+            }
+
+        ]
+
+    },
+
+    therapie: {
+
+        title: "Choisissez votre praticien",
+
+        cards: [
+
+            {
+                nom: "Laura Guedj",
+                specialite: "Psychologue",
+                lien: "https://www.doctolib.fr/psychologue/paris/laura-guedj"
+            },
+
+            {
+                nom: "Céline Hebbache",
+                specialite: "Psychologue",
+                lien: "https://www.doctolib.fr/psychologue/paris/celine-hebbache"
+            },
+
+            {
+                nom: "Doïna Mazière",
+                specialite: "Psychologue",
+                lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+            }
+
+        ]
+
+    },
+
+    groupes: {
+
+        title: "Choisissez votre praticien",
+
+        cards: [
+
+            {
+                nom: "Doïna Mazière",
+                specialite: "Psychologue",
+                lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+            }
+
+        ]
+
+    }
+
+};
+
+const rdvModal = document.getElementById("modal-rdv");
+const rdvModalTitle = document.getElementById("modal-title");
+const rdvModalContent = document.getElementById("modal-content");
+
+document.querySelectorAll(".open-modal").forEach(btn => {
+
+    btn.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const type = this.dataset.modal;
+
+        const data = rendezVousData[type];
+
+        rdvModalTitle.textContent = data.title;
+
+        rdvModalContent.innerHTML = "";
+
+        data.cards.forEach(praticien=>{
+
+            rdvModalContent.innerHTML += `
+
+                <div class="praticien-mini-card">
+
+                    <div>
+                        <h4>${praticien.nom}</h4>
+                        <span class="praticien-specialty">
+                            ${praticien.specialite}
+                        </span>
+                    </div>
+
+                    <a href="${praticien.lien}"
+                       target="_blank"
+                       class="btn btn-doctolib-sub">
+
+                        Voir l'agenda
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            `;
+
+        });
+
+        rdvModal.classList.add("active");
+
+    });
+
 });
 
-// fermer modal
-closeBtn.addEventListener("click", () => {
-  modal.classList.add("hidden");
-});
+document.querySelector("#modal-rdv .modal-close").onclick = ()=>{
 
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.add("hidden");
-  }
-});
+    rdvModal.classList.remove("active");
+
+};
+
+rdvModal.onclick = function(e){
+
+    if(e.target===rdvModal){
+
+        rdvModal.classList.remove("active");
+
+    }
+
+};
     // ==========================================
     // 3. GESTION DE L'ENVOI DU FORMULAIRE (EMAILJS)
     // ==========================================

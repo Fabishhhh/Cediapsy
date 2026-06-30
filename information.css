@@ -46,13 +46,13 @@ body:has(.legal-container) {
 }
 
 .legal-section h2 {
-    color: var(--emerald, #2d7a5f);
+    color: var(--primary, #2d7a5f);
     font-size: 1.4rem;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    border-left: 4px solid var(--emerald, #2d7a5f);
+    border-left: 4px solid var(--primary, #2d7a5f);
     padding-left: 12px;
 }
 
@@ -79,7 +79,7 @@ body:has(.legal-container) {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--emerald, #2d7a5f);
+    color: var(--primary, #2d7a5f);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -104,7 +104,7 @@ body:has(.legal-container) {
     background-color: #f7f5f0; /* Un fond très léger pour faire ressortir l'intro */
     padding: 20px;
     border-radius: 8px;
-    border-left: 3px solid var(--emerald, #2d7a5f);
+    border-left: 3px solid var(--primary, #2d7a5f);
 }
 
 /* Style propre pour les listes à puces dans les textes informatifs */
