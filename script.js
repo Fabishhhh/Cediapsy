@@ -290,6 +290,12 @@ const rendezVousData = {
                 nom: "Doïna Mazière",
                 specialite: "Psychologue",
                 lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+            },
+
+            {
+                nom: "Claire Paget",
+                specialite: "Neuropsychologue",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
             }
 
         ]
@@ -316,6 +322,12 @@ const rendezVousData = {
             {
                 nom: "Dr Franck Rolland",
                 specialite: "Psychiatre",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+            },
+
+            {
+                nom: "Claire Paget",
+                specialite: "Neuropsychologue",
                 lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
             }
 
