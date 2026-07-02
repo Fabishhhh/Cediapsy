@@ -382,7 +382,8 @@ Pop up prise en charge
     border-radius:18px;
     padding:35px;
     position:relative;
-    animation:popup .35s;
+    max-height: 85vh; 
+    overflow-y: auto;  /
 }
 
 @keyframes popup{

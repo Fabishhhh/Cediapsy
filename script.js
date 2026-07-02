@@ -268,95 +268,90 @@ if (modal && closeBtn) {
 Pop up prise en charge
 */
 
+// Remplace le début de ton objet par celui-ci :
 const rendezVousData = {
 
     tnd: {
-        title: "Choisissez votre praticien",
+        title: "Prendre rendez-vous avec nos spécialistes",
         cards: [
-
             {
                 nom: "Dr Isabelle Scheid",
                 specialite: "Psychiatre • TSA",
                 lien: "https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris"
             },
-
             {
                 nom: "Dr Franck Rolland",
                 specialite: "Psychiatre • TDAH",
                 lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
             },
-
             {
                 nom: "Doïna Mazière",
                 specialite: "Psychologue",
                 lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
             },
-
             {
                 nom: "Claire Paget",
                 specialite: "Neuropsychologue",
                 lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
             }
-
         ]
     },
 
-    psy: {
-
-        title: "Choisissez votre psychiatre",
-
+        avis: {
+        title: "Prendre rendez-vous avec notre spécialiste",
         cards: [
-
             {
                 nom: "Dr Nora Hamdani",
                 specialite: "Psychiatre",
                 lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
-            },
-
+            }
+        ]
+    },
+    
+    suivi: {
+        title: "Prendre rendez-vous avec nos spécialistes",
+        cards: [
             {
                 nom: "Dr Zeyad Al Salloum",
                 specialite: "Psychiatre",
-                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani" // Pense à mettre son vrai lien Doctolib si tu l'as
             },
-
             {
                 nom: "Dr Franck Rolland",
                 specialite: "Psychiatre",
-                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
-            },
-
-            {
-                nom: "Claire Paget",
-                specialite: "Neuropsychologue",
-                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani" // Pense à mettre son vrai lien Doctolib si tu l'as
             }
-
         ]
-
     },
 
     therapie: {
 
-        title: "Choisissez votre praticien",
+        title: "Prendre rendez-vous avec nos spécialistes",
 
         cards: [
 
             {
-                nom: "Laura Guedj",
-                specialite: "Psychologue",
-                lien: "https://www.doctolib.fr/psychologue/paris/laura-guedj"
+                nom: "Dr Franck Rolland",
+                specialite: "Psychiatre • TCC / Hypnose",
+                lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani" // Remplace par son lien si besoin
             },
 
             {
-                nom: "Céline Hebbache",
-                specialite: "Psychologue",
+                nom: "Mme Doïna Mazière",
+                specialite: "Psychologue • TCC",
+                lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+            },
+
+            {
+                nom: "Mme Céline Hebbache",
+                specialite: "Psychologue • TCC",
                 lien: "https://www.doctolib.fr/psychologue/paris/celine-hebbache"
             },
 
             {
-                nom: "Doïna Mazière",
-                specialite: "Psychologue",
-                lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+                nom: "Mme Laura Guedj",
+                specialite: "Psychologue • TCC",
+                lien: "https://www.doctolib.fr/psychologue/paris/laura-guedj"
             }
 
         ]
@@ -365,7 +360,7 @@ const rendezVousData = {
 
     groupes: {
 
-        title: "Choisissez votre praticien",
+        title: "Prendre rendez-vous avec notre spécialiste",
 
         cards: [
 
@@ -448,6 +443,26 @@ rdvModal.onclick = function(e){
     }
 
 };
+
+// Script automatique pour ouvrir la pop-up depuis une autre page
+window.addEventListener('DOMContentLoaded', () => {
+    // 1. On récupère les paramètres dans l'URL (ex: ?open=tnd)
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalToOpen = urlParams.get('open');
+
+    if (modalToOpen) {
+        // 2. On cherche le bouton sur la page prise-en-charge qui gère cette modal
+        const targetButton = document.querySelector(`.open-modal[data-modal="${modalToOpen}"]`);
+        
+        // 3. Si le bouton existe, on clique dessus automatiquement après un mini délai
+        if (targetButton) {
+            setTimeout(() => {
+                targetButton.click();
+            }, 300); // 300ms de délai pour laisser la page charger proprement
+        }
+    }
+});
+
     // ==========================================
     // 3. GESTION DE L'ENVOI DU FORMULAIRE (EMAILJS)
     // ==========================================
