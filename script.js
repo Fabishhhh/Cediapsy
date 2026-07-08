@@ -165,15 +165,15 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
         `,
 
-        franck: `
+rolland: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Médecin spécialiste en psychiatrie, le Dr Franck Rolland exerce depuis plusieurs années à l'hôpital au sein du service public. Également diplômé en psychologie clinique, il associe une approche médicale rigoureuse à une compréhension approfondie des psychothérapies. Consultations en psychiatrie générale, TDAH adulte et psychothérapies.</p>
+            <p>Médecin spécialiste en psychiatrie, le Dr Franck Rolland exerce depuis plusieurs années à l'hôpital au sein du service public. Également diplômé en psychologie clinique, il associe une approche médicale rigoureuse à une compréhension approfondie des psychothérapies. Consultations en psychiatrie générale, TDAH adulte et psychothérapies. <strong>Disponible le samedi.</strong></p>
             <h4>Champs d'expertise &amp; Prises en charge</h4>
             <ul>
               <li>Psychiatrie générale</li>
               <li>Évaluation diagnostique du TDAH de l'adulte</li>
               <li>Psychothérapies (TCC, hypnose, entretien motivationnel)</li>
-              <li>Burn-out et accompagnement au changement</li>
+              <li>Accompagnement au changement</li>
               <li>Sevrage tabagique et soutien aux proches</li>
             </ul>
             <h4>Formation</h4>
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `,
         claire: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Neuropsychologue diplômée, Claire Paget exerce auprès d'enfants, d'adolescents et d'adultes. Elle réalise des évaluations neuropsychologiques complètes permettant de mieux comprendre le profil cognitif et émotionnel de chacun. Elle propose également des bilans mémoire et des accompagnements individualisés adaptés aux pathologies neurologiques, chroniques et au suivi post-lésionnel.</p>
+            <p>Neuropsychologue diplômée, Claire Saget exerce auprès d'enfants, d'adolescents et d'adultes. Elle réalise des évaluations neuropsychologiques complètes permettant de mieux comprendre le profil cognitif et émotionnel de chacun. Elle propose également des bilans mémoire et des accompagnements individualisés adaptés aux pathologies neurologiques, chroniques et au suivi post-lésionnel.</p>
             <h4>Champs d'expertise &amp; Prises en charge</h4>
             <ul>
               <li>Bilans neuropsychologiques complets (QI, attention, mémoire, fonctions exécutives)</li>
@@ -253,11 +253,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     specialite: "Psychologue",
                     lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
                 },
-                {
-                    nom: "Claire Paget",
-                    specialite: "Neuropsychologue",
-                    lien: ""
-                }
             ]
         },
 
@@ -314,16 +309,16 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
 
-        groupes: {
-            title: "Prendre rendez-vous avec notre spécialiste",
-            cards: [
-                {
-                    nom: "Doïna Mazière",
-                    specialite: "Psychologue",
-                    lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
-                }
-            ]
+        memoire: {
+    title: "Prendre rendez-vous",
+    cards: [
+        {
+            nom: "Claire Saget",
+            specialite: "Neuropsychologue • Consultations mémoire",
+            lien: ""   // À remplacer par le lien Doctolib si elle en possède un
         }
+    ]
+}
     };
 
     const rdvModal = document.getElementById("modal-rdv");

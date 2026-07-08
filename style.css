@@ -199,6 +199,7 @@ body {
 .logo{
     display:flex;
     align-items:center;
+    margin-right: 60px;
 }
 
 .logo img{
@@ -274,6 +275,8 @@ body {
     color:var(--primary);
     font-weight:600;
     transition:.35s ease;
+    margin-left: 60px;
+
 }
 
 .header-actions .btn:hover{
@@ -1003,11 +1006,26 @@ Pop up prises en charge
 }
 
 /* Images de fond spécifiques pour chaque bannière */
-.tsa-bg { background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200'); }
-.bipolaire-bg { background-image: url('images/illustration_troubles.png'); }
-.anxiete-bg { background-image: url('https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&q=80&w=1200'); }
-.schizo-bg { background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200'); }
-.memoire-bg { background-image: url('https://images.pexels.com/photos/38351385/pexels-photo-38351385.jpeg'); }
+/* 1. TSA / TND (Anciennement Vert/Turquoise) */
+.tsa-bg { 
+    background: linear-gradient(135deg, #ffffff 70%, #e8f8f5 100%); 
+}
+/* 2. Troubles Bipolaires (Bleu doux) */
+.bipolaire-bg { 
+    background: linear-gradient(135deg, #ffffff 70%, #eaf2f8 100%); 
+}
+/* 3. Avis Ponctuel / Consultation (Violet) */
+.anxiete-bg { 
+    background: linear-gradient(135deg, #ffffff 70%, #f4ecf7 100%); 
+}
+/* 4. Psychiatrie Générale (Ardoise / Indigo) */
+.schizo-bg { 
+    background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%); 
+}
+/* 5. Consultation Mémoire (Sable / Or doux) */
+.memoire-bg { 
+    background: linear-gradient(135deg, #ffffff 70%, #ebf5fb 100%); 
+}
 
 
 /* Grille interne : Texte à gauche, encadré à droite */
@@ -1131,7 +1149,7 @@ Pop up prises en charge
 
 /* ==========================================================================
    ==========================================================================
-   PAGE PRISES EN CHARGE (PRISE-EN-CHARGE.HTML) - STYLE SPÉCIFIQUE
+   PAGE PRISES EN CHARGE (PRISES-EN-CHARGE.HTML) - STYLE SPÉCIFIQUE
    ==========================================================================
    ========================================================================== */
 
@@ -1158,11 +1176,64 @@ Pop up prises en charge
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Système de bordures décoratives épaisses à gauche (Vu sur la maquette) */
-.care-card.side-emerald { border-left: 32px solid var(--primary); }
-.care-card.side-light-green { border-left: 32px solid #4da684; }
-.care-card.side-teal { border-left: 32px solid #008080; }
-.care-card.side-sage { border-left: 32px solid #8fbc8f; }
+.care-main-info {
+    text-align: center;
+}
+
+.care-title-block {
+    justify-content: center;
+}
+
+.care-benefits-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.care-benefits-list li {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   SYSTÈME DE BORDURES DÉCORATIVES ÉPAISSES À GAUCHE (32PX)
+   ========================================================================== */
+
+.care-card.side-emerald { 
+    background: linear-gradient(135deg, #ffffff 70%, #e8f8f5 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #16a085 !important; 
+}
+.care-card.side-sage { 
+    background: linear-gradient(135deg, #ffffff 70%, #eaf2f8 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #2980b9 !important; 
+}
+.care-card.side-light-green { 
+    background: linear-gradient(135deg, #ffffff 70%, #f4ecf7 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #8e44ad !important; 
+}
+.care-card.side-teal { 
+    background: linear-gradient(135deg, #ffffff 70%, #f0f3f4 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #2c3e50 !important; 
+}
+
+.care-card.side-red { 
+    background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #b80303 !important; /* Orange ambré vif */
+}
+.care-card.side-amber { 
+    background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%) !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 32px solid #d35400 !important; /* Orange ambré vif */
+}
 
 /* Zone principale gauche (Infos) */
 .care-main-info {
