@@ -309,6 +309,17 @@ rolland: `
             ]
         },
 
+        groupes: {
+    title: "Prendre rendez-vous",
+    cards: [
+        {
+            nom: "Doïna Mazière",
+            specialite: "Neuropsychologue • Consultations mémoire",
+            lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
+        }
+    ]
+},
+
         memoire: {
     title: "Prendre rendez-vous",
     cards: [
