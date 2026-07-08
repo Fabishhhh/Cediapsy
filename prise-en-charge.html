@@ -8,23 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <!-- Pour les icônes de la maquette -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS de secours pour s'assurer que la modal s'affiche avec la classe active */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-overlay.active {
+            display: flex !important;
+        }
+    </style>
 </head>
-<body>
 
+<body>
     <!-- -------------------------------------------------------------
        EN-TÊTE DE LA PAGE (HEADER COMMUN)
        ------------------------------------------------------------- -->
     <header class="main-header header-solid">
         <div class="header-container">
             <div class="logo">
-                <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CEDIAPSY">
+                <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
             </div>
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Accueil</a></li>
                     <li><a href="equipe.html" class="nav-link">Notre équipe</a></li>
                     <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
-                    <li><a href="prise-en-charge.html" class="nav-link active">Prise en charge</a></li>
+                    <li><a href="prise-en-charge.html" class="nav-link active">Prises en charge</a></li>
                     <li><a href="rendez-vous.html" class="nav-link">Prendre rendez-vous</a></li>
                 </ul>
             </nav>
@@ -44,19 +63,19 @@
     <!-- -------------------------------------------------------------
        FIL D'ARIANE ET INTRO DE LA PAGE
        ------------------------------------------------------------- -->
-<section class="page-intro-section">
+    <section class="page-intro-section">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Accueil</a> <span>&gt;</span> <span class="current">Prise en charge</span>
+                <a href="index.html">Accueil</a> <span>&gt;</span> <span class="current">Prises en charge</span>
             </div>
             <h1 class="page-main-title">Les Prises en Charge</h1>
             <p class="page-subtitle">Des approches thérapeutiques, cognitives et comportementales, adaptées à chaque structure et ancrées scientifiquement.</p>
             
             <div class="anchors-container">
-                <a href="#psychoeducation" class="anchor-btn"><i class="fa-solid fa-users"></i> TND</a>
-                <a href="#habiletes-sociales" class="anchor-btn"><i class="fa-solid fa-user"></i> Psychiatrie générale</a>
-                <a href="#affirmation-soi" class="anchor-btn"><i class="fa-solid fa-brain"></i> Thérapies</a>
-                <a href="#emdr-enfant" class="anchor-btn"><i class="fa-solid fa-child"></i> Groupes</a>
+                <a href="#prise-tnd" class="anchor-btn"><i class="fa-solid fa-users"></i> TND</a>
+                <a href="#avis-specialise" class="anchor-btn"><i class="fa-solid fa-user"></i> Psychiatrie générale</a>
+                <a href="#suivi-classique" class="anchor-btn"><i class="fa-solid fa-brain"></i> Thérapies</a>
+                <a href="#groupes-therapeutiques" class="anchor-btn"><i class="fa-solid fa-child"></i> Groupes</a>
             </div>
         </div>
     </section>
@@ -67,9 +86,9 @@
     <main class="care-main-container">
         <div class="container">
 
-            <!-- CARD 1 : Groupes de Psychoéducation -->
-<article id="prise-tnd" class="care-card side-emerald">
-                    <div class="care-main-info">
+            <!-- CARD 1 : TND -->
+            <article id="prise-tnd" class="care-card side-emerald">
+                <div class="care-main-info">
                     <div class="care-title-block">
                         <div class="care-icon-box"><i class="fa-solid fa-users-rectangle"></i></div>
                         <div>
@@ -77,145 +96,121 @@
                             <span class="care-tag-sub">TSA / TDAH</span>
                         </div>
                     </div>
-                    <p class="care-description">Prise en charge spécialisée des troubles du neurodéveloppement chez l’enfant, l’adolescent et l’adulte.
-            Évaluations diagnostiques et accompagnement personnalisé.
-</p>
+                    <p class="care-description">Prises en charge spécialisée des troubles du neurodéveloppement chez l’enfant, l’adolescent et l’adulte. Évaluations diagnostiques et accompagnement personnalisé.</p>
                     
-        <div class="care-benefits-block">
-            <h4>Prise en charge</h4>
-            <ul class="care-benefits-list">
-                <li><i class="fa-regular fa-circle-check"></i> TSA</li>
-                <li><i class="fa-regular fa-circle-check"></i> TDAH</li>
-                <li><i class="fa-regular fa-circle-check"></i> Évaluations spécialisées</li>
-                <li><i class="fa-regular fa-circle-check"></i> Suivi psychiatrique</li>
-                <li><i class="fa-regular fa-circle-check"></i> Accompagnement global</li>
-            </ul>
-        </div>
-    </div>
+                    <div class="care-benefits-block">
+                        <h4>Prises en charge</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> TSA</li>
+                            <li><i class="fa-regular fa-circle-check"></i> TDAH</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Évaluations spécialisées</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Suivi psychiatrique</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Accompagnement global</li>
+                        </ul>
+                    </div>
+                </div>
 
-                
                 <div class="care-meta-sidebar">
                     <div class="meta-item">
-            <span class="meta-label">Psychiatres</span>
-            <p class="meta-value">
-                Dr Isabelle Scheid (TSA)<br>
-                Dr Franck Rolland (TDAH)
-            </p>
-        </div>
-                <div class="meta-item">
-            <span class="meta-label">Psychologues / Neuropsychologues</span>
-            <p class="meta-value">Mme Doïna Mazière</p>
-            <p class="meta-value">Mme Claire Paget</p>
-
-        </div>
-
-
+                        <span class="meta-label">Psychiatres</span>
+                        <p class="meta-value">
+                            Dr Isabelle Scheid (TSA)<br>
+                            Dr Franck Rolland (TDAH)
+                        </p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Psychologues / Neuropsychologues</span>
+                        <p class="meta-value">Mme Doïna Mazière</p>
+                        <p class="meta-value">Mme Claire Paget</p>
+                    </div>
                     <div class="meta-item">
                         <span class="meta-label">Lieu</span>
                         <p class="meta-value">Paris 8e</p>
                     </div>
-<a href="#" class="btn btn-care-action open-modal"
-   data-modal="tnd">
-    Prendre rendez-vous
-    <i class="fa-solid fa-arrow-right"></i>
-</a>             
-</div>
-</article>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="tnd">
+                        Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+                    </a>             
+                </div>
+            </article>
 
-            <!-- CARD 2 : Entraînement aux Habiletés Sociales -->
-<article id="avis-specialise" class="care-card side-sage">
-                    <div class="care-main-info">
+            <!-- CARD 2 : Avis spécialisé -->
+            <article id="avis-specialise" class="care-card side-sage">
+                <div class="care-main-info">
                     <div class="care-title-block">
                         <div class="care-icon-box"><i class="fa-solid fa-users-rectangle"></i></div>
                         <div>
                             <h3>Avis spécialisé</h3>
                         </div>
                     </div>
-                    <p class="care-description">            Consultations spécialisées pour le diagnostic et la prise en charge des troubles psychiatriques.</p>
+                    <p class="care-description">Consultations spécialisées pour le diagnostic et la prise en charge des troubles psychiatriques.</p>
                     
-        <div class="care-benefits-block">
-            <h4>Indications</h4>
-            <ul class="care-benefits-list">
-                <li><i class="fa-regular fa-circle-check"></i> Troubles bipolaires</li>
-                <li><i class="fa-regular fa-circle-check"></i> Schizophrénie</li>
-                <li><i class="fa-regular fa-circle-check"></i> Autres troubles psychiatriques</li>
+                    <div class="care-benefits-block">
+                        <h4>Indications</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Troubles bipolaires</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Schizophrénie</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Autres troubles psychiatriques</li>
+                        </ul>
+                    </div>
+                </div>
 
-            </ul>
-        </div>
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatre</span>
+                        <p class="meta-value">Dr Nora Hamdani</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="avis">
+                        Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-    </div>
-
-                
-<div class="care-meta-sidebar">
-
-    <div class="meta-item">
-        <span class="meta-label">Psychiatre</span>
-        <p class="meta-value">
-            Dr Nora Hamdani<br>
-        </p>
-    </div>
-
-    <div class="meta-item">
-        <span class="meta-label">Lieu</span>
-        <p class="meta-value">Paris 8e</p>
-    </div>
-
-<a href="#" class="btn btn-care-action open-modal" data-modal="avis">
-    Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
-</a>
-</div>
-
-</article>
-
-<!-- CARD 3 : Entraînement aux Habiletés Sociales -->
-<article id="suivi-classique" class="care-card side-light-green">
-                    <div class="care-main-info">
+            <!-- CARD 3 : Suivi Classique -->
+            <article id="suivi-classique" class="care-card side-light-green">
+                <div class="care-main-info">
                     <div class="care-title-block">
                         <div class="care-icon-box"><i class="fa-solid fa-users-rectangle"></i></div>
                         <div>
-<h3>Suivi et Prise en Charge Classique</h3>                        
-</div>
+                            <h3>Suivi et Prises en Charge Classique</h3>                        
+                        </div>
                     </div>
-<p class="care-description">Évaluation, diagnostic et traitement des troubles psychiques courants de l'adulte et de l'adolescent.</p>
+                    <p class="care-description">Évaluation, diagnostic et traitement des troubles psychiques courants de l'adulte et de l'adolescent.</p>
                     
-        <div class="care-benefits-block">
-            <h4>Indications</h4>
-            <ul class="care-benefits-list">
-                <li><i class="fa-regular fa-circle-check"></i> Troubles anxieux & dépressifs</li>
-                <li><i class="fa-regular fa-circle-check"></i> Burn-out & stress professionnel</li>
-                <li><i class="fa-regular fa-circle-check"></i> Troubles Obsessionnels Compulsifs (TOC)</li>
+                    <div class="care-benefits-block">
+                        <h4>Indications</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Troubles anxieux & dépressifs</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Burn-out & stress professionnel</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Troubles Obsessionnels Compulsifs (TOC)</li>
+                        </ul>
+                    </div>
+                </div>
 
-            </ul>
-        </div>
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatres</span>
+                        <p class="meta-value">
+                            Dr Zeyad Al Salloum<br>
+                            Dr Franck Rolland
+                        </p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lieu</span>
+                        <p class="meta-value">Paris 8e</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="suivi">
+                        Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-    </div>
-
-                
-<div class="care-meta-sidebar">
-
-    <div class="meta-item">
-        <span class="meta-label">Psychiatres</span>
-        <p class="meta-value">
-            Dr Zeyad Al Salloum<br>
-            Dr Franck Rolland
-            </p>
-    </div>
-
-    <div class="meta-item">
-        <span class="meta-label">Lieu</span>
-        <p class="meta-value">Paris 8e</p>
-    </div>
-
-<a href="#" class="btn btn-care-action open-modal" data-modal="suivi">
-    Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
-</a>
-</div>
-
-</article>
-
-            <!-- CARD 4 : Groupes d'Affirmation de Soi -->
-<article id="therapies" class="care-card side-teal">
-                    <div class="care-main-info">
+            <!-- CARD 4 : Thérapies -->
+            <article id="therapies" class="care-card side-teal">
+                <div class="care-main-info">
                     <div class="care-title-block">
                         <div class="care-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
                         <div>
@@ -223,45 +218,36 @@
                             <span class="care-tag-sub">TCC / Hypnose</span>
                         </div>
                     </div>
-<p class="care-description">Des psychothérapies ciblées et structurées basées sur les preuves scientifiques pour accompagner le changement et soulager la souffrance psychique.</p>
+                    <p class="care-description">Des psychothérapies ciblées et structurées basées sur les preuves scientifiques pour accompagner le changement et soulager la souffrance psychique.</p>
                     <div class="care-benefits-block">
                         <h4>Approches</h4>
                         <ul class="care-benefits-list">
-                <li><i class="fa-regular fa-circle-check"></i> Thérapies cognitives et comportementales (TCC)</li>
-                <li><i class="fa-regular fa-circle-check"></i> Gestion de l'anxiété, des phobies et douleurs</li>
-                <li><i class="fa-regular fa-circle-check"></i> Hypnose</li>
-
-
+                            <li><i class="fa-regular fa-circle-check"></i> Thérapies cognitives et comportementales (TCC)</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Gestion de l'anxiété, des phobies et douleurs</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Hypnose</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="care-meta-sidebar">
                     <div class="meta-item">
-            <span class="meta-label">Psychiatre</span>
-            <p class="meta-value">
-                Dr Franck Rolland (TDAH)
-            </p>
-        </div>
-                <div class="meta-item">
-            <span class="meta-label">Psychologues</span>
-            <p class="meta-value">Mme Doïna Mazière</p>
-            <p class="meta-value">Mme Céline Hebbache</p>
-            <p class="meta-value">Mme Laura Guedj</p>
-
-
-        </div>
-
-<a href="#" class="btn btn-care-action open-modal" data-modal="therapie">
-    Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
-</a>              
-</div>
+                        <span class="meta-label">Psychiatre</span>
+                        <p class="meta-value">Dr Franck Rolland (TDAH)</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Psychologues</span>
+                        <p class="meta-value">Mme Doïna Mazière</p>
+                        <p class="meta-value">Mme Céline Hebbache</p>
+                        <p class="meta-value">Mme Laura Guedj</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="therapie">
+                        Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+                    </a>              
+                </div>
             </article>
 
-<!-- CARD 5 : Groupes thérapeutiques -->
+            <!-- CARD 5 : Groupes thérapeutiques -->
             <article id="groupes-therapeutiques" class="care-card side-emerald">
-                
-                <!-- Partie principale Gauche -->
                 <div class="care-main-info">
                     <div class="care-title-block">
                         <div class="care-icon-box"><i class="fa-solid fa-child-reaching"></i></div>
@@ -271,7 +257,7 @@
                         </div>
                     </div>
                     
-                    <div class="care-description">Prise en charge collective pour partager, comprendre et développer des stratégies face aux troubles du neurodéveloppement.</div>
+                    <div class="care-description">Prises en charge collectives pour partager, comprendre et développer des stratégies face aux troubles du neurodéveloppement.</div>
                     
                     <div class="care-benefits-block">
                         <h4>Types de groupes</h4>
@@ -281,36 +267,37 @@
                         </ul>
                     </div>
 
-                    <!-- BLOC TÉLÉCHARGEMENT : Placé ici, il reste en dessous de la liste à gauche -->
                     <div class="resource-download-zone" style="margin-top: 25px; padding: 15px; border: 1px dashed #16a085; background-color: #eef9f6; border-radius: 6px;">
                         <p style="margin: 0 0 10px 0; font-weight: bold; color: #16a085;"><i class="fa-solid fa-download"></i> Présentation — Mme Doïna Mazière (TCC / Neuropsychologie)</p>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="documents/presentation-doinamaziere.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; font-size: 0.85em; padding: 6px 12px;">Télécharger la Présentation (PDF)</a>
-                            <a href="images/plaquette_doinamaziere.png" target="_blank" class="btn btn-outline-sidebar" style="font-size: 0.85em; padding: 6px 12px; margin: 0;">Télécharger la Plaquette (PNG)</a>
+                            <a href="documents/presentation-doinamaziere.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; font-size: 0.85em; padding: 6px 12px;">Télécharger la Présentation de Mme Mazière (PDF)</a>
+                            <a href="images/plaquette_doinamaziere.png" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; font-size: 0.85em; padding: 6px 12px;">Télécharger la Plaquette - Groupes Adultes (PNG)</a>
+                            <a href="images/document_enfant.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; font-size: 0.85em; padding: 6px 12px;">Télécharger la Présentation - Groupes Enfants (PDF)</a>
                         </div>
                     </div>
-                </div> <!-- Fin de la partie principale Gauche -->
+                </div>
 
-                <!-- Barre latérale Droite -->
                 <div class="care-meta-sidebar">
                     <div class="meta-item">
                         <span class="meta-label">Psychologue</span>
                         <p class="meta-value">Mme Doïna Mazière</p>
                     </div>
-
+                     <div class="prof-qrcode-area">
+                        <img src="images/qrcode_doina_maziere.png" alt="QR Code Prise de rendez-vous">
+                    </div>
                     <div class="meta-item">
                         <span class="meta-label">Lieu</span>
                         <p class="meta-value">Paris 8e</p>
                     </div>
-                    
-<a href="#" class="btn btn-care-action open-modal" data-modal="groupes">
-    Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
-</a>              
-                </div> <!-- Fin de la barre latérale Droite -->
-
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="groupes">
+                        Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+                    </a>              
+                </div>
             </article>
-            </div>
-        </main>
+
+        </div>
+    </main>
+
     <!-- -------------------------------------------------------------
        SECTION BAS DE PAGE : NOTRE APPROCHE THÉRAPEUTIQUE
        ------------------------------------------------------------- -->
@@ -321,7 +308,7 @@
                 <div class="approach-card">
                     <div class="approach-num">1</div>
                     <h3>Évaluation</h3>
-                    <p>Comprendre vos besoins et votre parcours pour vous proposer la prise en charge la plus adaptée.</p>
+                    <p>Comprendre vos besoins et votre parcours pour vous proposer les prises en charge les plus adaptées.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-num">2</div>
@@ -342,10 +329,10 @@
        ------------------------------------------------------------- -->
     <footer class="main-footer">
         <div class="container">
-              <div class="footer-grid">
+             <div class="footer-grid">
             <div class="footer-brand">
               <a href="index.html" class="logo inverted">
-              <img src="images/Logo_Cediapsy_blanc.png" alt="Cédiapsy Logo Footer">
+              <img src="images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
               </a>
               <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
             </div>
@@ -355,7 +342,7 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="equipe.html">Notre équipe</a></li>
                     <li><a href="troubles.html">Les troubles évalués</a></li>
-                    <li><a href="prise-en-charge.html">Prise en charge</a></li>
+                    <li><a href="prise-en-charge.html">Prises en charge</a></li>
                     <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
                 </ul>
                 </div>
@@ -373,7 +360,8 @@
                 <div class="footer-links">
                     <h5>Contact</h5>
                     <ul class="footer-contact-list">
-                        <li><i class="fa-solid fa-location-dot"></i> 14, rue de la pépinière 75008 PARIS</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 14 rue de la pépinière 75008 Paris</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 20 avenue Philippe Auguste, 75011 Paris</li>
                     </ul>
                 </div>
             </div>
@@ -381,40 +369,23 @@
                 <p>&copy; 2026 CÉDIAPSY. Tous droits réservés. | Conçu par <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</footer>
 
-
-    <script src="script.js"></script>
-
-    <!-- =========================
-     POPUP TND
-========================= -->
-
-<!-- =========================
+<!-- =============================================================
      POPUP RENDEZ-VOUS UNIQUE
-========================= -->
-
+     ============================================================= -->
 <div class="modal-overlay" id="modal-rdv">
-
     <div class="modal-box">
-
-        <button class="modal-close">&times;</button>
-
-        <h2 id="modal-title">
-            Choisissez votre praticien
-        </h2>
-
-        <p>Vous serez redirigé vers Doctolib.</p>
-
+        <button class="modal-close" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 30px; cursor: pointer; color: #333;">&times;</button>
+        <h2 id="modal-title" style="margin-top: 10px;">Choisissez votre praticien</h2>
+        <p style="margin-bottom: 20px; color: #666;">Vous serez redirigé vers Doctolib.</p>
         <div id="modal-content" class="modal-praticiens">
-
             <!-- Les cartes seront ajoutées automatiquement par JavaScript -->
-
         </div>
-
     </div>
-
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

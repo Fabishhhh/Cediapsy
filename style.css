@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------
-   VARIABLES DE COULEUR DU DESIGN ORIGINAL (CEDIAPSY)
+   VARIABLES DE COULEUR DU DESIGN ORIGINAL (CÉDIAPSY)
    ------------------------------------------------------------- */
 :root{
 
@@ -356,7 +356,7 @@ body {
 }
 
 /*
-Pop up prise en charge
+Pop up prises en charge
 */
 .modal-overlay{
     position:fixed;
@@ -575,6 +575,11 @@ Pop up prise en charge
     font-size: 0.85rem;
     color: var(--primary);
     font-weight: 500;
+}
+
+.trouble-text-area p, 
+.eval-card p {
+    text-align: left !important;
 }
 
 /* -------------------------------------------------------------
@@ -971,7 +976,7 @@ Pop up prise en charge
     border: 1px solid rgba(0,0,0,0.02);
 }
 
-/* Bannières avec filtres de couleur (Teinte verte Cédiapsy) */
+/* Bannières avec filtres de couleur (Teinte verte CÉDIAPSY) */
 .trouble-hero-banner {
     padding: 60px 40px;
     background-size: cover;
@@ -984,7 +989,7 @@ Pop up prise en charge
     content: '';
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(90deg, rgba(0, 56, 45, 0.85), rgba(0, 102, 83, 0.4));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 102, 83, 0.4));
     z-index: 1;
 }
 
@@ -1002,6 +1007,8 @@ Pop up prise en charge
 .bipolaire-bg { background-image: url('images/illustration_troubles.png'); }
 .anxiete-bg { background-image: url('https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&q=80&w=1200'); }
 .schizo-bg { background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200'); }
+.memoire-bg { background-image: url('https://images.pexels.com/photos/38351385/pexels-photo-38351385.jpeg'); }
+
 
 /* Grille interne : Texte à gauche, encadré à droite */
 .trouble-content-grid {
@@ -1704,21 +1711,20 @@ Pop up prise en charge
     align-items: flex-start;
 }
 
-/* Formulaire (Boîte Blanche de gauche) */
-.contact-form-box {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 50px 45px;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.07);
-}
+/* doctolib page contact */
+.doctolib-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
 
-.contact-form-box h2 {
-    font-family: var(--font-serif);
-    font-size: 2rem;
-    color: var(--text-dark);
-    font-weight: 400;
-    margin-bottom: 12px;
-}
+    /* Sur mobile (téléphones) : 1 seule colonne pour que le texte respire */
+    @media (max-width: 768px) {
+        .doctolib-grid {
+            grid-template-columns: 1fr !important;
+        }
+    }
 
 .form-intro {
     color: var(--text-muted);
@@ -1826,7 +1832,7 @@ Pop up prise en charge
 .info-card-icon {
     width: 44px;
     height: 44px;
-    background-color: #3d7d6a; /* Couleur d'icône coordonnée */
+    background-color: #005387; /* Couleur d'icône coordonnée */
     color: #ffffff;
     border-radius: 8px;
     display: flex;
@@ -1852,7 +1858,7 @@ Pop up prise en charge
 
 .info-card-link {
     font-size: 0.85rem;
-    color: #3d7d6a;
+    color: #005387;
     text-decoration: underline;
     font-weight: 500;
 }
