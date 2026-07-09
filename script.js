@@ -279,6 +279,12 @@ rolland: `
                     nom: "Dr Franck Rolland",
                     specialite: "Psychiatre",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
+                },
+
+                {
+                    nom: "Dr Nora Hamdani",
+                    specialite: "Psychiatre",
+                    lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 }
             ]
         },

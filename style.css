@@ -137,6 +137,18 @@ body {
     margin-top: 48px;
 }
 
+.trouble-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.trouble-actions .btn {
+    margin: 0;
+    white-space: nowrap;
+}
+
 /* -------------------------------------------------------------
    EN-TÊTE DE LA PAGE (HEADER)
    ------------------------------------------------------------- */
@@ -455,24 +467,29 @@ Pop up prises en charge
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+
+.eval-card:nth-child(1),
+.eval-card:nth-child(4) {
+    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
+}
+
+.eval-card:nth-child(2),
+.eval-card:nth-child(5) {
+    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
+}
+
+.eval-card:nth-child(3),
+.eval-card:nth-child(6) {
+    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
+}
+
 
 .eval-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
-}
-
-.eval-card-icon {
-    width: 48px;
-    height: 48px;
-    background-color: var(--primary-light);
-    color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    margin-bottom: 24px;
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1);
 }
 
 .eval-card h3 {
@@ -964,7 +981,6 @@ Pop up prises en charge
     transform: translateY(-2px);
 }
 
-/* Container global des blocs de pathologies */
 .troubles-main-container {
     background-color: #fcfbfa;
     padding: 40px 0 80px 0;
@@ -972,181 +988,112 @@ Pop up prises en charge
 
 .trouble-card-block {
     background-color: #ffffff;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
-    margin-bottom: 60px;
-    border: 1px solid rgba(0,0,0,0.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    margin-bottom: 36px;
+    border: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Bannières avec filtres de couleur (Teinte verte CÉDIAPSY) */
 .trouble-hero-banner {
-    padding: 60px 40px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #ffffff;
+    padding: 28px 40px;
+    color: #10201c;
 }
 
 .trouble-hero-banner::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 102, 83, 0.4));
-    z-index: 1;
+    display: none;
 }
 
 .trouble-hero-banner h2 {
-    position: relative;
-    z-index: 2;
     font-family: var(--font-serif);
-    font-size: 2.2rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
 }
 
-/* Images de fond spécifiques pour chaque bannière */
-/* 1. TSA / TND (Anciennement Vert/Turquoise) */
-.tsa-bg { 
-    background: linear-gradient(135deg, #ffffff 70%, #e8f8f5 100%); 
-}
-/* 2. Troubles Bipolaires (Bleu doux) */
-.bipolaire-bg { 
-    background: linear-gradient(135deg, #ffffff 70%, #eaf2f8 100%); 
-}
-/* 3. Avis Ponctuel / Consultation (Violet) */
-.anxiete-bg { 
-    background: linear-gradient(135deg, #ffffff 70%, #f4ecf7 100%); 
-}
-/* 4. Psychiatrie Générale (Ardoise / Indigo) */
-.schizo-bg { 
-    background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%); 
-}
-/* 5. Consultation Mémoire (Sable / Or doux) */
-.memoire-bg { 
-    background: linear-gradient(135deg, #ffffff 70%, #ebf5fb 100%); 
+.tsa-bg {
+    background: linear-gradient(135deg, #bfeee4 0%, #f2fbf8 100%);
 }
 
-
-/* Grille interne : Texte à gauche, encadré à droite */
-.trouble-content-grid {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 50px;
-    padding: 40px;
-    align-items: flex-start;
+.bipolaire-bg {
+    background: linear-gradient(135deg, #c7def3 0%, #f3f8fc 100%);
 }
 
-.trouble-text-area h3 {
-    font-size: 1.5rem;
-    color: var(--text-dark);
-    margin-bottom: 16px;
-    font-weight: 600;
+.anxiete-bg {
+    background: linear-gradient(135deg, #e3c7ef 0%, #faf5fc 100%);
 }
 
-.trouble-text-area p {
-    color: var(--text-muted);
-    font-size: 0.98rem;
-    margin-bottom: 20px;
+.schizo-bg {
+    background: linear-gradient(135deg, #f8d8ad 0%, #fff9f1 100%);
 }
 
-.trouble-text-area h4 {
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    margin-top: 32px;
-    margin-bottom: 16px;
-    font-weight: 600;
+.memoire-bg {
+    background: linear-gradient(135deg, #c7e6f5 0%, #f4f9fc 100%) !important;
 }
 
-/* Grille des petits carreaux/cases de signes */
-.signs-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 36px;
-}
-
-.sign-item {
+.trouble-sidebar-box {
     background-color: #ffffff;
-    border: 1px solid var(--border-color);
-    padding: 16px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    color: var(--text-dark);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0 0 18px 18px;
+    padding: 24px 40px 28px;
     display: flex;
     align-items: center;
-    gap: 12px;
-}
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 
-.sign-item i {
-    color: var(--primary);
-    font-size: 1.1rem;
-    flex-shrink: 0;
-}
-
-/* Bouton principal de l'action */
-.btn-emerald-action {
-    background-color: var(--primary);
-    color: #ffffff;
-    font-weight: 500;
-}
-.btn-emerald-action:hover {
-    background-color: var(--primary-hover);
-    color: #ffffff;
-}
-
-/* Encadré Sidebar à droite */
-.trouble-sidebar-box {
-    background-color: #faf9f6;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 32px 24px;
 }
 
 .trouble-sidebar-box h5 {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.trouble-sidebar-box p {
+    margin-bottom: 18px;
+    color: #2f3b37;
+    line-height: 1.6;
+}
+
+.trouble-sidebar-box strong {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+}
+
+.trouble-sidebar-box .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border-radius: 999px;
+    padding: 12px 24px;
+    text-decoration: none;
     font-weight: 600;
 }
 
-.trouble-sidebar-box ul {
-    list-style: none;
-    margin-bottom: 28px;
+#tnd .trouble-sidebar-box {
+    background-color: #f2fbf8;
 }
 
-.trouble-sidebar-box li {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 18px;
+#bipolaire .trouble-sidebar-box {
+    background-color: #f3f8fc;
 }
 
-.trouble-sidebar-box li::before {
-    content: "•";
-    color: var(--primary);
-    font-size: 1.2rem;
-    position: absolute;
-    left: 0;
-    top: -2px;
+#psychiatrie .trouble-sidebar-box {
+    background-color: #faf5fc;
 }
 
-.btn-outline-sidebar {
-    background-color: transparent;
-    color: var(--text-dark);
-    border: 1px solid var(--border-color);
-    font-size: 0.85rem;
-    padding: 10px 20px;
-    width: 100%;
+#schizo .trouble-sidebar-box {
+    background-color: #fff9f1;
 }
 
-.btn-outline-sidebar:hover {
-    background-color: var(--primary);
-    color: #ffffff;
-    border-color: var(--primary);
+#memoire .trouble-sidebar-box {
+    background-color: #f4f9fc;
 }
-
 /* ==========================================================================
    ==========================================================================
    PAGE PRISES EN CHARGE (PRISES-EN-CHARGE.HTML) - STYLE SPÉCIFIQUE
@@ -1206,7 +1153,7 @@ Pop up prises en charge
 .care-card.side-emerald { 
     background: linear-gradient(135deg, #ffffff 70%, #e8f8f5 100%) !important;
     border: 1px solid #e0e0e0 !important;
-    border-left: 32px solid #16a085 !important; 
+    border-left: 32px solid #bfeee4 !important; 
 }
 .care-card.side-sage { 
     background: linear-gradient(135deg, #ffffff 70%, #eaf2f8 100%) !important;
@@ -1216,23 +1163,23 @@ Pop up prises en charge
 .care-card.side-light-green { 
     background: linear-gradient(135deg, #ffffff 70%, #f4ecf7 100%) !important;
     border: 1px solid #e0e0e0 !important;
-    border-left: 32px solid #8e44ad !important; 
+    border-left: 32px solid #e3c7ef !important; 
 }
 .care-card.side-teal { 
     background: linear-gradient(135deg, #ffffff 70%, #f0f3f4 100%) !important;
     border: 1px solid #e0e0e0 !important;
-    border-left: 32px solid #2c3e50 !important; 
+    border-left: 32px solid #f8d8ad !important; 
 }
 
 .care-card.side-red { 
     background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%) !important;
     border: 1px solid #e0e0e0 !important;
-    border-left: 32px solid #b80303 !important; /* Orange ambré vif */
+    border-left: 32px solid #15ad08 !important; /* Orange ambré vif */
 }
 .care-card.side-amber { 
     background: linear-gradient(135deg, #ffffff 70%, #fef9e7 100%) !important;
     border: 1px solid #e0e0e0 !important;
-    border-left: 32px solid #d35400 !important; /* Orange ambré vif */
+    border-left: 32px solid #c7e6f5 !important; /* Orange ambré vif */
 }
 
 /* Zone principale gauche (Infos) */
