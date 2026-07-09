@@ -50,21 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const testimonialQuote = document.querySelector(".testimonial-slide blockquote");
     const testimonialAuthor = document.querySelector(".testimonial-slide .author");
 
-    const fakeData = [
-        {
-            quote: `"Madame Hamdani est la psychiatre qui a réalisé mon diagnostique de TSA, à la suite du bilan de Monnet David, un Neuropsy. Elle est très gentille et est apparemment une des expertes en France du sujet.”`,
-            author: "Patiente de Mme Hamdani"
-        },
-        {
-            quote: `"Très bon établissement, avec une équipe très compétente et à l'écoute."`,
-            author: "Sophie M."
-        },
-        {
-            quote: `"Une coordination parfaite entre l'école, le médecin de famille et l'équipe de CÉDIAPSY. Les bilans d'aide au diagnostic sont d'une clarté exemplaire."`,
-            author: "Enseignante Référente"
-        }
-    ];
-
     if (dots.length > 0 && testimonialQuote && testimonialAuthor) {
         testimonialQuote.style.transition = "opacity 0.2s ease";
         testimonialAuthor.style.transition = "opacity 0.2s ease";
@@ -131,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         zeyad: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Le Dr Zeyad AL SALLOUM est médecin psychiatre et exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris.</p>
+            <p>Le docteur Zeyad AL SALLOUM est médecin psychiatre et exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris.</p>
             <h4>Champs d'expertise &amp; Prises en charge</h4>
             <ul>
                 <li>Troubles anxieux</li>
@@ -167,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 rolland: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Médecin spécialiste en psychiatrie, le Dr Franck Rolland exerce depuis plusieurs années à l'hôpital au sein du service public. Également diplômé en psychologie clinique, il associe une approche médicale rigoureuse à une compréhension approfondie des psychothérapies. Consultations en psychiatrie générale, TDAH adulte et psychothérapies. <strong>Disponible le samedi.</strong></p>
+            <p>Médecin spécialiste en psychiatrie, le docteur Franck Rolland exerce depuis plusieurs années à l'hôpital au sein du service public. Également diplômé en psychologie clinique, il associe une approche médicale rigoureuse à une compréhension approfondie des psychothérapies. Consultations en psychiatrie générale, TDAH adulte et psychothérapies. <strong>Disponible le samedi.</strong></p>
             <h4>Champs d'expertise &amp; Prises en charge</h4>
             <ul>
               <li>Psychiatrie générale</li>
@@ -239,17 +224,17 @@ rolland: `
             title: "Prendre rendez-vous avec nos spécialistes",
             cards: [
                 {
-                    nom: "Dr Isabelle Scheid",
+                    nom: "Docteur Isabelle Scheid",
                     specialite: "Psychiatre • TSA",
                     lien: "https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris"
                 },
                 {
-                    nom: "Dr Franck Rolland",
+                    nom: "Docteur Franck Rolland",
                     specialite: "Psychiatre • TDAH",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 },
                 {
-                    nom: "Doïna Mazière",
+                    nom: "Madame Doïna Mazière",
                     specialite: "Psychologue",
                     lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
                 },
@@ -260,7 +245,7 @@ rolland: `
             title: "Prendre rendez-vous avec notre spécialiste",
             cards: [
                 {
-                    nom: "Dr Nora Hamdani",
+                    nom: "Docteur Nora Hamdani",
                     specialite: "Psychiatre",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 }
@@ -271,18 +256,18 @@ rolland: `
             title: "Prendre rendez-vous avec nos spécialistes",
             cards: [
                 {
-                    nom: "Dr Zeyad Al Salloum",
+                    nom: "Docteur Zeyad Al Salloum",
                     specialite: "Psychiatre",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 },
                 {
-                    nom: "Dr Franck Rolland",
+                    nom: "Docteur Franck Rolland",
                     specialite: "Psychiatre",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 },
 
                 {
-                    nom: "Dr Nora Hamdani",
+                    nom: "Docteur Nora Hamdani",
                     specialite: "Psychiatre",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 }
@@ -293,22 +278,22 @@ rolland: `
             title: "Prendre rendez-vous avec nos spécialistes",
             cards: [
                 {
-                    nom: "Dr Franck Rolland",
+                    nom: "Docteur Franck Rolland",
                     specialite: "Psychiatre • TCC / Hypnose",
                     lien: "https://www.doctolib.fr/psychiatre/paris/nora-hamdani"
                 },
                 {
-                    nom: "Mme Doïna Mazière",
+                    nom: "Madame Doïna Mazière",
                     specialite: "Psychologue • TCC",
                     lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
                 },
                 {
-                    nom: "Mme Céline Hebbache",
+                    nom: "Madame Céline Hebbache",
                     specialite: "Psychologue • TCC",
                     lien: "https://www.doctolib.fr/psychologue/paris/celine-hebbache"
                 },
                 {
-                    nom: "Mme Laura Guedj",
+                    nom: "Madame Laura Guedj",
                     specialite: "Psychologue • TCC",
                     lien: "https://www.doctolib.fr/psychologue/paris/laura-guedj"
                 }
@@ -319,7 +304,7 @@ rolland: `
     title: "Prendre rendez-vous",
     cards: [
         {
-            nom: "Doïna Mazière",
+            nom: "Madame Doïna Mazière",
             specialite: "Neuropsychologue • Consultations mémoire",
             lien: "https://www.doctolib.fr/psychologue/paris/doina-maziere"
         }
@@ -330,7 +315,7 @@ rolland: `
     title: "Prendre rendez-vous",
     cards: [
         {
-            nom: "Claire Saget",
+            nom: "Madame Claire Saget",
             specialite: "Neuropsychologue • Consultations mémoire",
             lien: ""   // À remplacer par le lien Doctolib si elle en possède un
         }

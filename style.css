@@ -468,22 +468,26 @@ Pop up prises en charge
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(31, 41, 55, 0.05);
 }
 
+/* Prises en charge médicales :
+   TND, Avis spécialisé, Psychiatrie générale, Consultations mémoire */
 .eval-card:nth-child(1),
-.eval-card:nth-child(4) {
-    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
-}
-
 .eval-card:nth-child(2),
-.eval-card:nth-child(5) {
-    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
-}
-
 .eval-card:nth-child(3),
 .eval-card:nth-child(6) {
-    background: linear-gradient(145deg, #d8f0eb, #f2f9f7);
+    background: #fff8f5;
+    border: 1px solid #efc1b3;
+    border-left: 5px solid #d98f7c;
+}
+
+/* PSYCHO / GROUPES */
+.eval-card:nth-child(4),
+.eval-card:nth-child(5) {
+    background: #fffdfb;
+    border: 1px solid #ead8d1;
+    border-left: 5px solid #c9a89d;
 }
 
 
