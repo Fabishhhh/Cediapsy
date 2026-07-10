@@ -297,6 +297,30 @@ body {
     transform:translateY(-2px);
 }
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 16px;
+}
+
+.lang-btn {
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.lang-btn.active {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
 /* -------------------------------------------------------------
    SECTION HERO & COMPTEURS
    ------------------------------------------------------------- */
@@ -473,21 +497,22 @@ Pop up prises en charge
 
 /* Prises en charge médicales :
    TND, Avis spécialisé, Psychiatrie générale, Consultations mémoire */
+/* 3 cartes du haut */
 .eval-card:nth-child(1),
 .eval-card:nth-child(2),
-.eval-card:nth-child(3),
-.eval-card:nth-child(6) {
+.eval-card:nth-child(3) {
     background: #fff8f5;
     border: 1px solid #efc1b3;
     border-left: 5px solid #d98f7c;
 }
 
-/* PSYCHO / GROUPES */
+/* 3 cartes du dessous */
 .eval-card:nth-child(4),
-.eval-card:nth-child(5) {
-    background: #fffdfb;
-    border: 1px solid #ead8d1;
-    border-left: 5px solid #c9a89d;
+.eval-card:nth-child(5),
+.eval-card:nth-child(6) {
+    background: #fffaf0;
+    border: 1px solid #ead8ad;
+    border-left: 5px solid #d6b86f;
 }
 
 
