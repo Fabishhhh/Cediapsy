@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prendre rendez-vous - CÉDIAPSY</title>
+    <title>Book an Appointment - CÉDIAPSY</title>
     <!-- Même fichier style.css unique -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- Icônes FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -17,87 +17,88 @@
 <header class="main-header header-solid">
     <div class="header-container">
 
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
-            </a>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/Logo_Cediapsy_noir (1).png"
+                         alt="CÉDIAPSY Logo">
+                </a>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="equipe.html" class="nav-link">
+                            Our Team
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="troubles.html" class="nav-link">
+                            Conditions Assessed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="prises-en-charge.html" class="nav-link">
+                            Care Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="rendez-vous.html" class="nav-link">
+                            Book an Appointment
+                        </a>
+                    </li>
+
+                    <!-- Contact visible dans le menu burger -->
+                    <li class="mobile-contact-link">
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                                        <!-- Visible uniquement dans le menu burger -->
+                    <li class="mobile-language-link">
+                        <a href="../index.html" class="nav-link">
+                            🇫🇷 Français
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="burger-menu"
+                    id="burgerBtn"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+             <!-- Visible sur ordinateur -->
+            <div class="header-actions">
+
+                <a href="../index.html" class="language-btn">
+                    FR
+                </a>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Contact
+                </a>
+
+            </div>
+
         </div>
-
-        <nav class="nav-menu" id="navMenu">
-            <ul class="nav-list">
-
-                <li>
-                    <a href="index.html" class="nav-link">
-                        Accueil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="equipe.html" class="nav-link">
-                        Notre équipe
-                    </a>
-                </li>
-
-                <li>
-                    <a href="troubles.html" class="nav-link">
-                        Les troubles évalués
-                    </a>
-                </li>
-
-                <li>
-                    <a href="prises-en-charge.html" class="nav-link">
-                        Prises en charge
-                    </a>
-                </li>
-
-                <li>
-                    <a href="rendez-vous.html" class="nav-link active">
-                        Prendre rendez-vous
-                    </a>
-                </li>
-
-                <!-- Visible uniquement dans le menu burger -->
-                <li class="mobile-contact-link">
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-
-                <!-- Visible uniquement dans le menu burger -->
-                <li class="mobile-language-link">
-                    <a href="en/index.html" class="nav-link">
-                        🇬🇧 English
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <button class="burger-menu"
-                id="burgerBtn"
-                aria-label="Ouvrir le menu de navigation"
-                aria-expanded="false"
-                aria-controls="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Visible sur ordinateur -->
-        <div class="header-actions">
-
-            <a href="en/index.html" class="language-btn">
-                EN
-            </a>
-
-            <a href="contact.html" class="btn btn-primary">
-                Contact
-            </a>
-
-        </div>
-
-    </div>
-</header>
+    </header>
 
     <!-- -------------------------------------------------------------
        FIL D'ARIANE ET INTRO DE LA PAGE
@@ -105,10 +106,10 @@
     <section class="page-intro-section">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Accueil</a> <span>&gt;</span> <span class="current">Prendre rendez-vous</span>
+                <a href="index.html">Home</a> <span>&gt;</span> <span class="current">Book an Appointment</span>
             </div>
-            <h1 class="page-main-title">Prendre Rendez-Vous</h1>
-            <p class="page-subtitle">Prenez rendez-vous avec notre équipe via Doctolib. La réservation s'effectue directement sur la plateforme.</p>
+            <h1 class="page-main-title">Book an Appointment</h1>
+            <p class="page-subtitle">Book an appointment with our team via Doctolib. Booking is done directly on the platform.</p>
         </div>
     </section>
 
@@ -123,8 +124,8 @@
                 <div class="doctolib-alert-header">
                     <i class="fa-solid fa-arrow-up-right-from-square alert-icon"></i>
                     <div>
-                        <h3>Rendez-vous en ligne via Doctolib</h3>
-                        <p>La prise de rendez-vous s'effectue directement sur les pages Doctolib de nos praticiens. Cliquez sur le nom du professionnel pour accéder à son agenda.</p>
+                        <h3>Online Appointments via Doctolib</h3>
+                        <p>Booking is done directly on the Doctolib pages of our practitioners. Click on the practitioner's name to access their calendar.</p>
                     </div>
                 </div>
 
@@ -132,66 +133,66 @@
                     <!-- Praticien 1 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Docteur Nora Hamdani</h4>
-                            <span class="praticien-specialty">Psychiatre</span>
+                            <h4>Dr. Nora Hamdani</h4>
+                            <span class="praticien-specialty">Psychiatrist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <!-- Praticien 2 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Docteur Isabelle Scheid</h4>
-                            <span class="praticien-specialty">Psychiatre</span>
+                            <h4>Dr. Isabelle Scheid</h4>
+                            <span class="praticien-specialty">Psychiatrist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/isabelle-scheid-paris" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                                                     <!-- Praticien 7 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Zeyad Al Salloum</h4>
-                            <span class="praticien-specialty">Psychiatre</span>
+                            <h4>Dr. Zeyad Al Salloum</h4>
+                            <span class="praticien-specialty">Psychiatrist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                                 <!-- Praticien 8 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Franck Rolland</h4>
-                            <span class="praticien-specialty">Psychiatre</span>
+                            <h4>Dr. Franck Rolland</h4>
+                            <span class="praticien-specialty">Psychiatrist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychiatre/paris/nora-hamdani" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <!-- Praticien 3 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Madame Céline Hebbache</h4>
-                            <span class="praticien-specialty">Psychologue</span>
+                            <h4>Dr. Céline Hebbache</h4>
+                            <span class="praticien-specialty">Psychologist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychologue/paris/celine-hebbache" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychologue/paris/celine-hebbache" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <!-- Praticien 4 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Madame Laura Guedj</h4>
-                            <span class="praticien-specialty">Psychologue</span>
+                            <h4>Dr. Laura Guedj</h4>
+                            <span class="praticien-specialty">Psychologist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychologue/paris/laura-guedj" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychologue/paris/laura-guedj" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <!-- Praticien 6 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Madame Doïna Mazière</h4>
-                            <span class="praticien-specialty">Psychologue</span>
+                            <h4>Dr. Doïna Mazière</h4>
+                            <span class="praticien-specialty">Psychologist</span>
                         </div>
-                        <a href="https://www.doctolib.fr/psychologue/paris/doina-maziere" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.doctolib.fr/psychologue/paris/doina-maziere" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <!-- Praticien 4 -->
                     <div class="praticien-mini-card">
                         <div>
-                            <h4>Madame Claire Saget</h4>
-                            <span class="praticien-specialty">Neuropsychologue.</span>
+                            <h4>Dr. Claire Saget</h4>
+                            <span class="praticien-specialty">Neuropsychologist</span>
                         </div>
-                        <a href="" class="btn btn-doctolib-sub">Voir l'agenda <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="" class="btn btn-doctolib-sub">View calendar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </section>
@@ -199,39 +200,39 @@
 
             <!-- Section Processus/Étapes -->
             <section class="steps-section-box">
-                <h2 class="steps-box-title">Comment se déroule la prise de rendez-vous ?</h2>
+                <h2 class="steps-box-title">How does booking an appointment work?</h2>
                 
                 <div class="steps-list">
                     <!-- Étape 1 -->
                     <div class="step-row-item">
                         <div class="step-icon-wrapper"><i class="fa-solid fa-user-check"></i></div>
                         <div class="step-content-text">
-                            <h3>1. Choisissez votre praticien</h3>
-                            <p>Parcourez la liste de nos professionnels et sélectionnez celui qui vous convient. Vous pouvez consulter leurs spécialités et profils détaillés pour un choix éclairé.</p>
+                            <h3>1. Choose your practitioner</h3>
+                            <p>Browse our list of professionals and select the one that suits you. You can view their specialties and detailed profiles for an informed choice.</p>
                         </div>
                     </div>
                     <!-- Étape 2 -->
                     <div class="step-row-item">
                         <div class="step-icon-wrapper"><i class="fa-solid fa-calendar-days"></i></div>
                         <div class="step-content-text">
-                            <h3>2. Sélectionnez un créneau sur Doctolib</h3>
-                            <p>Cliquez sur le bouton de réservation pour être redirigé vers notre agenda Doctolib sécurisé. Choisissez la date et l'heure qui vous conviennent parmi les créneaux disponibles.</p>
+                            <h3>2. Select a time slot on Doctolib</h3>
+                            <p>Click on the booking button to be redirected to our secure Doctolib agenda. Choose the date and time that suits you among the available slots.</p>
                         </div>
                     </div>
                     <!-- Étape 3 -->
                     <div class="step-row-item">
                         <div class="step-icon-wrapper"><i class="fa-solid fa-envelope-circle-check"></i></div>
                         <div class="step-content-text">
-                            <h3>3. Recevez votre confirmation</h3>
-                            <p>Une fois votre créneau validé sur Doctolib, vous recevrez un e-mail et un SMS de confirmation contenant tous les détails de votre rendez-vous.</p>
+                            <h3>3. Receive your confirmation</h3>
+                            <p>Once your slot is validated on Doctolib, you will receive a confirmation email and SMS containing all the details of your appointment.</p>
                         </div>
                     </div>
                     <!-- Étape 4 -->
                     <div class="step-row-item">
                         <div class="step-icon-wrapper"><i class="fa-solid fa-laptop-medical"></i></div>
                         <div class="step-content-text">
-                            <h3>4. Première consultation au cabinet ou en visio</h3>
-                            <p>Le jour de votre rendez-vous, présentez-vous au cabinet sélectionné ou connectez-vous à la visio-conférence via le lien fourni. Votre praticien vous accueillera.</p>
+                            <h3>4. First consultation in person or via video</h3>
+                            <p>On the day of your appointment, please present yourself at the selected clinic or connect to the video conference via the provided link. Your practitioner will welcome you.</p>
                         </div>
                     </div>
                 </div>
@@ -245,7 +246,7 @@
        ------------------------------------------------------------- -->
 <section class="cabinets-section">
     <div class="container">
-        <h2 class="cabinets-main-title">Nos Cabinets</h2>
+        <h2 class="cabinets-main-title">Our Clinics</h2>
         
         <div class="cabinets-grid">
             <!-- Cabinet 1 : Paris 8e -->
@@ -263,8 +264,8 @@
                     </iframe>
                 </div>
                 <div class="cabinet-card-body">
-                    <h3>Cabinet Paris 8e</h3>
-                    <p class="cabinet-intro-text">À proximité de la gare Saint-Lazare, notre cabinet du 8e arrondissement vous accueille dans un cadre calme et accessible.</p>
+                    <h3>Paris 8th Office</h3>
+                    <p class="cabinet-intro-text">Near Saint-Lazare station, our office in the 8th arrondissement welcomes you in a calm and accessible setting.</p>
                     
                     <div class="cabinet-address-line">
                         <i class="fa-solid fa-location-dot"></i>
@@ -272,17 +273,17 @@
                     </div>
                     
                     <div class="cabinet-access-block">
-                        <h5>Accès</h5>
+                        <h5>Access</h5>
                         <div class="metro-tags-list">
-                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Métro St-Augustin (ligne 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Metro St-Augustin (line 9)</span>
                             <span class="metro-tag"><i class="fa-solid fa-train"></i> Bus 22, 43, 80, 93</span>
                             <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Auber</span>
-                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Gare St-Lazare (toutes lignes)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Saint-Lazare Station (all lines)</span>
                         </div>
                     </div>
                     
                     <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
-                    <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </article>
 
@@ -301,24 +302,24 @@
                     </iframe>
                 </div>
                 <div class="cabinet-card-body">
-                    <h3>Cabinet Paris 11e</h3>
-                    <p class="cabinet-intro-text">Situé à deux pas de la place de la Nation, ce cabinet bénéficie d'une excellente desserte en transports en commun.</p>
-                    
+                    <h3>Paris 11th Office</h3>
+                    <p class="cabinet-intro-text">Located just steps from Nation Square, this office offers excellent public transport access.</p>
+
                     <div class="cabinet-address-line">
                         <i class="fa-solid fa-location-dot"></i>
                         <p><strong>20, avenue Philippe Auguste</strong><br>75011 PARIS</p>
                     </div>
                     
                     <div class="cabinet-access-block">
-                        <h5>Accès</h5>
+                        <h5>Access</h5>
                         <div class="metro-tags-list">
-                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Métro Nation (lignes 1, 2, 6, 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Metro Nation (lines 1, 2, 6, 9)</span>
                             <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Nation</span>
                         </div>
                     </div>
                     
                     <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
-                    <a href="https://maps.google.com/?q=20+Avenue+Philippe+Auguste+75011+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://maps.google.com/?q=20+Avenue+Philippe+Auguste+75011+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </article>
         </div>
@@ -333,28 +334,28 @@
              <div class="footer-grid">
             <div class="footer-brand">
               <a href="index.html" class="logo inverted">
-              <img src="images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
+              <img src="../images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
               </a>
-              <p>Centre d'expertise en psychiatrie et psychologie, spécialisé dans l'accompagnement des troubles psychiatriques.</p>
+              <p>Center of expertise in psychiatry and psychology, specialized in supporting patients with psychiatric disorders.</p>
             </div>
                 <div class="footer-links">
                     <h5>Navigation</h5>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="equipe.html">Notre équipe</a></li>
-                    <li><a href="troubles.html">Les troubles évalués</a></li>
-                    <li><a href="prises-en-charge.html">Prises en charge</a></li>
-                    <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="equipe.html">Our Team</a></li>
+                    <li><a href="troubles.html">The Assessed Disorders</a></li>
+                    <li><a href="prises-en-charge.html">Treatment Options</a></li>
+                    <li><a href="rendez-vous.html">Book an Appointment</a></li>
                 </ul>
                 </div>
 
             <div class="footer-links">
-                    <h5>Informations</h5>
+                    <h5>Information</h5>
                 <ul>
-                    <li><a href="mentions-legales.html">Mentions légales</a></li>
-                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-                    <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
-                    <li><a href="cookies.html">Gestion des cookies</a></li>
+                    <li><a href="mentions-legales.html">Legal notice</a></li>
+                    <li><a href="confidentialite.html">Privacy policy</a></li>
+                    <li><a href="conditions-utilisation.html">Terms of use</a></li>
+                    <li><a href="cookies.html">Cookie management</a></li>
                 </ul>
             </div>
             
@@ -367,7 +368,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CÉDIAPSY. Tous droits réservés. | Conçu par <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+                <p>&copy; 2026 CÉDIAPSY. All rights reserved. | Designed by <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
             </div>
         </div>
     </footer>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        CÉDIAPSY - Diagnostic Assessment Practice in Psychiatry
+    </title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<section class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+<header class="main-header">
+    <div class="header-container">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/Logo_Cediapsy_blanc.png"
+                         alt="CÉDIAPSY Logo">
+                </a>
+            </div>
+
+<nav class="nav-menu" id="navMenu">
+    <ul class="nav-list">
+
+        <li>
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="equipe.html" class="nav-link">
+                Our Team
+            </a>
+        </li>
+
+        <li>
+            <a href="troubles.html" class="nav-link">
+                The Assessed Disorders
+            </a>
+        </li>
+
+        <li>
+            <a href="prises-en-charge.html" class="nav-link">
+                Treatment Options
+            </a>
+        </li>
+
+        <li>
+            <a href="rendez-vous.html" class="nav-link">
+                Book an Appointment
+            </a>
+        </li>
+
+        <!-- Visible uniquement dans le menu burger -->
+        <li class="mobile-contact-link">
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+        </li>
+
+        <!-- Visible uniquement dans le menu burger -->
+        <li class="mobile-language-link">
+            <a href="../index.html" class="nav-link">
+                🇬🇧 English
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+<button class="burger-menu"
+        id="burgerBtn"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="navMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Visible sur ordinateur -->
+<div class="header-actions">
+
+    <a href="../index.html" class="language-btn">
+        EN
+    </a>
+
+    <a href="contact.html" class="btn btn-primary">
+        Contact
+    </a>
+
+</div>
+
+        </div>
+    </header>
+
+    <div class="container hero-container">
+        <h1>CÉDIAPSY</h1>
+        <p class="hero-subtitle">
+            Diagnostic assessment practice in psychiatry.</p>
+<!-- Commentaire : Phrase mise de côté au cas où elle la réclame 
+    <p class="hero-description">Nous accompagnons enfants, adolescents et adultes vers un équilibre psychologique durable.</p> 
+    -->
+        <div style="margin-top: 25px;">
+            <a href="prises-en-charge.html" class="btn btn-primary">Book an Appointment</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="evaluations-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Diagnostic Evaluations and Care Plans</h2>
+            <p>A rigorous diagnostic approach allowing for the identification of encountered difficulties and the proposal of a personalized orientation.</p>
+        </div>
+
+        <div class="eval-grid">
+
+            <!-- 1. NDD -->
+            <div class="eval-card">
+                <h3> NDD (ASD / ADHD)</h3>
+                <p>Specialized assessment and support for neurodevelopmental disorders in children and adults.</p>
+
+                <ul class="eval-list-items">
+                    <li>ASD</li>
+                    <li>ADHD</li>
+                    <li>Specialized evaluations and accompaniment</li>
+                </ul>
+
+                <a href="prises-en-charge.html#prise-tnd" class="eval-link">Learn more...</a>
+            </div>
+
+            <!-- 2. Avis spécialisé -->
+            <div class="eval-card">
+                <h3>Specialist Opinion</h3>
+                <p>Specialized consultations for the diagnosis and management of complex psychiatric disorders.</p>
+
+                <ul class="eval-list-items">
+                    <li>Bipolar Disorders</li>
+                    <li>Schizophrenia</li>
+                    <li>Other psychiatric disorders</li>
+                </ul>
+
+                <a href="prises-en-charge.html#avis-specialise" class="eval-link">Learn more...</a>
+            </div>
+
+            <!-- 3. Psychiatrie générale -->
+            <div class="eval-card">
+                <h3>General Psychiatry</h3>
+                <p>Assessment, diagnosis and treatment of common psychiatric disorders in adults, with specialized care.</p>
+
+                <ul class="eval-list-items">
+                    <li>Anxiety Disorders</li>
+                    <li>Mood Disorders</li>
+                    <li>Psychiatric Follow-up</li>
+                </ul>
+
+                <a href="prises-en-charge.html#psychiatrie-generale" class="eval-link">Learn more...</a>
+            </div>
+
+            <!-- 4. Thérapies -->
+            <div class="eval-card">
+                <h3>Therapies</h3>
+                <p>Psychotherapies adapted to the needs of each patient, founded on scientifically validated approaches.</p>
+
+                <ul class="eval-list-items">
+                    <li>Cognitive and Behavioral Therapies (CBT)</li>
+                    <li>Hypnosis</li>
+                    <li>Personalized Accompaniment</li>
+                </ul>
+
+                <a href="prises-en-charge.html#therapies" class="eval-link">Learn more...</a>
+            </div>
+
+            <!-- 5. Groupes TND -->
+<div class="eval-card">
+    <h3>NDD Groups</h3>
+    <p>Social skills training for children and adults with ASD or ADHD.</p>
+
+    <ul class="eval-list-items">
+        <li>Child NDD</li>
+        <li>Adult NDD</li>
+        <li>Social Skills</li>
+    </ul>
+
+    <a href="prises-en-charge.html#groupes-tnd" class="eval-link">Learn more...</a>
+</div>
+
+            <!-- 6. Consultations mémoire -->
+            <div class="eval-card">
+                <h3>Memory Consultations</h3>
+                <p> Assessments, evaluations, and support for memory and cognitive function disorders.</p>
+
+                <ul class="eval-list-items">
+                    <li>Memory Assessments</li>
+                    <li>Cognitive Evaluations</li>
+                    <li>Specialized Accompaniment</li>
+                </ul>
+
+                <a href="prises-en-charge.html#memoire" class="eval-link">Learn more...</a>
+            </div>
+
+        </div>
+
+        <div class="center-btn">
+            <a href="prises-en-charge.html" class="btn btn-outline-dark">
+                Discover our care options
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- -------------------------------------------------------------
+       SECTION NOS CABINETS (CARTES MAPS)
+       ------------------------------------------------------------- -->
+<section class="cabinets-section">
+    <div class="container">
+            <div class="section-title">
+                <h2>Our Clinics</h2>
+            </div>
+
+        <div class="cabinets-grid">
+            <!-- Cabinet 1 : Paris 8e -->
+            <article class="cabinet-card">
+                <div class="cabinet-map-placeholder">
+                    <!-- Vraie carte Google Maps intégrée pour le 14 rue de la Pépinière -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.237255132204!2d2.321453977287951!3d48.872740200373016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3b2e59df99%3A0x7d69dc2a11b71be5!2s14%20Rue%20de%20la%20P%C3%A9pini%C3%A8re%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1717430000000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="cabinet-card-body">
+                    <h3>Cabinet Paris 8e</h3>
+                    <p class="cabinet-intro-text">Nearby the Saint-Lazare station, our clinic in the 8th arrondissement welcomes you in a quiet and accessible environment.</p>
+                    
+                    <div class="cabinet-address-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>14, rue de la Pépinière</strong><br>75008 PARIS</p>
+                    </div>
+                    
+                    <div class="cabinet-access-block">
+                        <h5>Access</h5>
+                        <div class="metro-tags-list">
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Saint-Augustin Metro station (Line 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Bus 22, 43, 80, 93</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Auber</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Gare St-Lazare (all lines)</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
+                    <a href="https://maps.google.com/?q=14+Rue+de+la+Pepinire+75008+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- Cabinet 2 : Paris 11e -->
+            <article class="cabinet-card">
+                <div class="cabinet-map-placeholder">
+                    <!-- Vraie carte Google Maps intégrée pour le 20 avenue Philippe Auguste -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4338903332026!2d2.3929452772863923!3d48.84992980197992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d66e74b732d%3A0x6b876fcda0fbf8d1!2s20%20Av.%20Philippe-Auguste%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1717430100000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="cabinet-card-body">
+                    <h3>Practice in Paris 11th</h3>
+                    <p class="cabinet-intro-text">Located just steps away from Place de la Nation, this office enjoys excellent public transport links.</p>
+                    
+                    <div class="cabinet-address-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>20, avenue Philippe Auguste</strong><br>75011 PARIS</p>
+                    </div>
+                    
+                    <div class="cabinet-access-block">
+                        <h5>Access</h5>
+                        <div class="metro-tags-list">
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> Nation Metro station (Lines 1, 2, 6, 9)</span>
+                            <span class="metro-tag"><i class="fa-solid fa-train"></i> RER A Nation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Lien direct vers l'adresse Google Maps (s'ouvre dans un nouvel onglet) -->
+                    <a href="https://maps.google.com/?q=20+Avenue+Philippe+Auguste+75011+Paris" target="_blank" rel="noopener" class="btn btn-outline-map">Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Formed practitioners, united to guide and accompany you throughout your journey.</p>
+            </div>
+
+<div class="team-grid">
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/NoraHamdani.png" alt="Dr. Nora Hamdani">
+        </div>
+        <h4>Dr. Nora Hamdani</h4>
+        <p class="role">Psychiatrist </p>
+        <span class="specialty">Bipolar Disorders, Schizophrenia</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/Isabelle_Scheid.png" alt="Dr. Isabelle Scheid">
+        </div>
+        <h4>Dr. Isabelle Scheid</h4>
+        <p class="role">Psychiatrist </p>
+        <span class="specialty">Autism Spectrum Disorders</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/Celine-Hebbache.png" alt="Ms. Céline Hebbache">
+        </div>
+        <h4>Ms. Céline Hebbache</h4>
+        <p class="role">Psychologist</p>
+        <span class="specialty">CBT, Hypnosis, Bipolar</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/DoinaMaziere_carre.png" alt="Ms. Doïna Mazière">
+        </div>
+        <h4>Ms. Doïna Mazière</h4>
+        <p class="role">Clinical Psychologist</p>
+        <span class="specialty">TSA • TDAH • Psychological Assessments</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/ZeyadAlSalloum.png" alt="Dr. Zeyad Al Salloum">
+        </div>
+        <h4>Dr. Zeyad Al Salloum</h4>
+        <p class="role">Psychiatrist </p>
+        <span class="specialty">General Psychiatry</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/FranckRolland.png" alt="Dr. Franck Rolland">
+        </div>
+        <h4>Dr. Franck Rolland</h4>
+        <p class="role">Psychiatrist </p>
+        <span class="specialty">Adult ADHD • CBT • Hypnosis</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/LauraGuedj.png" alt="Ms. Laura Guedj">
+        </div>
+        <h4>Ms. Laura Guedj</h4>
+        <p class="role">Psychologist</p>
+        <span class="specialty">Psychotherapies</span>
+    </div>
+
+    <div class="team-card">
+        <div class="avatar-wrapper">
+            <img src="../images/ClaireSaget.png" alt="Ms. Claire Saget">
+        </div>
+        <h4>Ms. Claire Saget</h4>
+        <p class="role">Neuropsychologist</p>
+        <span class="specialty">Neuropsychological Assessments • Memory Consultations</span>
+    </div>
+
+</div>
+
+            <div class="center-btn">
+                <a href="equipe.html" class="btn btn-outline-dark">See the entire team</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="logo inverted">
+              <img src="../images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
+              </a>
+              <p>Center of expertise in psychiatry and psychology, specializing in the management of psychiatric disorders.</p>
+            </div>
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="equipe.html">Our Team</a></li>
+                    <li><a href="troubles.html">The Assessed Disorders</a></li>
+                    <li><a href="prises-en-charge.html">Treatment Options</a></li>
+                    <li><a href="rendez-vous.html">Book an Appointment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                    <h5>Information</h5>
+                <ul>
+                    <li><a href="mentions-legales.html">Legal Notice</a></li>
+                    <li><a href="confidentialite.html">Privacy Policy</a></li>
+                    <li><a href="conditions-utilisation.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h5>Contact</h5>
+                <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 14 rue de la pépinière 75008 Paris</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 20 avenue Philippe Auguste, 75011 Paris</li>
+                </ul>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CÉDIAPSY. All rights reserved. | Designed by <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+            </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

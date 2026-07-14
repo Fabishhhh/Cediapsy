@@ -10,35 +10,90 @@
 <body>
 
     <!-- Barre de navigation principale -->
-    <header class="main-header header-solid">
-        <div class="header-container">
-            <div class="logo">
+<header class="main-header header-solid">
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="index.html">
                 <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
-            </div>
-            <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="equipe.html" class="nav-link active">Notre équipe</a></li>
-                    <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
-                    <li><a href="prises-en-charge.html" class="nav-link">Prises en charge</a></li>
-                    <li><a href="rendez-vous.html" class="nav-link">Prendre rendez-vous</a></li>
-                </ul>
-            </nav>
-
-                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-
-            <div class="header-actions">
-                <a href="contact.html" class="btn btn-primary">Contact</a>
-                <button class="burger-menu" id="burgerBtn">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+            </a>
         </div>
-    </header>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="equipe.html" class="nav-link active">
+                        Notre équipe
+                    </a>
+                </li>
+
+                <li>
+                    <a href="troubles.html" class="nav-link">
+                        Les troubles évalués
+                    </a>
+                </li>
+
+                <li>
+                    <a href="prises-en-charge.html" class="nav-link">
+                        Prises en charge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="rendez-vous.html" class="nav-link">
+                        Prendre rendez-vous
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-contact-link">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-language-link">
+                    <a href="en/index.html" class="nav-link">
+                        🇬🇧 English
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="burger-menu"
+                id="burgerBtn"
+                aria-label="Ouvrir le menu de navigation"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Visible sur ordinateur -->
+        <div class="header-actions">
+
+            <a href="en/index.html" class="language-btn">
+                EN
+            </a>
+
+            <a href="contact.html" class="btn btn-primary">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+</header>
 
     <main class="team-page-wrapper">
         <!-- Section Titre et Fil d'Ariane -->
@@ -277,9 +332,9 @@
             <div class="details-col">
                 <h5><i class="fa-solid fa-stethoscope"></i> Spécialités</h5>
                 <ul>
-                    <li>TCC, ACT, Hypnose</li>
                     <li>Troubles bipolaires</li>
-                    <li>Bilans (personnalité/attentionnel)</li>
+                    <li>Thérapies Cognitives et Comportementales (TCC)</li>
+                    <li>Hypnothérapie</li>
                 </ul>
             </div>
 
@@ -287,9 +342,9 @@
                 <h5><i class="fa-solid fa-graduation-cap"></i> Formation</h5>
                 <div class="formation-content-wrapper">
                 <ul>
-                    <li>Master II Psychologie (Nanterre)</li>
-                    <li>Thérapie Interpersonnelle</li>
-                    <li>Thérapie des Schémas (Young)</li>
+                    <li>Master en Psychopathologie et Psychologie Clinique, Empirique et TCC</li>
+                    <li>Université Paris Nanterre</li>
+                    <li>Formation en Thérapie interpersonnelle et en Hypnothérapie</li>
                 </ul>
                     <div class="prof-qrcode-area">
                         <img src="images/codeqr_celinehebbache.png" alt="QR Code Prise de rendez-vous">

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatment Options - CÉDIAPSY</title>
+    <!-- Même fichier style.css unique -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Pour les icônes de la maquette -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS de secours pour s'assurer que la modal s'affiche avec la classe active */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-overlay.active {
+            display: flex !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -------------------------------------------------------------
+       EN-TÊTE DE LA PAGE (HEADER COMMUN)
+       ------------------------------------------------------------- -->
+<header class="main-header header-solid">
+    <div class="header-container">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/Logo_Cediapsy_noir (1).png"
+                         alt="CÉDIAPSY Logo">
+                </a>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="equipe.html" class="nav-link">
+                            Our Team
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="troubles.html" class="nav-link">
+                            Conditions Assessed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="prises-en-charge.html" class="nav-link">
+                            Care Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="rendez-vous.html" class="nav-link">
+                            Book an Appointment
+                        </a>
+                    </li>
+
+                    <!-- Contact visible dans le menu burger -->
+                    <li class="mobile-contact-link">
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                                        <!-- Visible uniquement dans le menu burger -->
+                    <li class="mobile-language-link">
+                        <a href="../index.html" class="nav-link">
+                            🇫🇷 Français
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="burger-menu"
+                    id="burgerBtn"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Visible sur ordinateur -->
+            <div class="header-actions">
+
+                <a href="../index.html" class="language-btn">
+                    FR
+                </a>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- -------------------------------------------------------------
+       FIL D'ARIANE ET INTRO DE LA PAGE
+       ------------------------------------------------------------- -->
+    <section class="page-intro-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>&gt;</span> <span class="current">Prises en charge</span>
+            </div>
+            <h1 class="page-main-title">Treatment Options</h1>
+            <p class="page-subtitle">Therapeutic, cognitive, and behavioral approaches tailored to each patient and grounded in science.</p>
+            
+<div class="anchors-container">
+    <a href="#prise-tnd" class="anchor-btn">NDD</a>
+    <a href="#avis-specialise" class="anchor-btn">Specialized Opinion</a>
+    <a href="#psychiatrie-generale" class="anchor-btn">General Psychiatry</a>
+    <a href="#therapies" class="anchor-btn">Therapies</a>
+    <a href="#groupes-tnd" class="anchor-btn">NDD Groups</a>
+    <a href="#memoire" class="anchor-btn">Memory Consultations</a>
+</div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       LISTE DES PRESTATIONS / SOINS
+       ------------------------------------------------------------- -->
+    <main class="care-main-container">
+        <div class="container">
+
+            <!-- CARD 1 : TND -->
+            <article id="prise-tnd" class="care-card side-emerald">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div>
+                            <h3>NDD</h3>
+                            <span class="care-tag-sub">ASD / ADHD</span>
+                        </div>
+                    </div>
+                    <p class="care-description">Specialized care for neurodevelopmental disorders in children, adolescents, and adults. Diagnostic assessments and personalized support.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Treatment Options</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> ASD</li>
+                            <li><i class="fa-regular fa-circle-check"></i> ADHD</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Specialized Assessments</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Psychiatric Follow-up</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Personalized Support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatrists</span>
+                        <p class="meta-value">
+                            Dr. Isabelle Scheid (ASD)<br>
+                            Dr. Franck Rolland (ADHD)
+                        </p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Psychologists  / Neuropsychologists</span>
+                        <p class="meta-value">Ms. Doïna Mazière</p>
+                        <p class="meta-value">Ms. Claire Saget</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <p class="meta-value">Paris 8th and Paris 11th</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="tnd">
+                        Book an Appointment <i class="fa-solid fa-arrow-right"></i>
+                    </a>             
+                </div>
+            </article>
+
+            <!-- CARD 2 : Avis spécialisé -->
+            <article id="avis-specialise" class="care-card side-sage">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div>
+                            <h3>Specialized Opinion</h3>
+                        </div>
+                    </div>
+                    <p class="care-description">Specialized consultations for the diagnosis and management of psychiatric disorders.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Indications</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Bipolar Disorders</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Schizophrenia</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Other Psychiatric Disorders</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatrist</span>
+                        <p class="meta-value">Dr. Nora Hamdani</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <p class="meta-value">Paris 8th</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="avis">
+                        Book an Appointment <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- CARD 3 : Suivi Classique -->
+            <article id="psychiatrie-generale" class="care-card side-light-green">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div>
+                            <h3>General Psychiatry</h3>                        
+                        </div>
+                    </div>
+                    <p class="care-description">Evaluation, diagnosis and treatment of common psychiatric disorders in adults and adolescents.</p>
+                    
+                    <div class="care-benefits-block">
+                        <h4>Indications</h4>
+                        <ul class="care-benefits-list">
+    <li><i class="fa-regular fa-circle-check"></i> Anxiety and Depressive Disorders</li>
+    <li><i class="fa-regular fa-circle-check"></i> Mood Disorders</li>
+    <li><i class="fa-regular fa-circle-check"></i> Diagnosis of Psychiatric Disorders in Adults</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatrists</span>
+                        <p class="meta-value">
+                            Dr. Zeyad Al Salloum<br>
+                            Dr. Franck Rolland<br>
+                            Dr. Nora Hamdani
+                        </p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <p class="meta-value">Paris 8th</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="suivi">
+                        Book an Appointment <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- CARD 4 : Thérapies -->
+            <article id="therapies" class="care-card side-teal">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                        <div>
+                            <h3>Therapies</h3>
+                            <span class="care-tag-sub">CBT / Hypnosis</span>
+                        </div>
+                    </div>
+                    <p class="care-description">Targeted, structured, evidence-based psychotherapies to support change and relieve psychological distress.</p>
+                    <div class="care-benefits-block">
+                        <h4>Approaches</h4>
+                        <ul class="care-benefits-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Cognitive Behavioral Therapies (CBT)</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Hypnosis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="care-meta-sidebar">
+                    <div class="meta-item">
+                        <span class="meta-label">Psychiatrist</span>
+                        <p class="meta-value">Dr. Franck Rolland (ADHD)</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Psychologists</span>
+                        <p class="meta-value">Ms. Doïna Mazière</p>
+                        <p class="meta-value">Ms. Céline Hebbache</p>
+                        <p class="meta-value">Ms. Laura Guedj</p>
+                    </div>
+                                        <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <p class="meta-value">Paris 8th</p>
+                    </div>
+                    <a href="#" class="btn btn-care-action open-modal" data-modal="therapie">
+                        Book an Appointment <i class="fa-solid fa-arrow-right"></i>
+                    </a>              
+                </div>
+            </article>
+
+            <!-- CARD 5 : Groupes TND -->
+<article id="groupes-tnd" class="care-card side-red">
+    <div class="care-main-info">
+        <div class="care-title-block">
+            <div class="care-icon-box">
+            </div>
+
+            <div>
+                <h3>NDD Groups</h3>
+                <span class="care-tag-sub">ASD / ADHD</span>
+            </div>
+        </div>
+
+        <p class="care-description">
+            Social skills training designed for children and adults with neurodevelopmental disorders.
+        </p>
+
+        <div class="care-benefits-block">
+            <h4>Groups Offered</h4>
+
+            <ul class="care-benefits-list">
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    Child NDD
+                </li>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    Adult NDD
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="care-meta-sidebar">
+        <div class="meta-item">
+            <span class="meta-label">Psychologist</span>
+            <p class="meta-value">Ms. Doïna Mazière</p>
+        </div>
+
+        <div class="meta-item">
+            <span class="meta-label">Contact</span>
+            <p class="meta-value">Doctolib</p>
+        </div>
+
+                            <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <p class="meta-value">Paris 8th and Paris 11th</p>
+                    </div>
+
+<div class="resource-download-zone" style="margin-top: 25px; margin-bottom: 30px; padding: 15px; border: 1px dashed #16a085; background-color: #eef9f6; border-radius: 6px;">
+    <p style="margin: 0 0 10px 0; font-weight: bold; color: #16a085;">
+        <i class="fa-solid fa-download"></i> Downloadable documents
+    </p>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="images/document_enfant.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
+            Child EHS presentation
+        </a>
+
+        <a href="images/plaquette_enfant.png" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
+            Child brochure
+        </a>
+
+        <a href="documents/presentation-doinamaziere.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
+            Adult EHS presentation
+        </a>
+
+        <a href="images/plaquette_doinamaziere.png" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
+            Adult brochure
+        </a>
+    </div>
+</div>
+
+        <a href="#" class="btn btn-care-action open-modal" data-modal="groupes">
+            Book an appointment
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</article>
+
+<!-- CARD 6 : Consultations mémoire -->
+<article id="memoire" class="care-card side-amber">
+    <div class="care-main-info">
+        <div class="care-title-block">
+            <div class="care-icon-box">
+            </div>
+            <div>
+                <h3>Memory Consultations</h3>
+                <span class="care-tag-sub">Assessment • Support</span>
+            </div>
+        </div>
+
+        <p class="care-description">
+            Evaluation, assessment and support for memory disorders and cognitive functions.
+        </p>
+
+        <div class="care-benefits-block">
+<h4>Support Services</h4>
+<ul class="care-benefits-list">
+    <li><i class="fa-regular fa-circle-check"></i> Memory Assessment</li>
+    <li><i class="fa-regular fa-circle-check"></i> Support</li>
+    <li><i class="fa-regular fa-circle-check"></i> Bipolar Disorders</li>
+    <li><i class="fa-regular fa-circle-check"></i> Multiple Sclerosis</li>
+    <li><i class="fa-regular fa-circle-check"></i> Stroke</li>
+    <li><i class="fa-regular fa-circle-check"></i> Parkinson's Disease</li>
+    <li><i class="fa-regular fa-circle-check"></i> Traumatic Brain Injury</li>
+</ul>
+        </div>
+    </div>
+
+    <div class="care-meta-sidebar">
+        <div class="meta-item">
+            <span class="meta-label">Neuropsychologist</span>
+            <p class="meta-value">Ms. Claire Saget</p>
+        </div>
+
+        <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <p class="meta-value">Paris 8th Arrondissement</p>
+        </div>
+
+        <a href="#" class="btn btn-care-action open-modal" data-modal="memoire">
+            Book an appointment <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</article>
+        </div>
+    </main>
+
+    <!-- -------------------------------------------------------------
+       SECTION BAS DE PAGE : NOTRE APPROCHE THÉRAPEUTIQUE
+       ------------------------------------------------------------- -->
+    <section class="approach-section">
+        <div class="container">
+            <h2 class="approach-main-title">Our Therapeutic Approach</h2>
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-num">1</div>
+                    <h3>Assessment</h3>
+                    <p>Understanding your needs and journey to offer you the most appropriate care options.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-num">2</div>
+                    <h3>Personalization</h3>
+                    <p>Adapting our therapeutic methods to your profile and personal goals.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-num">3</div>
+                    <h3>Support</h3>
+                    <p>To support you at every step of your journey towards lasting well-being and autonomy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       PIED DE PAGE (FOOTER COMMUN)
+       ------------------------------------------------------------- -->
+    <footer class="main-footer">
+        <div class="container">
+             <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="index.html" class="logo inverted">
+              <img src="../images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
+              </a>
+              <p>Centre of expertise in psychiatry and psychology, specialized in supporting individuals with psychiatric disorders.</p>
+            </div>
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="equipe.html">Our Team</a></li>
+                    <li><a href="troubles.html">The Assessed Disorders</a></li>
+                    <li><a href="prises-en-charge.html">Treatment Options</a></li>
+                    <li><a href="rendez-vous.html">Book an Appointment</a></li>
+                </ul>
+                </div>
+
+            <div class="footer-links">
+                    <h5>Informations</h5>
+                <ul>
+                    <li><a href="mentions-legales.html">Legal Notices</a></li>
+                    <li><a href="confidentialite.html">Privacy Policy</a></li>
+                    <li><a href="conditions-utilisation.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Management</a></li>
+                </ul>
+            </div>
+            
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 14 rue de la pépinière 75008 Paris</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 20 avenue Philippe Auguste, 75011 Paris</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CÉDIAPSY. All rights reserved. | Designed by <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+            </div>
+        </div>
+</footer>
+
+<!-- =============================================================
+     POPUP RENDEZ-VOUS UNIQUE
+     ============================================================= -->
+<div class="modal-overlay" id="modal-rdv">
+    <div class="modal-box">
+        <button class="modal-close" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 30px; cursor: pointer; color: #333;">&times;</button>
+        <h2 id="modal-title" style="margin-top: 10px;">Choose your practitioner</h2>
+        <p style="margin-bottom: 20px; color: #666;">You will be redirected to Doctolib.</p>
+        <div id="modal-content" class="modal-praticiens">
+            <!-- The cards will be added automatically by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

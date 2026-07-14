@@ -204,6 +204,34 @@ body {
     justify-content:space-between;
 }
 
+.header-solid .language-btn {
+    color: #000;
+    border: 1px solid #d1d5db;
+    background: transparent;
+}
+
+.header-solid .language-btn:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.mobile-language-link,
+.mobile-contact-link {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .mobile-language-link,
+    .mobile-contact-link {
+        display: block;
+    }
+
+    .header-actions {
+        display: none;
+    }
+}
 /* ===========================
    LOGO
 =========================== */
@@ -275,26 +303,33 @@ body {
    ACTIONS
 =========================== */
 
-.header-actions{
-    display:flex;
-    align-items:center;
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 32px;
+    flex-shrink: 0;
 }
 
-.header-actions .btn{
-    padding:12px 28px;
-    border-radius:999px;
-    background:white;
-    color:var(--primary);
-    font-weight:600;
-    transition:.35s ease;
-    margin-left: 60px;
+.header-actions .btn {
+    padding: 12px 28px;
+    border-radius: 999px;
 
+    background: #ffffff;
+    color: var(--primary);
+
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    margin: 0;
+    transition: var(--transition);
 }
 
-.header-actions .btn:hover{
-    background:var(--primary);
-    color:white;
-    transform:translateY(-2px);
+.header-actions .btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .language-switcher {
@@ -319,6 +354,39 @@ body {
     background-color: #000000;
     color: #ffffff;
     border-color: #000000;
+}
+
+.language-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 62px;
+    height: 48px;
+    padding: 0 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    transition: var(--transition);
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #ffffff;
+    transform: translateY(-2px);
 }
 
 /* -------------------------------------------------------------

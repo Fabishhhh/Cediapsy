@@ -33,32 +33,90 @@
     <!-- -------------------------------------------------------------
        EN-TÊTE DE LA PAGE (HEADER COMMUN)
        ------------------------------------------------------------- -->
-    <header class="main-header header-solid">
-        <div class="header-container">
-            <div class="logo">
+<header class="main-header header-solid">
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="index.html">
                 <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
-            </div>
-            <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="equipe.html" class="nav-link">Notre équipe</a></li>
-                    <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
-                    <li><a href="prises-en-charge.html" class="nav-link active">Prises en charge</a></li>
-                    <li><a href="rendez-vous.html" class="nav-link">Prendre rendez-vous</a></li>
-                </ul>
-            </nav>
-
-                <button class="burger-menu" id="burgerBtn" aria-label="Menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-
-            <div class="header-actions">
-                <a href="contact.html" class="btn btn-primary">Contact</a>
-            </div>
+            </a>
         </div>
-    </header>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="equipe.html" class="nav-link">
+                        Notre équipe
+                    </a>
+                </li>
+
+                <li>
+                    <a href="troubles.html" class="nav-link">
+                        Les troubles évalués
+                    </a>
+                </li>
+
+                <li>
+                    <a href="prises-en-charge.html" class="nav-link active">
+                        Prises en charge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="rendez-vous.html" class="nav-link">
+                        Prendre rendez-vous
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-contact-link">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-language-link">
+                    <a href="en/index.html" class="nav-link">
+                        🇬🇧 English
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="burger-menu"
+                id="burgerBtn"
+                aria-label="Ouvrir le menu de navigation"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Visible sur ordinateur -->
+        <div class="header-actions">
+
+            <a href="en/index.html" class="language-btn">
+                EN
+            </a>
+
+            <a href="contact.html" class="btn btn-primary">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+</header>
 
     <!-- -------------------------------------------------------------
        FIL D'ARIANE ET INTRO DE LA PAGE
@@ -126,7 +184,7 @@
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Lieu</span>
-                        <p class="meta-value">Paris 8e</p>
+                        <p class="meta-value">Paris 8e et Paris 11e</p>
                     </div>
                     <a href="#" class="btn btn-care-action open-modal" data-modal="tnd">
                         Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
@@ -295,7 +353,7 @@
 
                             <div class="meta-item">
                         <span class="meta-label">Lieu</span>
-                        <p class="meta-value">Paris 8e</p>
+                        <p class="meta-value">Paris 8e et Paris 11e</p>
                     </div>
 
 <div class="resource-download-zone" style="margin-top: 25px; margin-bottom: 30px; padding: 15px; border: 1px dashed #16a085; background-color: #eef9f6; border-radius: 6px;">

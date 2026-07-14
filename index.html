@@ -14,38 +14,95 @@
 
     <div class="hero-overlay"></div>
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
+<header class="main-header">
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="index.html">
                 <img src="images/Logo_Cediapsy_blanc.png" alt="Logo CÉDIAPSY">
-            </div>
-
-            <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
-                    <li><a href="equipe.html" class="nav-link">Notre équipe</a></li>
-                    <li><a href="troubles.html" class="nav-link">Les troubles évalués</a></li>
-                    <li><a href="prises-en-charge.html" class="nav-link">Prises en charge</a></li>
-                    <li><a href="rendez-vous.html" class="nav-link">Prendre rendez-vous</a></li>
-                </ul>
-            </nav>
-
-            <button class="burger-menu" id="burgerBtn" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="header-actions">
-                <a href="contact.html" class="btn btn-primary">Contact</a>
-            </div>
+            </a>
         </div>
-    </header>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="equipe.html" class="nav-link">
+                        Notre équipe
+                    </a>
+                </li>
+
+                <li>
+                    <a href="troubles.html" class="nav-link">
+                        Les troubles évalués
+                    </a>
+                </li>
+
+                <li>
+                    <a href="prises-en-charge.html" class="nav-link">
+                        Prises en charge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="rendez-vous.html" class="nav-link">
+                        Prendre rendez-vous
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-contact-link">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- Visible uniquement dans le menu burger -->
+                <li class="mobile-language-link">
+                    <a href="en/index.html" class="nav-link">
+                        🇬🇧 English
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="burger-menu"
+                id="burgerBtn"
+                aria-label="Ouvrir le menu de navigation"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Visible sur ordinateur -->
+        <div class="header-actions">
+
+            <a href="en/index.html" class="language-btn">
+                EN
+            </a>
+
+            <a href="contact.html" class="btn btn-primary">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+</header>
 
     <div class="container hero-container">
         <h1>CÉDIAPSY</h1>
         <p class="hero-subtitle">
-            Cabinet d'évaluation diagnostique en psychiatrie.</p>
+            Cabinet d'évaluation diagnostique en psychiatrie</p>
 <!-- Commentaire : Phrase mise de côté au cas où elle la réclame 
     <p class="hero-description">Nous accompagnons enfants, adolescents et adultes vers un équilibre psychologique durable.</p> 
     -->
@@ -277,11 +334,11 @@
 
     <div class="team-card">
         <div class="avatar-wrapper">
-            <img src="images/Celine_Hebbache.png" alt="Madame Céline Hebbache">
+            <img src="images/Celine-Hebbache.png" alt="Madame Céline Hebbache">
         </div>
         <h4>Madame Céline Hebbache</h4>
         <p class="role">Psychologue</p>
-        <span class="specialty">TCC, Groupes thérapeutiques</span>
+        <span class="specialty">TCC, Hypnose, Bipolaire</span>
     </div>
 
     <div class="team-card">

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Assessed Disorders - CÉDIAPSY</title>
+    <!-- On relie le MEME fichier style.css unique -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Pour les petites icônes (cochées, flèches, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- -------------------------------------------------------------
+       EN-TÊTE DE LA PAGE (HEADER COMMUN)
+       ------------------------------------------------------------- -->
+<header class="main-header header-solid">
+    <div class="header-container">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/Logo_Cediapsy_noir (1).png"
+                         alt="CÉDIAPSY Logo">
+                </a>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="equipe.html" class="nav-link">
+                            Our Team
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="troubles.html" class="nav-link">
+                            Conditions Assessed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="prises-en-charge.html" class="nav-link">
+                            Care Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="rendez-vous.html" class="nav-link">
+                            Book an Appointment
+                        </a>
+                    </li>
+
+                    <!-- Contact visible dans le menu burger -->
+                    <li class="mobile-contact-link">
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                                        <!-- Visible uniquement dans le menu burger -->
+                    <li class="mobile-language-link">
+                        <a href="../index.html" class="nav-link">
+                            🇫🇷 Français
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="burger-menu"
+                    id="burgerBtn"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Visible sur ordinateur -->
+            <div class="header-actions">
+
+                <a href="../index.html" class="language-btn">
+                    FR
+                </a>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- -------------------------------------------------------------
+       FIL D'ARIANE ET INTRO DE LA PAGE
+       ------------------------------------------------------------- -->
+    <section class="page-intro-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>&gt;</span> <span class="current">The Assessed Disorders</span>
+            </div>
+            <h1 class="page-main-title">The Assessed Disorders</h1>
+            <p class="page-subtitle">Therapeutic, cognitive and behavioral approaches adapted to each structure and scientifically grounded.</p>
+            
+            <!-- Petits boutons d'ancrage pour sauter directement à un trouble -->
+            <div class="anchors-container">
+                <a href="#tnd" class="anchor-btn">NDD (ASD / ADHD)</a>
+                <a href="#bipolaire" class="anchor-btn">Bipolar Disorders</a>
+                <a href="#psychiatrie" class="anchor-btn">General Psychiatry</a>
+                <a href="#schizo" class="anchor-btn">Schizophrenia</a>
+                <a href="#memoire" class="anchor-btn">Memory Consultations</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------
+       SECTION CONTENU DES TROUBLES
+       ------------------------------------------------------------- -->
+<main class="troubles-main-container">
+    <div class="container">
+
+        <article id="tnd" class="trouble-card-block">
+            <div class="trouble-hero-banner tsa-bg">
+                <h2>NDD (ASD / ADHD)</h2>
+            </div>
+
+<aside class="trouble-sidebar-box">
+    <h5>Professionals dedicated</h5>
+
+    <p>
+        <strong>Psychiatrists</strong><br>
+        Dr. Isabelle Scheid (ASD)<br>
+        Dr. Franck Rolland (ADHD)
+    </p>
+
+    <p>
+        <strong>Psychologist</strong><br>
+        Ms. Doïna Mazière
+    </p>
+
+    <div class="trouble-actions">
+        <a href="prises-en-charge.html?open=tnd#prise-tnd" class="btn">
+            Book an Appointment
+        </a>
+
+        <a href="prises-en-charge.html?open=groupes#groupes-tnd" class="btn">
+            See TND Groups
+        </a>
+    </div>
+</aside>
+        </article>
+
+<article id="bipolaire" class="trouble-card-block">
+    <div class="trouble-hero-banner bipolaire-bg">
+        <h2>Bipolar Disorders</h2>
+    </div>
+
+    <aside class="trouble-sidebar-box">
+        <h5>Professionals dedicated</h5>
+
+        <p>
+            <strong>Psychiatrist</strong><br>
+            Dr. Nora Hamdani
+        </p>
+
+        <div class="trouble-actions">
+            <a href="prises-en-charge.html?open=avis#avis-specialise" class="btn">
+                Book an Appointment
+            </a>
+        </div>
+    </aside>
+</article>
+
+        <article id="psychiatrie" class="trouble-card-block">
+            <div class="trouble-hero-banner anxiete-bg">
+                <h2>General Psychiatry</h2>
+            </div>
+
+            <aside class="trouble-sidebar-box">
+                <h5>Professionals dedicated</h5>
+                <p><strong>Psychiatrists</strong><br>Dr. Nora Hamdani<br>Dr. Zeyad Al Salloum<br>Dr. Franck Rolland</p>
+                <a href="prises-en-charge.html?open=suivi#psychiatrie-generale" class="btn">Book an Appointment</a>
+            </aside>
+        </article>
+
+        <article id="schizo" class="trouble-card-block">
+            <div class="trouble-hero-banner schizo-bg">
+                <h2>Schizophrenia</h2>
+            </div>
+
+            <aside class="trouble-sidebar-box">
+                <h5>Professionals dedicated</h5>
+                <p><strong>Psychiatrist</strong><br>Dr. Nora Hamdani</p>
+                <a href="prises-en-charge.html?open=avis#avis-specialise" class="btn">Book an Appointment</a>
+            </aside>
+        </article>
+
+<article id="memoire" class="trouble-card-block">
+    <div class="trouble-hero-banner memoire-bg">
+        <h2>Memory Consultations</h2>
+    </div>
+
+    <aside class="trouble-sidebar-box">
+        <h5>Professionals dedicated</h5>
+
+        <p>
+            <strong>Neuropsychologist</strong><br>
+            Ms. Claire Saget
+        </p>
+
+        <div class="trouble-actions">
+            <a href="prises-en-charge.html?open=memoire#memoire" class="btn">
+                Book an Appointment
+            </a>
+        </div>
+    </aside>
+</article>
+
+    </div>
+</main>
+
+    <!-- -------------------------------------------------------------
+       PIED DE PAGE (FOOTER COMMUN)
+       ------------------------------------------------------------- -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo inverted">
+                        <img src="../images/Logo_Cediapsy_blanc.png" alt="CÉDIAPSY Logo Footer">
+                    </a>
+                    <p>Center of expertise in psychiatry and psychology, specializing in the management of psychiatric disorders.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="equipe.html">Our Team</a></li>
+                        <li><a href="troubles.html">The Assessed Disorders</a></li>
+                        <li><a href="prises-en-charge.html">Treatment Options</a></li>
+                        <li><a href="rendez-vous.html">Book an Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h5>Information</h5>
+                    <ul>
+                        <li><a href="mentions-legales.html">Legal Notice</a></li>
+                        <li><a href="confidentialite.html">Privacy Policy</a></li>
+                        <li><a href="conditions-utilisation.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Contact</h5>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 14 rue de la pépinière 75008 Paris</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 20 avenue Philippe Auguste, 75011 Paris</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CÉDIAPSY. All rights reserved. | Designed by <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

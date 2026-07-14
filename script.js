@@ -85,107 +85,205 @@ document.addEventListener("DOMContentLoaded", function () {
     const data = {
         celine: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Diplômée de l’université Nanterre Paris 10 en 2015 en psychopathologie et psychologie clinique, empirique et TCC, Céline Hebbache s'inscrit dans une démarche thérapeutique multi-référentielle et éclectique. Elle est également formée en thérapie interpersonnelle, en thérapie ACT, en Hypnose Ericksonienne, nouvelle hypnose et PNL.</p>
-            <p>Particulièrement intéressée par le concept de personnalité et de schémas de fonctionnement, elle utilise l'approche thérapeutique développée par Jeffrey E. Young ainsi que la thérapie ACT.</p>
-            <h4>Services &amp; Prises en charge</h4>
-            <ul>
-                <li>Prise en charge psychothérapeutique</li>
-                <li>Bilan de personnalité</li>
-                <li>Bilan attentionnel</li>
-                <li>Groupes thérapeutiques</li>
-            </ul>
+            <p>Céline HEBBACHE est psychologue clinicienne. Diplômée de l’université Nanterre Paris X en 2015 en psychopathologie et psychologique clinique, empirique et TCC (thérapies comportementales et cognitives), elle est également formée en thérapie interpersonnelle et en hypnothérapie.
+Impliquée depuis plusieurs années dans la Recherche, les thèmes d’étude portent sur la dépression post-partum, la dépression, l’immunopsychiatrie, la définition d’un algorithme prédictif du risque suicidaire. Les publics concernés sont multiples: trouble anxieux, trouble de l'humeur (unipolaire ou bipolaire), trouble psychotique, trouble de la personnalité.
+Elle travaille depuis plusieurs années au centre-expert Bipolaire de l’hôpital Chenevier, ayant développé une expertise dans l’évaluation diagnostique et thérapeutique de patients souffrant de troubles bipolaires. L’animation de groupes de Psychoéducation des troubles bipolaires, de gestion des émotions et d’affirmation de soi fait également partie des compétences acquises au cours des années de pratique.</p>
         `,
 
         nora: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Le docteur Nora HAMDANI est médecin psychiatre, ancienne chef de clinique des hôpitaux de Paris et responsable médical d’unités d’hospitalisation.</p>
-            <p>Titulaire d'un Master II et d'une Thèse de Sciences en pharmacogénétique, elle a également obtenu l’Habilitation à Diriger les Recherches pour ses travaux en immunopsychiatrie.</p>
-            <h4>Articles récents</h4>
-            <ul>
-                <li>Gay F, Romeo B, Martelli C, Benyamina A, Hamdani N. <em>Cytokines changes associated with electroconvulsive therapy...</em></li>
-                <li>Romeo B, Lester V, Martelli C, Benyamina A, Hamdani N. <em>Cannabis Cessation, Inflammatory Markers and Schizophrenia.</em></li>
-                <li>Romeo B, Mazari A, Ali-Diabacte H, Lestra V, Martelli C, Benyamina A, Hamdani N. <em>White blood cells and patients with psychiatric disorders needing seclusion.</em></li>
-            </ul>
+            <p>Le docteur Nora HAMDANI est médecin psychiatre.
+
+Elle a obtenu le concours de médecine à la Faculté Paris VII puis le concours de l’internat en psychiatrie à Paris.
+
+Interne dans les hôpitaux de Paris, elle a obtenu un Master II (Psychopathologie et Neurobiologie du développement et des comportements, Université Pierre et Marie Curie sur le « Rôle du gène codant pour le récepteur 5-HT2A dans la réponse thérapeutique aux antipsychotiques chez 90 patients schizophrènes ».
+
+Médaillée d’argent et Lauréate de l’université Paris Diderot pour sa thèse de médecine intitulée «La prévention secondaire des suicidants : les interventions et leurs limites», elle obtient par la suite sa spécialité en psychiatrie avec une mention très bien sur  « Les facteurs de résistance aux antipsychotiques dans la schizophrénie ».
+
+Titulaire de son diplôme de psychiatre, elle est recrutée deux ans par l’INSERM en tant que médecin chercheur ce qui lui permet de soutenir une thèse de sciences « Pharmacogénétique de la schizophrénie » avec une mention très honorable. Elle poursuivra ses travaux de recherche sur « Infection, Immunité et psychoses », ce qui lui vaudra d’obtenir l’habilitation à diriger les recherches (HDR). Elle poursuit ses travaux en lien avec un service universitaire parisien sur la piste infectieuse, inflammatoire et digestive de la schizophrénie, du trouble bipolaire ou des traumatismes. Elle a publié de nombreux articles dans des revues internationales (https://www.ncbi.nlm.nih.gov/pubmed/?term=nora+hamdani).
+
+Ancienne chef de clinique des hôpitaux de Paris puis responsable médical d’unités d’hospitalisation, elle a exercé plus de quinze ans dans les hôpitaux psychiatriques universitaires et a pu ainsi évaluer des milliers de patients souffrant de pathologies diverses notamment les troubles bipolaires et la schizophrénie.
+
+Son expérience double clinique et scientifique permettra de réfléchir avec vous sur les pistes non explorées à l’origine de vos troubles afin de vous proposer des prises en charge ciblées ainsi qu’une évaluation clinique fine et précise grâce à la durée des entretiens.
+
+​
+
+https://expertscape.com/au/bipolar+and+related+disorders/Hamdani%2C+N
+
+​
+
+https://expertscape.com/ex/bipolar+and+related+disorders/c/fr</p>
+<h4>Articles récents</h4>
+<ul>
+    <li>
+        Gay F, Romeo B, Martelli C, Benyamina A, Hamdani N.
+        <em>Cytokines changes associated with electroconvulsive therapy in patients with treatment-resistant depression: a Meta-analysis.</em>
+        Psychiatry Res. 2021 Mar;297:113735.
+    </li>
+
+    <li>
+        Romeo B, Lester V, Martelli C, Benyamina A, Hamdani N.
+        <em>Cannabis Cessation, Inflammatory Markers and Schizophrenia.</em>
+        J Dual Diagn. 2022;18(1):33-41.
+    </li>
+
+    <li>
+        Lestra V, Romeo B, Martelli C, Benyamina A, Hamdani N.
+        <em>Could CRP be a differential biomarker of illness stages in schizophrenia? A systematic review and meta-analysis.</em>
+        2022;246:175-186.
+    </li>
+
+    <li>
+        Romeo B, Lestra V, Martelli C, Amirouche A, Benyamina A, Hamdani N.
+        <em>The modulated role of Toxoplasma Gondii on eosinophils in psychiatric disorders after cannabis cessation.</em>
+        Pathogens. 2023;12(11):1333.
+    </li>
+
+    <li>
+        Romeo B, Lestra V, Martelli C, Amirouche A, Benyamina A, Hamdani N.
+        <em>Increased markers of inflammation after cannabis cessation and their association with psychotic symptoms.</em>
+        Acta Neuropsychiatr. 2024 Apr 28;1-10. doi:10.1017/neu.2023.24.
+    </li>
+
+    <li>
+        Romeo B, Mazari A, Ali-Diabacte H, Lestra V, Martelli C, Benyamina A, Hamdani N.
+        <em>White blood cells and patients with psychiatric disorders needing seclusion: A retrospective non-interventional study.</em>
+        Encephale. 2024 Apr 21:S0013-7006.
+    </li>
+
+    <li>
+        <em>Could peripheral immunological markers discriminate schizophrenia and schizoaffective disorders from bipolar disorder?</em>
+        In press, Journal of Psychiatric Research.
+    </li>
+</ul>
         `,
 
         isabelle: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>La docteure Isabelle SCHEID est psychiatre, ancienne Cheffe de Clinique des hôpitaux de Paris. Elle est spécialisée dans la psychopathologie de l’adulte et les TSA.</p>
-            <p>Elle a exercé au Centre Expert TSA pour adultes à l’hôpital Chenevier et au Centre Expert enfants et adolescents de l’hôpital Robert Debré.</p>
-        `,
+            <p>La docteure Isabelle SCHEID est psychiatre. Elle a obtenu le concours de médecine à la Faculté Paris V puis le concours de l’internat en psychiatrie à Paris.
+Ancienne Cheffe de Clinique des hôpitaux de Paris dans le service de psychiatrie de l’hôpital Hôtel Dieu, la Dre Isabelle SCHEID est également titulaire d’un Master 2 en neurosciences, au cours duquel elle a travaillé sur les facteurs génétiques impliqués dans les TSA.
+Psychiatre d’adultes, la Dre Isabelle SCHEID a travaillé 6 années au Centre Expert TSA SDI adultes à l’hôpital Chenevier, dont 2 années  de temps partagé avec le Centre Expert TSA SDI enfants et adolescents à l’hôpital Robert Debré. Elle a été 2 ans coordinatrice du réseau des Centres Experts TSA SDI France. La Dre SCHEID a contribué à plusieurs article au sujet des TSA. La Dre SCHEID a également travaillé 2 ans au Dispositif de Soins Partagés 94. Ces différents postes ont permis au Dr SCHEID d’acquérir une expérience de la psychopathologie de l’adulte, particulièrement des TSA mais également des troubles anxieux et post-traumatiques.
+Le Dr SCHEID utilise son expérience et ses connaissances au sujet des TSA pour proposer une évaluation pour tous les adultes (à partir de 18 ans) se posant la question de ce diagnostic à leur sujet.
 
+
+</p>
+                    `,
         zeyad: `
-            <h4>Biographie &amp; Parcours</h4>
-            <p>Le docteur Zeyad AL SALLOUM est médecin psychiatre et exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris.</p>
-            <h4>Champs d'expertise &amp; Prises en charge</h4>
-            <ul>
-                <li>Troubles anxieux</li>
-                <li>Troubles bipolaires</li>
-                <li>Psychotraumatismes</li>
-                <li>Clinique de l'adolescent et du jeune adulte</li>
-            </ul>
-        `,
+<h4>Biographie &amp; Parcours</h4>
+    <p>
+        Le docteur Zeyad AL SALLOUM est médecin psychiatre. Il exerce en tant que Praticien Hospitalier au sein d'un établissement public à Paris. Fort d'une solide expérience hospitalière acquise aux urgences psychiatriques, en hospitalisation et en Centre Médico-Psychologique (CMP), dans plusieurs établissements de la région parisienne et en province, il a également exercé en pédopsychiatrie et possède une expérience pratique en psychiatrie transculturelle.
+    </p>
+
+    <p>
+        Dans sa pratique, il privilégie une approche globale associant psychoéducation et réhabilitation psychosociale, avec un intérêt particulier pour la prise en charge des troubles anxieux, des troubles bipolaires et du psychotraumatisme.
+    </p>
+
+    <h4>Diplômes &amp; Formations</h4>
+    <ul>
+        <li>DIU de Psychiatrie pour assistants généralistes – Université Paris Diderot</li>
+        <li>DU Clinique de l'Adolescent – Institut Mutualiste Montsouris</li>
+        <li>Diplôme de Médecine Générale – Université de Homs (Syrie)</li>
+    </ul>
+
+    <h4>Langues de consultation</h4>
+    <ul>
+        <li>Français</li>
+        <li>Anglais</li>
+        <li>Arabe levantin</li>
+    </ul>
+`,
 
         laura: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Diplômée d’un Master en psychologie clinique, Laura Guedj s'inscrit dans une démarche thérapeutique moderne, bienveillante et intégrative.</p>
-            <h4>Services &amp; Prises en charge</h4>
-            <ul>
-                <li>Prise en charge psychothérapeutique</li>
-                <li>Bilan psychologique</li>
-                <li>Soutien psychologique</li>
-                <li>Gestion du stress et des émotions</li>
-            </ul>
+            <p>Laura GUEDJ est psychologue clinicienne. Titulaire d’un Master de Psychologie Clinique et Empirique de l’Université Paris Ouest Nanterre la Défense en 2016, elle a, par la suite, validée une formation de spécialisation en TCC (Thérapie Comportementale et Cognitive) à l’AFTCC (Association Française des TCC). Elle est également formée à la Thérapie ACT (Thérapie d’Acceptation et d’Engagement).
+Durant deux ans, elle a travaillé dans le domaine de la Recherche au Service Hospitalo-Universitaire au Centre Hospitalier Sainte-Anne et a écrit plusieurs articles sur le contrôle moteur dans la schizophrénie.
+En parallèle, elle a travaillé dans un Service d’intervention précoce médico-social s’adressant à des jeunes adultes atteints de troubles psychotiques ou elle pratique les TCC et ou elle co-anime un groupe de cognition sociale chez les jeunes adultes souffrant de troubles psychotiques. Elle propose des accompagnements et de la psychoéducation des familles des patients.
+Elle travaille également dans un cabinet libéral ou elle pratique les TCC et la Thérapie ACT chez le tout-venant.
+Ces différents postes ont permis à Laura GUEDJ d’acquérir une expérience de la psychopathologie de l’adulte, particulièrement des les troubles psychotiques mais également des troubles anxio-dépressifs et la gestion des émotions.</p>
         `,
 
         doina: `
-            <h4>Biographie &amp; Parcours</h4>
-            <p>Psychologue clinicienne, Doïna Mazière accompagne les enfants, les adolescents, les adultes et leurs familles.</p>
-            <h4>Évaluations &amp; Bilans</h4>
-            <ul>
-                <li>Bilans psychométriques</li>
-                <li>Évaluations TSA</li>
-                <li>Bilans TDAH</li>
-                <li>Troubles des apprentissages</li>
-            </ul>
+<h4>Biographie &amp; Parcours</h4>
+<p>
+Psychologue clinicienne spécialisée dans les troubles du 
+neurodéveloppement (TSA et TDAH), Madame Doïna Mazière accompagne 
+les enfants, les adolescents, les adultes et leurs familles tout au 
+long de leur parcours. Après avoir débuté sa carrière au sein du 
+cabinet Espas Iddees, spécialisé dans l'accompagnement des personnes 
+autistes, elle partage aujourd'hui son activité entre son cabinet 
+libéral et un Institut Médico-Éducatif (IME) accueillant des enfants 
+et adolescents présentant un TSA. Elle réalise des bilans 
+psychométriques, des évaluations diagnostiques (TSA, TDAH et 
+troubles des apprentissages) ainsi que des consultations 
+psychologiques, des thérapies cognitives et comportementales (TCC), 
+de la remédiation cognitive, de la guidance parentale et des 
+accompagnements visant à développer les compétences sociales, la 
+communication et l'autonomie. Sa démarche vise avant tout à mieux 
+comprendre le fonctionnement de chaque personne afin de proposer un 
+accompagnement personnalisé et adapté à ses besoins.
+</p>
         `,
 
 rolland: `
-            <h4>Biographie &amp; Parcours</h4>
-            <p>Médecin spécialiste en psychiatrie, le docteur Franck Rolland exerce depuis plusieurs années à l'hôpital au sein du service public. Également diplômé en psychologie clinique, il associe une approche médicale rigoureuse à une compréhension approfondie des psychothérapies. Consultations en psychiatrie générale, TDAH adulte et psychothérapies. <strong>Disponible le samedi.</strong></p>
-            <h4>Champs d'expertise &amp; Prises en charge</h4>
-            <ul>
-              <li>Psychiatrie générale</li>
-              <li>Évaluation diagnostique du TDAH de l'adulte</li>
-              <li>Psychothérapies (TCC, hypnose, entretien motivationnel)</li>
-              <li>Accompagnement au changement</li>
-              <li>Sevrage tabagique et soutien aux proches</li>
-            </ul>
-            <h4>Formation</h4>
-            <ul>
-              <li>Médecin spécialiste en psychiatrie</li>
-              <li>Psychologue clinicien</li>
-              <li>Thérapeute TCC (AFTCC)</li>
-              <li>Formé à l'hypnose médicale</li>
-              <li>Entretien motivationnel – Niveau 2 (AFDEM)</li>
-            </ul>
-        `,
+    <h4>Biographie &amp; Parcours</h4>
+    <p>
+        Le docteur Franck Rolland est médecin spécialiste en psychiatrie. Il exerce depuis plusieurs années à l'hôpital en contribuant au service public. Il a la particularité d'avoir suivi une formation universitaire en psychologie clinique, lui conférant également le titre de psychologue clinicien. Cette double formation lui permet d'articuler une approche médicale rigoureuse, avec ou sans prescription médicamenteuse, à une compréhension approfondie des processus psychiques et des psychothérapies. Il est également formé aux thérapies cognitives et comportementales (TCC), à l'hypnose médicale ainsi qu'à l'entretien motivationnel. <strong>Disponible le samedi.</strong>
+    </p>
+
+    <h4>Consultations proposées</h4>
+    <ul>
+        <li>Psychiatrie générale (diagnostic, suivi et traitement des troubles psychiatriques)</li>
+        <li>Évaluation diagnostique du TDAH de l'adulte</li>
+        <li>Sevrage tabagique et accompagnement à l'arrêt du tabac</li>
+        <li>Soutien aux proches de personnes concernées par un trouble psychiatrique ou une addiction</li>
+        <li>Syndrome d'épuisement professionnel (burnout)</li>
+        <li>Psychothérapies (TCC, hypnose, entretien motivationnel, thérapie de soutien)</li>
+        <li>Accompagnement au changement (événement de vie, choix professionnel, addiction...)</li>
+    </ul>
+
+    <h4>Formation</h4>
+    <ul>
+        <li>Médecin spécialiste en psychiatrie</li>
+        <li>Psychologue clinicien</li>
+        <li>Thérapeute en Thérapies Cognitives et Comportementales (AFTCC)</li>
+        <li>Formé à l'hypnose médicale</li>
+        <li>Entretien motivationnel – Niveau 2 (AFDEM)</li>
+    </ul>
+
+    <p>
+        Le docteur Franck Rolland propose un espace de consultation respectueux et attentif aux spécificités des personnes LGBTQIA+.
+    </p>
+`,
         claire: `
             <h4>Biographie &amp; Parcours</h4>
-            <p>Neuropsychologue diplômée, Claire Saget exerce auprès d'enfants, d'adolescents et d'adultes. Elle réalise des évaluations neuropsychologiques complètes permettant de mieux comprendre le profil cognitif et émotionnel de chacun. Elle propose également des bilans mémoire et des accompagnements individualisés adaptés aux pathologies neurologiques, chroniques et au suivi post-lésionnel.</p>
-            <h4>Champs d'expertise &amp; Prises en charge</h4>
-            <ul>
-              <li>Bilans neuropsychologiques complets (QI, attention, mémoire, fonctions exécutives)</li>
-              <li>Orientation diagnostique (TDAH, troubles des apprentissages, HPI)</li>
-              <li>Pôle Mémoire adultes (Bilans globaux, évaluations mnésiques et attentionnelles)</li>
-              <li>Suivi post-lésionnel (AVC, traumatisme crânien) et pathologies chroniques (SEP, Parkinson...)</li>
-              <li>Accompagnement individualisé et guidance parentale</li>
-            </ul>
-            <h4>Formation</h4>
-            <ul>
-              <li>Master en Psychologie Cognitive et Neuropsychologie (Université de Franche-Comté, Besançon)</li>
-              <li>Spécialisée en bilans et accompagnement neuropsychologique de l'enfant et de l'adulte</li>
-            </ul>
+            <p>Neuropsychologue diplômée d'un Master en Psychologie Cognitive et
+Neuropsychologie (Université de Franche-Comté, Besançon), j'exerce
+auprès d'enfants, d'adolescents et d'adultes.
+
+Auprès des enfants et des adolescents, je réalise des évaluations
+neuropsychologiques complètes permettant de mieux comprendre le
+profil cognitif et émotionnel de l'enfant : bilan intellectuel (QI), de
+l'attention, de la mémoire ou des fonctions exécutives, dans le cadre d'un
+bilan d'orientation diagnostique (TDAH, troubles des apprentissages, haut
+potentiel...). Je propose également un accompagnement adapté aux
+besoins de l'enfant ou de l'adolescent, ainsi qu'un soutien aux parents
+sous forme de guidance parentale.
+
+Auprès des adultes, je réalise des bilans neuropsychologiques variés :
+bilan global, évaluation mnésique et attentionnelle, bilan suivi post-
+
+Mémoire : bilan/accompagnement
+
+Bipolaires
+
+Sclérose en plaques,
+
+AVC, Parkinson, trauma crânien…
+
+lésionnel (AVC, traumatisme crânien...) ou dans le cadre d’une sclérose en
+plaque. Un accompagnement individualisé peut être proposé à la suite du
+bilan, ainsi qu'un soutien à la parentalité pour les parents en difficulté
+avec leur enfant.</p>
         `
     };
 
