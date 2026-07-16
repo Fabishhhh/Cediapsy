@@ -570,24 +570,22 @@ Pop up prises en charge
 .eval-card:nth-child(1),
 .eval-card:nth-child(2),
 .eval-card:nth-child(3) {
-    background: #f9ddd2;
-    border: 1px solid #de9a84;
-    border-left: 8px solid #cf6c4d;
+    background: #fdf0ea;              /* crème saumon */
+    border: 1px solid #e8c1b4;
+    border-left: 8px solid #d9826e;
 }
 
 .eval-card:nth-child(4),
 .eval-card:nth-child(5),
 .eval-card:nth-child(6) {
-    background: #fdebbd;
-    border: 1px solid #dcb75a;
-    border-left: 8px solid #bf8b22;
+    background: #fdf8e8;              /* crème doré */
+    border: 1px solid #e7d7a6;
+    border-left: 8px solid #caa24f;
 }
-
 
 .eval-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
-
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
 }
 
 .eval-card h3 {
