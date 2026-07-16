@@ -569,24 +569,25 @@ Pop up prises en charge
 /* 3 cartes du haut */
 .eval-card:nth-child(1),
 .eval-card:nth-child(2),
-.eval-card:nth-child(3){
-    background:#fdece5;
-    border:1px solid #e6b19c;
-    border-left:6px solid #d57a5d;
+.eval-card:nth-child(3) {
+    background: #f9ddd2;
+    border: 1px solid #de9a84;
+    border-left: 8px solid #cf6c4d;
 }
 
 .eval-card:nth-child(4),
 .eval-card:nth-child(5),
-.eval-card:nth-child(6){
-    background:#fff3d4;
-    border:1px solid #e4c46b;
-    border-left:6px solid #c89a2f;
+.eval-card:nth-child(6) {
+    background: #fdebbd;
+    border: 1px solid #dcb75a;
+    border-left: 8px solid #bf8b22;
 }
 
 
 .eval-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+
 }
 
 .eval-card h3 {
