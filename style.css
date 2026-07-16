@@ -570,18 +570,17 @@ Pop up prises en charge
 .eval-card:nth-child(1),
 .eval-card:nth-child(2),
 .eval-card:nth-child(3) {
-    background: #fff8f5;
-    border: 1px solid #efc1b3;
-    border-left: 5px solid #d98f7c;
+    background: #fff3ee;
+    border: 1px solid #e7ad9d;
+    border-left: 6px solid #d9826e;
 }
 
-/* 3 cartes du dessous */
 .eval-card:nth-child(4),
 .eval-card:nth-child(5),
 .eval-card:nth-child(6) {
-    background: #fffaf0;
-    border: 1px solid #ead8ad;
-    border-left: 5px solid #d6b86f;
+    background: #fff8e8;
+    border: 1px solid #e1c88c;
+    border-left: 6px solid #caa24f;
 }
 
 
@@ -693,6 +692,21 @@ Pop up prises en charge
     font-size: 0.85rem;
     color: var(--primary);
     font-weight: 500;
+}
+
+.team-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-card-link .team-card {
+    height: 100%;
+    cursor: pointer;
+}
+
+.team-card-link:hover .team-card {
+    transform: translateY(-4px);
 }
 
 .trouble-text-area p, 
