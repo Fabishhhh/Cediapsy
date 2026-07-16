@@ -2099,6 +2099,19 @@ Pop up prises en charge
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-header,
+.header-container,
+.hero-section {
+    width: 100%;
+    max-width: 100%;
+}
 /* ==========================================================================
    MEDIA QUERIES (CONCEPTION RESPONSIVE CENTRALISÉE)
    ========================================================================== */
@@ -2121,19 +2134,23 @@ Pop up prises en charge
     .trouble-content-grid { grid-template-columns: 1fr; gap: 40px; }
     .trouble-sidebar-box { width: 100%; }
 }
-@media (max-width: 1020px) {
+@media screen and (max-width: 1300px) {
+    .header-container {
+        height: 80px;
+        padding: 0 20px;
+    }
 
-.burger-menu {
+    .burger-menu {
         display: flex;
     }
 
     .nav-menu {
         position: absolute;
-        top: 90px;
+        top: 80px;
+        left: 0;
         right: 0;
         width: 100%;
-        background: rgb(0, 0, 0);
-        backdrop-filter: blur(10px);
+        background: #000000;
         border-bottom: 1px solid var(--border-color);
 
         max-height: 0;
@@ -2142,28 +2159,34 @@ Pop up prises en charge
     }
 
     .nav-menu.active {
-        max-height: 400px;
+        max-height: 450px;
     }
 
     .nav-list {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
-        padding: 24px;
+        padding: 26px 20px;
         text-align: center;
-        
     }
 
-    .header-actions {
-        display: none; /* optionnel pour alléger mobile */
-    }
-
-        .nav-menu .nav-link {
-        color: #fff;
+    .nav-menu .nav-link {
+        color: #ffffff;
+        white-space: nowrap;
     }
 
     .nav-menu .nav-link:hover,
     .nav-menu .nav-link.active {
-        color: #fff;
+        color: #ffffff;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .language-switcher {
+        margin-left: auto;
+        margin-right: 15px;
     }
 }
 /* -------------------------------------------------------------
