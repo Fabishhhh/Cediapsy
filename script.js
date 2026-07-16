@@ -84,11 +84,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const data = {
         celine: `
-            <h4>Biographie &amp; Parcours</h4>
-            <p>Céline HEBBACHE est psychologue clinicienne. Diplômée de l’université Nanterre Paris X en 2015 en psychopathologie et psychologique clinique, empirique et TCC (thérapies comportementales et cognitives), elle est également formée en thérapie interpersonnelle et en hypnothérapie.
-Impliquée depuis plusieurs années dans la Recherche, les thèmes d’étude portent sur la dépression post-partum, la dépression, l’immunopsychiatrie, la définition d’un algorithme prédictif du risque suicidaire. Les publics concernés sont multiples: trouble anxieux, trouble de l'humeur (unipolaire ou bipolaire), trouble psychotique, trouble de la personnalité.
-Elle travaille depuis plusieurs années au centre-expert Bipolaire de l’hôpital Chenevier, ayant développé une expertise dans l’évaluation diagnostique et thérapeutique de patients souffrant de troubles bipolaires. L’animation de groupes de Psychoéducation des troubles bipolaires, de gestion des émotions et d’affirmation de soi fait également partie des compétences acquises au cours des années de pratique.</p>
-        `,
+    <h4>Biographie &amp; Parcours</h4>
+    <p>
+        Diplômée de l’université Nanterre Paris 10 en 2015 en psychopathologie et psychologique clinique, empirique et TCC (Thérapies Comportementales et Cognitives), je suis également formée en thérapie interpersonnelle, en thérapie ACT (acceptation et engagement), en Hypnose Ericksonienne, nouvelle hypnose et PNL.
+
+Particulièrement intéressée par le concept de personnalité et de schémas de fonctionnement, j'utilise également l'approche thérapeutique des schémas développée notamment par Jeffrey E. Young. L'approche de l'ACT (Thérapie d'Acceptation et d'Engagement), dont l'efficacité a été démontrée dans le traitement de nombreux troubles psychologiques, vient compléter ma pratique qui se veut donc éclectique. En utilisant différentes thérapies, cela constitue une démarche multi-référentielle : en fonction des objectifs thérapeutiques, il est possible de sélectionner des outils dans une approche ou une autre - la thérapie s'adapte au patient.
+
+Ayant travaillé plusieurs années à l'hôpital, j'ai pu développer une expertise dans l’évaluation diagnostique et thérapeutique de patients souffrant de troubles bipolaires ainsi que d'autres pathologies psychiatriques.
+
+L’animation de groupes de psychoéducation, de gestion des émotions et d’affirmation de soi fait également partie des compétences acquises au cours des années de pratique.
+
+Chaque individu est le résultat des interactions entre son patrimoine génétique, ce qu'il a vécu dans son enfance, son tempérament, sa personnalité, son histoire de vie, etc. Il est intéressant de tenter de se comprendre en tenant compte de sa globalité.
+
+J'ai développé en juillet 2020 une activité libérale afin de proposer de l'accompagnement psychothérapeutique - le travail psychothérapeutique permet de faire émerger, découvrir ou redécouvrir les ressources présentes chez la personne qui vient consulter au moyen d'une collaboration active entre celle-ci et le psychologue.
+    </p>
+
+    <h4>Prises en charge proposées</h4>
+    <ul>
+        <li>Prise en charge psychothérapeutique - le travail psychothérapeutique permet de faire émerger, découvrir ou redécouvrir les ressources présentes chez la personne qui vient consulter au moyen d'une collaboration active entre celle-ci et le psychologue</li>
+        <li>Bilans de personnalité</li>
+        <li>Bilans attentionnels</li>
+        <li>Groupes de psychoéducation des troubles bipolaires</li>
+        <li>Gestion des émotions</li>
+        <li>Affirmation de soi</li>
+    </ul>
+`,
 
         nora: `
             <h4>Biographie &amp; Parcours</h4>
