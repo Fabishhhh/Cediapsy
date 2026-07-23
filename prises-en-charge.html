@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Prises en Charge - CÉDIAPSY</title>
-    <!-- Même fichier style.css unique -->
     <link rel="stylesheet" href="style.css">
-    <!-- Pour les icônes de la maquette -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* CSS de secours pour s'assurer que la modal s'affiche avec la classe active */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -30,12 +27,8 @@
 </head>
 
 <body>
-    <!-- -------------------------------------------------------------
-       EN-TÊTE DE LA PAGE (HEADER COMMUN)
-       ------------------------------------------------------------- -->
 <header class="main-header header-solid">
     <div class="header-container">
-
         <div class="logo">
             <a href="index.html">
                 <img src="images/Logo_Cediapsy_noir (1).png" alt="Logo CÉDIAPSY">
@@ -44,7 +37,6 @@
 
         <nav class="nav-menu" id="navMenu">
             <ul class="nav-list">
-
                 <li>
                     <a href="index.html" class="nav-link">
                         Accueil
@@ -75,23 +67,19 @@
                     </a>
                 </li>
 
-                <!-- Visible uniquement dans le menu burger -->
                 <li class="mobile-contact-link">
                     <a href="contact.html" class="nav-link">
                         Contact
                     </a>
                 </li>
 
-                <!-- Visible uniquement dans le menu burger -->
                 <li class="mobile-language-link">
                     <a href="en/index.html" class="nav-link">
                         🇬🇧 English
                     </a>
                 </li>
-
             </ul>
         </nav>
-
         <button class="burger-menu"
                 id="burgerBtn"
                 aria-label="Ouvrir le menu de navigation"
@@ -102,7 +90,6 @@
             <span></span>
         </button>
 
-        <!-- Visible sur ordinateur -->
         <div class="header-actions">
 
             <a href="en/index.html" class="language-btn">
@@ -112,15 +99,10 @@
             <a href="contact.html" class="btn btn-primary">
                 Contact
             </a>
-
         </div>
-
     </div>
 </header>
 
-    <!-- -------------------------------------------------------------
-       FIL D'ARIANE ET INTRO DE LA PAGE
-       ------------------------------------------------------------- -->
     <section class="page-intro-section">
         <div class="container">
             <div class="breadcrumb">
@@ -140,13 +122,9 @@
         </div>
     </section>
 
-    <!-- -------------------------------------------------------------
-       LISTE DES PRESTATIONS / SOINS
-       ------------------------------------------------------------- -->
     <main class="care-main-container">
         <div class="container">
 
-            <!-- CARD 1 : TND -->
             <article id="prise-tnd" class="care-card side-emerald">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -192,7 +170,6 @@
                 </div>
             </article>
 
-            <!-- CARD 2 : Avis spécialisé -->
             <article id="avis-specialise" class="care-card side-sage">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -227,7 +204,6 @@
                 </div>
             </article>
 
-            <!-- CARD 3 : Suivi Classique -->
             <article id="psychiatrie-generale" class="care-card side-light-green">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -240,9 +216,9 @@
                     <div class="care-benefits-block">
                         <h4>Indications</h4>
                         <ul class="care-benefits-list">
-    <li><i class="fa-regular fa-circle-check"></i> Troubles anxieux et dépressifs</li>
-    <li><i class="fa-regular fa-circle-check"></i> Troubles de l'humeur</li>
-    <li><i class="fa-regular fa-circle-check"></i> Diagnostic des troubles psychiatriques de l'adulte</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Troubles anxieux et dépressifs</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Troubles de l'humeur</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Diagnostic des troubles psychiatriques de l'adulte</li>
                         </ul>
                     </div>
                 </div>
@@ -266,7 +242,6 @@
                 </div>
             </article>
 
-            <!-- CARD 4 : Thérapies -->
             <article id="therapies" class="care-card side-teal">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -296,7 +271,7 @@
                         <p class="meta-value">Madame Céline Hebbache</p>
                         <p class="meta-value">Madame Laura Guedj</p>
                     </div>
-                                        <div class="meta-item">
+                    <div class="meta-item">
                         <span class="meta-label">Lieu</span>
                         <p class="meta-value">Paris 8e</p>
                     </div>
@@ -306,17 +281,16 @@
                 </div>
             </article>
 
-            <!-- CARD 5 : Groupes TND -->
-<article id="groupes-tnd" class="care-card side-red">
-    <div class="care-main-info">
-        <div class="care-title-block">
-            <div class="care-icon-box">
-            </div>
+            <article id="groupes-tnd" class="care-card side-red">
+                <div class="care-main-info">
+                    <div class="care-title-block">
+                <div class="care-icon-box">
+                </div>
 
-            <div>
-                <h3>Groupes TND</h3>
+                <div>
+                   <h3>Groupes TND</h3>
                 <span class="care-tag-sub">TSA / TDAH</span>
-            </div>
+                </div>
         </div>
 
         <p class="care-description">
@@ -325,13 +299,11 @@
 
         <div class="care-benefits-block">
             <h4>Groupes proposés</h4>
-
             <ul class="care-benefits-list">
                 <li>
                     <i class="fa-regular fa-circle-check"></i>
                     TND enfant
                 </li>
-
                 <li>
                     <i class="fa-regular fa-circle-check"></i>
                     TND adulte
@@ -351,10 +323,10 @@
             <p class="meta-value">Doctolib</p>
         </div>
 
-                            <div class="meta-item">
-                        <span class="meta-label">Lieu</span>
-                        <p class="meta-value">Paris 8e et Paris 11e</p>
-                    </div>
+        <div class="meta-item">
+            <span class="meta-label">Lieu</span>
+            <p class="meta-value">Paris 8e et Paris 11e</p>
+        </div>
 
 <div class="resource-download-zone" style="margin-top: 25px; margin-bottom: 30px; padding: 15px; border: 1px dashed #16a085; background-color: #eef9f6; border-radius: 6px;">
     <p style="margin: 0 0 10px 0; font-weight: bold; color: #16a085;">
@@ -365,15 +337,12 @@
         <a href="images/document_enfant.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
             Présentation EHS enfant
         </a>
-
         <a href="images/plaquette_enfant.png" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
             Plaquette enfant
         </a>
-
         <a href="documents/presentation-doinamaziere.pdf" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
             Présentation EHS adulte
         </a>
-
         <a href="images/plaquette_doinamaziere.png" target="_blank" class="btn btn-emerald-action" style="background-color: #16a085; color: #ffffff; font-size: 0.85em; padding: 6px 12px;">
             Plaquette adulte
         </a>
@@ -387,7 +356,6 @@
     </div>
 </article>
 
-<!-- CARD 6 : Consultations mémoire -->
 <article id="memoire" class="care-card side-amber">
     <div class="care-main-info">
         <div class="care-title-block">
@@ -414,31 +382,26 @@
     <li><i class="fa-regular fa-circle-check"></i> Maladie de Parkinson</li>
     <li><i class="fa-regular fa-circle-check"></i> Traumatisme crânien</li>
 </ul>
-        </div>
-    </div>
+</div>
+</div>
 
     <div class="care-meta-sidebar">
         <div class="meta-item">
             <span class="meta-label">Neuropsychologue</span>
             <p class="meta-value">Madame Claire Saget</p>
         </div>
-
         <div class="meta-item">
             <span class="meta-label">Lieu</span>
             <p class="meta-value">Paris 8e</p>
         </div>
-
         <a href="#" class="btn btn-care-action open-modal" data-modal="memoire">
             Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
         </a>
     </div>
-</article>
-        </div>
-    </main>
+    </article>
+    </div>
+</main>
 
-    <!-- -------------------------------------------------------------
-       SECTION BAS DE PAGE : NOTRE APPROCHE THÉRAPEUTIQUE
-       ------------------------------------------------------------- -->
     <section class="approach-section">
         <div class="container">
             <h2 class="approach-main-title">Notre Approche Thérapeutique</h2>
@@ -462,9 +425,6 @@
         </div>
     </section>
 
-    <!-- -------------------------------------------------------------
-       PIED DE PAGE (FOOTER COMMUN)
-       ------------------------------------------------------------- -->
     <footer class="main-footer">
         <div class="container">
              <div class="footer-grid">
@@ -484,7 +444,6 @@
                     <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
                 </ul>
                 </div>
-
             <div class="footer-links">
                     <h5>Informations</h5>
                 <ul>
@@ -509,21 +468,15 @@
         </div>
 </footer>
 
-<!-- =============================================================
-     POPUP RENDEZ-VOUS UNIQUE
-     ============================================================= -->
 <div class="modal-overlay" id="modal-rdv">
     <div class="modal-box">
         <button class="modal-close" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 30px; cursor: pointer; color: #333;">&times;</button>
         <h2 id="modal-title" style="margin-top: 10px;">Choisissez votre praticien</h2>
         <p style="margin-bottom: 20px; color: #666;">Vous serez redirigé vers Doctolib.</p>
         <div id="modal-content" class="modal-praticiens">
-            <!-- Les cartes seront ajoutées automatiquement par JavaScript -->
         </div>
     </div>
 </div>
-
 <script src="script.js"></script>
-
 </body>
 </html>

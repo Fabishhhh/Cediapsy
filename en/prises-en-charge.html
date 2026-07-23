@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychiatric and psychological care - CÉDIAPSY</title>
-    <!-- Même fichier style.css unique -->
     <link rel="stylesheet" href="../style.css">
-    <!-- Pour les icônes de la maquette -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* CSS de secours pour s'assurer que la modal s'affiche avec la classe active */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -30,9 +27,6 @@
 </head>
 
 <body>
-    <!-- -------------------------------------------------------------
-       EN-TÊTE DE LA PAGE (HEADER COMMUN)
-       ------------------------------------------------------------- -->
 <header class="main-header header-solid">
     <div class="header-container">
 
@@ -45,7 +39,6 @@
 
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-
                     <li>
                         <a href="index.html" class="nav-link">
                             Home
@@ -76,14 +69,12 @@
                         </a>
                     </li>
 
-                    <!-- Contact visible dans le menu burger -->
                     <li class="mobile-contact-link">
                         <a href="contact.html" class="nav-link">
                             Contact
                         </a>
                     </li>
 
-                                        <!-- Visible uniquement dans le menu burger -->
                     <li class="mobile-language-link">
                         <a href="../index.html" class="nav-link">
                             🇫🇷 Français
@@ -92,7 +83,6 @@
 
                 </ul>
             </nav>
-
             <button class="burger-menu"
                     id="burgerBtn"
                     aria-label="Open navigation menu"
@@ -103,25 +93,17 @@
                 <span></span>
             </button>
 
-            <!-- Visible sur ordinateur -->
             <div class="header-actions">
-
                 <a href="../index.html" class="language-btn">
                     FR
                 </a>
-
                 <a href="contact.html" class="btn btn-primary">
                     Contact
                 </a>
-
             </div>
-
         </div>
     </header>
 
-    <!-- -------------------------------------------------------------
-       FIL D'ARIANE ET INTRO DE LA PAGE
-       ------------------------------------------------------------- -->
     <section class="page-intro-section">
         <div class="container">
             <div class="breadcrumb">
@@ -138,16 +120,12 @@
     <a href="#groupes-tnd" class="anchor-btn">NDD Groups</a>
     <a href="#memoire" class="anchor-btn">Memory Consultations</a>
 </div>
-        </div>
-    </section>
+</div>
+</section>
 
-    <!-- -------------------------------------------------------------
-       LISTE DES PRESTATIONS / SOINS
-       ------------------------------------------------------------- -->
     <main class="care-main-container">
         <div class="container">
 
-            <!-- CARD 1 : TND -->
             <article id="prise-tnd" class="care-card side-emerald">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -193,7 +171,6 @@
                 </div>
             </article>
 
-            <!-- CARD 2 : Avis spécialisé -->
             <article id="avis-specialise" class="care-card side-sage">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -228,7 +205,6 @@
                 </div>
             </article>
 
-            <!-- CARD 3 : Suivi Classique -->
             <article id="psychiatrie-generale" class="care-card side-light-green">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -241,9 +217,9 @@
                     <div class="care-benefits-block">
                         <h4>Indications</h4>
                         <ul class="care-benefits-list">
-    <li><i class="fa-regular fa-circle-check"></i> Anxiety and Depressive Disorders</li>
-    <li><i class="fa-regular fa-circle-check"></i> Mood Disorders</li>
-    <li><i class="fa-regular fa-circle-check"></i> Diagnosis of Psychiatric Disorders in Adults</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Anxiety and Depressive Disorders</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Mood Disorders</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Diagnosis of Psychiatric Disorders in Adults</li>
                         </ul>
                     </div>
                 </div>
@@ -267,7 +243,6 @@
                 </div>
             </article>
 
-            <!-- CARD 4 : Thérapies -->
             <article id="therapies" class="care-card side-teal">
                 <div class="care-main-info">
                     <div class="care-title-block">
@@ -307,13 +282,11 @@
                 </div>
             </article>
 
-            <!-- CARD 5 : Groupes TND -->
 <article id="groupes-tnd" class="care-card side-red">
     <div class="care-main-info">
         <div class="care-title-block">
             <div class="care-icon-box">
             </div>
-
             <div>
                 <h3>NDD Groups</h3>
                 <span class="care-tag-sub">ASD / ADHD</span>
@@ -381,7 +354,6 @@
     </div>
 </article>
 
-<!-- CARD 6 : Consultations mémoire -->
 <article id="memoire" class="care-card side-amber">
     <div class="care-main-info">
         <div class="care-title-block">
@@ -427,12 +399,9 @@
         </a>
     </div>
 </article>
-        </div>
-    </main>
+</div>
+</main>
 
-    <!-- -------------------------------------------------------------
-       SECTION BAS DE PAGE : NOTRE APPROCHE THÉRAPEUTIQUE
-       ------------------------------------------------------------- -->
     <section class="approach-section">
         <div class="container">
             <h2 class="approach-main-title">Our Therapeutic Approach</h2>
@@ -456,9 +425,6 @@
         </div>
     </section>
 
-    <!-- -------------------------------------------------------------
-       PIED DE PAGE (FOOTER COMMUN)
-       ------------------------------------------------------------- -->
     <footer class="main-footer">
         <div class="container">
              <div class="footer-grid">
@@ -503,9 +469,6 @@
         </div>
 </footer>
 
-<!-- =============================================================
-     POPUP RENDEZ-VOUS UNIQUE
-     ============================================================= -->
 <div class="modal-overlay" id="modal-rdv">
     <div class="modal-box">
         <button class="modal-close" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 30px; cursor: pointer; color: #333;">&times;</button>
@@ -516,8 +479,6 @@
         </div>
     </div>
 </div>
-
 <script src="script.js"></script>
-
 </body>
 </html>

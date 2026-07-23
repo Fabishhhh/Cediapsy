@@ -6,7 +6,7 @@
 body:has(.legal-container) {
     background-color: var(--light-bg, #fcfbf9);
     padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-sans);
     line-height: 1.6;
 }
 
@@ -129,6 +129,25 @@ body:has(.legal-container) {
     color: #9b2c2c;
     font-size: 0.95rem;
     margin-bottom: 15px;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+strong {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Tablettes et mobiles */

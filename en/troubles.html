@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluations - CÉDIAPSY</title>
-    <!-- On relie le MEME fichier style.css unique -->
     <link rel="stylesheet" href="../style.css">
-    <!-- Pour les petites icônes (cochées, flèches, etc.) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- -------------------------------------------------------------
-       EN-TÊTE DE LA PAGE (HEADER COMMUN)
-       ------------------------------------------------------------- -->
 <header class="main-header header-solid">
     <div class="header-container">
-
             <div class="logo">
                 <a href="index.html">
                     <img src="../images/Logo_Cediapsy_noir (1).png"
                          alt="CÉDIAPSY Logo">
                 </a>
             </div>
-
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-
                     <li>
                         <a href="index.html" class="nav-link">
                             Home
@@ -57,23 +49,19 @@
                         </a>
                     </li>
 
-                    <!-- Contact visible dans le menu burger -->
                     <li class="mobile-contact-link">
                         <a href="contact.html" class="nav-link">
                             Contact
                         </a>
                     </li>
 
-                                        <!-- Visible uniquement dans le menu burger -->
                     <li class="mobile-language-link">
                         <a href="../index.html" class="nav-link">
                             🇫🇷 Français
                         </a>
                     </li>
-
                 </ul>
             </nav>
-
             <button class="burger-menu"
                     id="burgerBtn"
                     aria-label="Open navigation menu"
@@ -84,25 +72,17 @@
                 <span></span>
             </button>
 
-            <!-- Visible sur ordinateur -->
             <div class="header-actions">
-
                 <a href="../index.html" class="language-btn">
                     FR
                 </a>
-
                 <a href="contact.html" class="btn btn-primary">
                     Contact
                 </a>
-
-            </div>
-
+           </div>
         </div>
     </header>
 
-    <!-- -------------------------------------------------------------
-       FIL D'ARIANE ET INTRO DE LA PAGE
-       ------------------------------------------------------------- -->
     <section class="page-intro-section">
         <div class="container">
             <div class="breadcrumb">
@@ -111,29 +91,22 @@
             <h1 class="page-main-title">Evaluations</h1>
             <p class="page-subtitle">Therapeutic, cognitive and behavioral approaches adapted to each structure and scientifically grounded</p>
             
-            <!-- Petits boutons d'ancrage pour sauter directement à un trouble -->
             <div class="anchors-container">
                 <a href="#tnd" class="anchor-btn">NDD (ASD / ADHD)</a>
                 <a href="#bipolaire" class="anchor-btn">Bipolar Disorders</a>
                 <a href="#psychiatrie" class="anchor-btn">General Psychiatry</a>
                 <a href="#schizo" class="anchor-btn">Schizophrenia</a>
                 <a href="#memoire" class="anchor-btn">Memory Consultations</a>
-
             </div>
         </div>
     </section>
 
-    <!-- -------------------------------------------------------------
-       SECTION CONTENU DES TROUBLES
-       ------------------------------------------------------------- -->
 <main class="troubles-main-container">
     <div class="container">
-
         <article id="tnd" class="trouble-card-block">
             <div class="trouble-hero-banner tsa-bg">
                 <h2>NDD (ASD / ADHD)</h2>
             </div>
-
 <aside class="trouble-sidebar-box">
     <h5>Professionals dedicated</h5>
 
@@ -142,29 +115,25 @@
         Dr. Isabelle Scheid (ASD)<br>
         Dr. Franck Rolland (ADHD)
     </p>
-
     <p>
         <strong>Psychologist</strong><br>
         Ms. Doïna Mazière
     </p>
-
     <div class="trouble-actions">
         <a href="prises-en-charge.html?open=tnd#prise-tnd" class="btn">
             Book an Appointment
         </a>
-
         <a href="prises-en-charge.html?open=groupes#groupes-tnd" class="btn">
             See TND Groups
         </a>
     </div>
 </aside>
-        </article>
+</article>
 
 <article id="bipolaire" class="trouble-card-block">
     <div class="trouble-hero-banner bipolaire-bg">
         <h2>Bipolar Disorders</h2>
     </div>
-
     <aside class="trouble-sidebar-box">
         <h5>Professionals dedicated</h5>
 
@@ -209,7 +178,6 @@
     <div class="trouble-hero-banner memoire-bg">
         <h2>Memory Consultations</h2>
     </div>
-
     <aside class="trouble-sidebar-box">
         <h5>Professionals dedicated</h5>
 
@@ -225,13 +193,9 @@
         </div>
     </aside>
 </article>
-
-    </div>
+</div>
 </main>
 
-    <!-- -------------------------------------------------------------
-       PIED DE PAGE (FOOTER COMMUN)
-       ------------------------------------------------------------- -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
@@ -271,13 +235,11 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 CÉDIAPSY. All rights reserved. | Designed by <a href="https://yizio.fr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Yizio</a></p>
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
