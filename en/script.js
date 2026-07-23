@@ -297,7 +297,6 @@ Stroke, Parkinson’s disease, traumatic brain injury...
         }
     ]
 },
-
         memoire: {
     title: "Book an appointment",
     cards: [
@@ -309,7 +308,6 @@ Stroke, Parkinson’s disease, traumatic brain injury...
     ]
 }
     };
-
     const rdvModal = document.getElementById("modal-rdv");
     const rdvModalTitle = document.querySelector("#modal-rdv #modal-title");
     const rdvModalContent = document.querySelector("#modal-rdv #modal-content");
@@ -327,14 +325,12 @@ Stroke, Parkinson’s disease, traumatic brain injury...
                     console.error("Type de modal introuvable :", type);
                     return;
                 }
-
                 rdvModalTitle.textContent = selectedData.title;
                 rdvModalContent.innerHTML = "";
 
                 selectedData.cards.forEach(function (praticien) {
                     const card = document.createElement("div");
                     card.className = "praticien-mini-card";
-
                     const boutonAgenda = praticien.lien
                         ? `
                             <a href="${praticien.lien}" target="_blank" class="btn btn-doctolib-sub">
@@ -347,7 +343,6 @@ Stroke, Parkinson’s disease, traumatic brain injury...
                                 Schedule coming soon
                             </span>
                         `;
-
                     card.innerHTML = `
                         <div>
                             <h4>${praticien.nom}</h4>
@@ -355,32 +350,26 @@ Stroke, Parkinson’s disease, traumatic brain injury...
                         </div>
                         ${boutonAgenda}
                     `;
-
                     rdvModalContent.appendChild(card);
                 });
-
                 rdvModal.classList.add("active");
             });
         });
-
         if (rdvCloseBtn) {
             rdvCloseBtn.addEventListener("click", function () {
                 rdvModal.classList.remove("active");
             });
         }
-
         rdvModal.addEventListener("click", function (e) {
             if (e.target === rdvModal) {
                 rdvModal.classList.remove("active");
             }
         });
-
         const urlParams = new URLSearchParams(window.location.search);
         const modalToOpen = urlParams.get("open");
 
         if (modalToOpen) {
             const targetButton = document.querySelector('.open-modal[data-modal="' + modalToOpen + '"]');
-
             if (targetButton) {
                 setTimeout(function () {
                     targetButton.click();
@@ -388,5 +377,4 @@ Stroke, Parkinson’s disease, traumatic brain injury...
             }
         }
     }
-
 });
